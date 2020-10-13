@@ -1,5 +1,5 @@
 <template>
-  <div :class="header === '' && type === 'workshop' ? 'mb-5 pb-4' : 'mb-5'" :style="header === '' && author !== 'Asko Soukka' && author !== 'Pekka Klärck' && type === 'workshop' ? 'border-bottom: dashed 2px #20f73f' : ''">
+  <div :class="header === '' && type === 'workshop' ? 'mb-5 pb-4' : 'mb-5'" :style="header === '' && author !== 'Asko Soukka' && author !== 'Pekka Klärck' && type === 'workshop' ? 'border-bottom: dashed 2px' : ''">
     <div v-if="margin" class="mt-5" />
     <div v-if="header !== ''">
       <h2 class="white no-arrow mt-4">{{ header }}</h2>
@@ -13,7 +13,6 @@
       <div v-else class="mt-4" />
       <a
         class="mb-0 ml-4 link-title"
-        style="color: #20f73f"
         :id="title.replace(/ /g, '-').toLowerCase()"
         :class="{ 'clickable-title' : descriptionExpanded !== '' || url !== ''}"
         @click="descriptionExpanded !== '' || url !== '' ? expanded = !expanded : false">
