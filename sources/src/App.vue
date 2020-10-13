@@ -26,21 +26,22 @@ export default {
     return {
       pages: [
         {
-          title: "Hello",
+          title: "ComingSoon",
           text_block: false,
           text_block_centered: true,
           tab_box: false,
           feature_box: false,
           data: {
             text: {
-              twitter: true,
-              header: "Hello",
+              twitter: false,
+              header: "Coming Soon",
               text:
-                '<p>Thanks to everyone who attended Robocon 2020, see you next year!<br><br><a href="#previous-talks">Videos of 2020 talks here!</a></p>'
+                `<p>Great Robot Framework Workshops are coming soon!
+                 <br>SAVE THE DATE!</p>`
             }
           }
         },
-        {
+        /*{
           title: "",
           text_block_centered: true,
           tab_box: false,
@@ -125,7 +126,7 @@ export default {
             ]
           }
         },
-        {
+       /* {
           title: "Conference",
           text_block: false,
           text_block_centered: true,
@@ -236,8 +237,8 @@ export default {
               ]
             }
           }
-        },
-        {
+        },*/
+        /*{
           title: "Tickets",
           text_block: false,
           text_block_centered: true,
@@ -251,7 +252,7 @@ export default {
                 '<p><a href="https://www.lyyti.in/Robocon_2020_6339" target="blank">Tickets available here!</a></p> <table style="width: 100%; display: flex; margin-top: 10px"><tr><th></th><th>1 day</th><th>2 days</th><th>Available until</th></tr><tr><td><del>Blind Robot</del></td><td>-</td><td><del>600€</del></td><td><del>2019-09-30</del></td></tr><tr><td><del>Early Robot</del></td><td><del>600€</del></td><td><del>900€</del></td><td><del>2019-12-31</del></td></tr><tr><td>Late Robot</td><td>800€</td><td>1200€</td><td>2020-01-15</td></tr></table><br><p>All prices are exclusive of 24 % VAT. <a href="#workshops">Workshop</a> tickets are sold separately.</p>'
             }
           }
-        },
+        },*/
         {
           title: "Workshops",
           text_block: false,
@@ -264,10 +265,80 @@ export default {
             text: {
               twitter: false,
               header: "Workshops",
-              text: '<p>Date: January 14, 2020<br>Location: Technopolis Ruoholahti, <a href="https://goo.gl/maps/LyrLSoMJF3S6PCvz7" target="blank">Energiakuja 3 & 4, Helsinki</a>.<br>Detailed location information will be sent to workshops participants separately.<br><br>Prices:<br>Remaining workshop tickets are sold with 250€ (full day) and 180€ (half day) with no additional member discount. Ticket sale closes on Monday, January 13, at 14:00 EET (12:00 UTC).<table style="width: 100%; display: flex; margin-top: 0; margin-bottom: 5px"><tr><th></th><th>Normal</th><th>Members *)</th></tr><tr><td>Half-day</td><td><del>350€</del></td><td><del>250€</del></td></tr><tr><td>Full-day</td><td><del>450€</del></td><td><del>350€</del></td></tr></table><p style="font-size: 0.95rem">*) Member price is for <a href="https://robotframework.org/foundation/" target="blank">Robot Framework Foundation</a> member organizations.</p><a class="col-sm-12 pl-0 mb-5 mt-3" href="https://www.lyyti.fi/reg/robocon2020workshops" target="blank">Tickets available here!</a>',
+              text: `<p>Date: December 02, 2020<br>Location: The World Wide Web.<br>
+              Detailed information will be sent to workshops participants separately.<br>
+              <br>Ticket sale starts on Wednesday, November 4, at 08:00 UTC.</p>
+              <p>
+              Prices:<br>
+              <br>
+              Workshops in East Asia / Oceania time zones (UTC +12 to UTC +8):</p>
+              <table style="width: 100%; display: flex; margin-top: 0; margin-bottom: 5px">
+                <tr>
+                  <th></th>
+                  <th>Supporter</th>
+                  <th>Standard</th>
+                  <th>Budget *</th>
+                </tr>
+                <tr>
+                  <td>Half-day</td>
+                  <td>400€</td>
+                  <td>200€</td>
+                  <td>100€</td>
+                </tr>
+                <tr>
+                  <td>Full-day</td>
+                  <td>800€</td>
+                  <td>400€</td>
+                  <td>200€</td>
+                </tr>
+              </table>
+             
+              <p>Workshops in Central Asia / India time zones (UTC +7 to UTC +4):</p>
+              <table style="width: 100%; display: flex; margin-top: 0; margin-bottom: 5px">
+                <tr>
+                  <th></th>
+                  <th>Supporter</th>
+                  <th>Standard</th>
+                  <th>Budget *</th>
+                </tr>
+                <tr>
+                  <td>Half-day</td>
+                  <td>300€</td>
+                  <td>100€</td>
+                  <td>50€</td>
+                </tr><tr>
+                  <td>Full-day</td>
+                  <td>500€</td>
+                  <td>200€</td>
+                  <td>100€</td>
+                </tr>
+              </table>
+
+              <p>Workshops in Europe / Africa / America time zones (UTC +3 to UTC -12):</p>
+              <table style="width: 100%; display: flex; margin-top: 0; margin-bottom: 5px">
+                <tr>
+                  <th></th>
+                  <th>Supporter</th>
+                  <th>Standard</th>
+                  <th>Budget *</th>
+                </tr>
+                <tr>
+                  <td>Half-day</td>
+                  <td>600€</td>
+                  <td>300€</td>
+                  <td>150€</td>
+                </tr><tr>
+                  <td>Full-day</td>
+                  <td>1000€</td>
+                  <td>500€</td>
+                  <td>300€</td>
+                </tr>
+              </table>
+              <p style="font-size: 0.95rem">*) Budget Tickets are for anyone who can not afford normal ticket price. Just send an email to <a href="mailto:rene@robotframework.org">Ren&eacute;</a> or contact me on slack @Ren&eacute; and you get a voucher code to buy a budget ticket. No questions! No explanation requested!</p>`,
+              /*<a class="col-sm-12 pl-0 mb-5 mt-3" href="https://www.lyyti.fi/reg/robocon2020workshops" target="blank">Tickets available here!</a>`,*/
               talks: [
                 { type: "workshop", header: 'Half-day workshops' },
-                { type: "workshop", author: "Elias Hachichou, Kristina Sabotic",
+                /*{ type: "workshop", author: "Elias Hachichou, Kristina Sabotic",
                   title: "End-to-end testing through multiple interfaces",
                   description: "13:00-16:00<br>Welcome to this fun group exercise in how to build end-to-end test flows that can cover any type of interface for multiple applications in the same script. It will be a bonanza in problem solving, trying new libraries, exploring new ways of working – and music!",
                   descriptionExpanded: "Adwisit works with automating tests for end-users that have many integrating systems from different suppliers and little to no own development. To test full business processes from end to end we combine different tools and libraries and usually let our robots work the same way a user does. In this workshop, we will work together to script a flow through different interfaces and applications. We will introduce the way we are working with our customers, but instead of warehouse management and ERP systems, we will work with fun test flow through applications that anyone can access.<br><br>You should already be acquainted with working with RF. We will challenge you with a flow to script, but also provide a step-by-step solution suggestion so you can work in a pace that suits you. This is a fun workshop that we already have run variants of live, where it was a success. The ideal participant is someone who knows RF a bit, but have previously focused on testing one system or through one interface.<br><br>To accommodate different levels of users, we will provide the step-by-step solution from the start. That way, an advanced participant can move forward in their own pace, while less experienced participants can choose how much help to use to keep up. Since we are two hosts, we can cover all questions that arise. We also always have checkpoints where we make sure everyone has finished up to that point. Participants will need to bring their own computer, and have an installation of Python 3, and we will provide an installation package.<br><br><h3>At least basic knowledge of Robot Framework is recommended.</h3>",
@@ -296,8 +367,8 @@ export default {
                   description: "13:00-16:00<br>What's better than writing plain language testing and automation with Robot Framework? Doing that interactively! We will deliver gentle hands-on introduction into writing Robot Framework tests and tasks using JupyterLab: modern and easy to use interactive computing and authoring environment.",
                   descriptionExpanded: "JupyterLab is a free and open source interactive computing environment from Project Jupyter. For Robot Framework users, JupyterLab provides an intuitive test authoring user-interface with many IDE-like features and built-in interactive test and keyword execution – logs and reports embedded.<br><br>For organisations, JupyterLab enables an option for controlled cloud-like deployment model called JupyterHub, where test authors may write and execute tests directly from their web browsers, without need of direct network access for the system under test from their own computers.<br><br>In this workshop we cover:<br><br>* installing JupyterLab with Robot Framework integration<br>* walkthrough on JupyterLab IDE features for Robot Framework<br>* authoring and executing Robot notebooks with JupyterLab<br>* authoring and using custom keyword libraries with JupyterLab<br>* authoring and using Python keyword libraries with JupyterLab<br>* advanced features of our Robot Framework Jupyter integrations<br>* writing interactive Robot Framework tutorials in JupyterLab<br>* executing Robot notebooks from command line<br>* exporting Robot notebooks into .robot-files<br><br>A testimony about RobotLab: \"After trying up few different setups ofRobot Framework combined with variety of GUI (graphical user interface) tools it turned out that there was a much easier way to do it. By installing Robotlab, the package mentioned earlier, the user can really focus on the testing  part  and  not  a  complicated  set  up.  This  is  especially  good  if  the  tester  is  not familiar with programming and updating advanced user settings for their operating sys-tem. GUI also provides testers easier ways to write and execute tests and view the test logs and screen captures.\" <a href='https://www.theseus.fi/bitstream/handle/10024/169008/Tiia-Rautavesi-thesis.pdf?sequence=2&isAllowed=y' target='blank'>(Link to the thesis)</a><br><br><h3>For all skill levels</h3>",
                   bio: "Asko Soukka is the author of RobotKernel, which is the first Robot Framework integration developed for the popular interactive computing environment called Jupyter. Asko bootstrapped the work on RobotKernel at the sprints of RoboCon 2018, and together with Nicholas Bollweg from Project Jupyter, presented the project at RoboCon 2019. Asko works as a Software Architect at Digital Services of University of Jyväskylä, where Robot Framework is used for both acceptance testing and business process automation. When working on those topics, Asko continues to explore new ways to ease test and task authoring with Jupyter." },
-                { type: "workshop", header: 'Full-day workshops (09:00-16:00)', margin: true },
-                { type: "workshop", author: "Jenna Kaisanlahti, Valtteri Kukkola",
+                */{ type: "workshop", header: 'Full-day workshops (09:00-16:00)', margin: true },
+                /*{ type: "workshop", author: "Jenna Kaisanlahti, Valtteri Kukkola",
                   title: "Robot Framework hands-on",
                   description: "A hands-on introduction to test automation with Robot Framework. No prior experience on Robot Framework or test automation is required.",
                   descriptionExpanded: "The target of this workshop is to learn the basics of Robot Framework. This includes creating test cases and new domain specific higher level keywords, running tests and analyzing results, as well as understanding the overall architecture of the framework and what is available in the wider Robot Framework ecosystem.<br><br>This workshop is especially targeted for testers, programmers, and other development team members, but it is suitable for everyone who is interested in Robot Framework. Participants should have some understanding about software development and testing, but no programming skills or previous test automation experience is necessary.<br><br>Participants should have a laptop with Python 3.6 or newer installed. Operating system does not matter, but participants should be comfortable using the machine and have local admin rights to it. It is possible to work also in pairs using only one laptop. The workshop will be held in English.<br><br><b>The workshop focuses on test automation purposes, but we warmly welcome newcomers with RPA (Robotic Process Automation) intentions as well. Note that applying Robot Framework to RPA typically requires further training and python skills, though.</b><br><br><h3>Recommended for beginners!</h3>",
@@ -324,11 +395,11 @@ export default {
                   description: "In this workshop you will learn how to extend Robot Framework using various different interfaces. The first half of the workshop is dedicated to the library API, starting from basics and quickly continuing to more advanced topics like the dynamic library interface (used nowadays by SeleniumLibrary) and automatic argument type conversion. During the second half you will get familiar with other extending and integration possibilities such as the listener API, modifying tests dynamically before execution, starting execution programmatically, analyzing results, and new parsing APIs in Robot Framework 3.2.",
                   descriptionExpanded: "This workshop is for you if you already know basics of using Robot Framework, preferably also basics of writing tests libraries, and want to take your skills to the next level. These skills make it easier to adapt the framework to your own needs in different contexts.<br><br>The workshop is 100% hands-on, no slides, learn-by-doing. In addition to learning from the person who has designed these powerful APIs, you have a change to ask hard questions related to Robot Framework from its creator.<br><br>Participants should know basics of Robot Framework, including test library API, and Python programming. Participants should bring their own laptop with Python 3.6 or newer and Robot Framework 3.2 or newer installed. They should also have adequate admin rights to install possible additional Python modules using pip. A text editor or an IDE for writing Python code and Robot Framework tests is needed as well.<br><br><h3>Recommended for advanced users.</h3><h3>Max number of participants: 16</h3>",
                   bio: "Pekka Klärck is a tester, developer and independent consultant from Finland. He is the original author and lead developer of Robot Framework."}
-              ]
+              */]
             }
           }
         },
-        {
+        /*{
           title: "Sprints",
           text_block: false,
           text_block_centered: true,
@@ -371,7 +442,7 @@ export default {
                 "<div><h2 class='no-arrow'>Hotel deals</h2><p><a href='https://www.sokoshotels.fi/en/helsinki/sokos-hotel-presidentti' target='blank'>Original Sokos Hotel Presidentti</a><br>- Standard single room: 150€ / night<br>- Standard double room: 170€ / night<br>- Breakfast and Wi-Fi included<br>- Promo code will be sent after ticket purchase</p></div>"
             }
           }
-        },
+        },*/
         {
           title: "CoC",
           text_block: false,
@@ -381,13 +452,28 @@ export default {
           data: {
             text: {
               twitter: false,
-              header: "Conference Code of Conduct",
+              header: "Workshop Code of Conduct",
               text:
-                "<p>All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following <a href='http://confcodeofconduct.com' target='blank'>code of conduct</a>. Organisers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.<br><br>Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.<br><br>For more detailed code of conduct, see: <a href='http://confcodeofconduct.com' target='blank'>confcodeofconduct.com</a></p>"
+                `
+<p>All attendees, speakers, sponsors and volunteers at our workshops are required to agree with the following
+    <a href='http://confcodeofconduct.com' target='blank'>code of conduct</a>.
+    Organisers will enforce this code throughout the event. 
+    We expect cooperation from all participants to help ensure a safe environment for everybody.<br>
+    <br>
+    Our conference is dedicated to providing a harassment-free conference experience for everyone,
+    regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body
+    size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of
+    conference participants in any form. Sexual language and imagery is not appropriate for any conference venue,
+    including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules
+    may be sanctioned or expelled from the conference without a refund at the discretion of the conference
+    organisers.<br>
+    <br>
+    For more detailed code of conduct, see: <a href='http://confcodeofconduct.com' target='blank'>confcodeofconduct.com</a>
+</p>`
             }
           }
         },
-        {
+        /*{
           title: "Previous-talks",
           text_block: false,
           text_block_centered: true,
@@ -501,7 +587,7 @@ export default {
               ]
             }
           }
-        }
+        }*/
       ]
     }
   }
