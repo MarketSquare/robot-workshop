@@ -346,7 +346,7 @@ export default {
                 { type: "workshop",
                   author: "René Rohner",
                   title: "🇩🇪 Browser library für SeleniumLibrary User [GERMANY/DE]",
-                  description: "Einführung in die brandneue Robot Framework Browser library für alle Nutzer der SeleniumLibrary mit Vorkenntnissen in Web-Automatisierung.",
+                  description: "Einführung in die brandneue Robot Framework Browser library für alle Nutzer*Innen der SeleniumLibrary mit Vorkenntnissen in Web-Automatisierung.",
                   descriptionExpanded: "Die brandneue Robot Framework Browser library is eine top moderne Web-Automatisierungsbibliothek basierend auf Microsofts neuer Web-Automatisierungstechnologie Playwright. Dieser Halbtages-Workshop ist für alle Nutzer der SeleniumLibrary mit Vorkenntnissen in Web-Automatisierung.",
                   bio: "<h3 class='mb-0 mt-4'>René Rohner</h3>René Rohner is a Senior Consultant for Testing Systems in Germany and member of the board of Robot Framework Foundation.<br><br>He has over 6 years of experience with Keyword-Driven and Behavior-Driven Testing in multiple small and huge projects in Germany." },
                 { type: "workshop",
