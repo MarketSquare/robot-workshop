@@ -497,11 +497,15 @@ table {
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 950px) {
   .main-header {
+    margin: auto;
+    max-width: 750px;
     font-size: 4rem !important;
   }
+}
 
+@media (max-width: 769px) {
   .main-header-container h1 {
     text-align: center;
   }
@@ -512,6 +516,18 @@ table {
 
   .img-header {
     display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  .main-header {
+    font-size: 3rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-header {
+    font-size: 2rem !important;
   }
 }
 
