@@ -26,22 +26,80 @@ export default {
     return {
       pages: [
         {
-          title: "ComingSoon",
-          text_block: false,
+          title: "Welcome",
           text_block_centered: true,
-          tab_box: false,
-          feature_box: false,
           data: {
             text: {
               twitter: false,
-              header: "Coming Soon",
+              header: "World Wide Workshop Wednesday",
               text:
-                `<p>Great Robot Framework Workshops are coming soon!
-                 <br>SAVE THE DATE!</p>`
+                `<p>We are happy to announce that the Robot Framework Foundation will be holding a World Wide Workshop Wednesday on <b>December 2nd</b> this year.</p>
+                <p>All Workshops will be hold online on <a href="https://bigbluebutton.org/" target="blank">BigBlueButton</a> Servers located in Germany.<br>
+                </p>
+                <p>Due to COVID-19 we can not have an on-side conference next January and do not get revenues from that ticket sales. 
+                With this workshop event we want to give you the possibility to donate for Robot Framework. 
+                But you do also get a lot for your money!<br>
+                We have gathered experts from the Robot Framework Community to hold great workshops.
+                The revenues of the day will be used entirely for the further development of Robot Framework.</p>
+                <p>Special thanks go to all workshop organizers who will share their experience with the community.</p>
+                <h2 style="margin-left: 1.5rem !important;">Thank you very much! You are the best ❤️ </h2></p>`
             }
           }
         },
-        /*{
+        {
+          title: "Contribute",
+          text_block_centered: true,
+          user_contact: true,
+          data: {
+            text: {
+              twitter: false,
+              header: "Contribution",
+              text:
+                `<p>We are still looking for community members who want to share their knowledge in a workshop.<br>
+                Please contact us if you want to contribute:`
+            },
+            users: [
+              {
+                title: "René Rohner",
+                text: "<b>René Rohner</b><br>imbus AG<br><a href='mailto:rene@robotframework.org'>rene@robotframework.org</a><br>@René on Slack",
+                href: "mailto:rene@robotframework.org",
+                img: require("@/assets/img/users/Rene_Rohner.png")
+              },
+              {
+                title: "Mikko Korpela",
+                text: "Mikko Korpela</b><br>Reaktor Oy<br><a href='mailto:mikko@robotframework.org'>mikko@robotframework.org</a><br>@mkorpela on Slack",
+                href: "mailto:mikko@robotframework.org",
+                img: require("@/assets/img/users/Mikko_Korpela.png")
+              }
+            ]
+          }
+        },
+        {
+          title: "Sponsors",
+          text_block_centered: true,
+          tab_box: false,
+          feature_box: false,
+          main_sponsor_box: true,
+          data: {
+            text: {
+              header: "Main Sponsors",
+              twitter: false
+            },
+            users: [
+              {
+                title: "imbus AG",
+                href: "https://www.imbus.de",
+                img: require("@/assets/img/sponsors/imbus.png")
+              },
+              {
+                title: "Reaktor Oy",
+                href: "https://www.reaktor.com/",
+                img: require("@/assets/img/sponsors/reaktor.png")
+              },
+            ]
+          }
+        },
+        {
           title: "",
           text_block_centered: true,
           tab_box: false,
@@ -53,76 +111,16 @@ export default {
               twitter: false
             },
             users: [
-              {
-                title: "Business Finland",
-                href: "https://www.businessfinland.fi/en/for-finnish-customers/services/programs/ai-business/",
-                img: require("@/assets/img/sponsors/businessfinland.png")
+              /*{
+                title: "imbus AG",
+                href: "https://www.imbus.de",
+                img: require("@/assets/img/sponsors/imbus.png")
               },
               {
-                title: "Eficode",
-                href: "https://www.eficode.com",
-                img: require("@/assets/img/sponsors/eficode.png")
-              },
-              {
-                title: "Etteplan",
-                href: "https://www.etteplan.com/expertise/software-and-embedded-solutions/rd-testing-and-validation",
-                img: require("@/assets/img/sponsors/etteplan.png")
-              },
-              {
-                title: "Knowit Oy",
-                href: "https://www.knowit.fi/",
-                img: require("@/assets/img/sponsors/knowit.png")
-              },
-              {
-                title: "Nets",
-                href: "https://www.nets.eu/",
-                img: require("@/assets/img/sponsors/nets.png")
-              },
-              {
-                title: "Qentinel",
-                href: "https://www.qentinel.com",
-                img: require("@/assets/img/sponsors/qentinel.png")
-              },
-              {
-                title: "Q-Factory Oy",
-                href: "https://q-factory.fi/",
-                img: require("@/assets/img/sponsors/q-factory.png")
-              },
-              {
-                title: "Robocorp",
-                href: "https://www.robocorp.com",
-                img: require("@/assets/img/sponsors/robocorp.png")
-              },
-              {
-                title: "Saucelabs",
-                href: "https://saucelabs.com/",
-                img: require("@/assets/img/sponsors/saucelabs.png")
-              },
-              {
-                title: "Segron",
-                href: "https://segron.com/",
-                img: require("@/assets/img/sponsors/segron.png")
-              },
-              {
-                title: "Siili Solutions Oyj",
-                href: "https://www.siili.com",
-                img: require("@/assets/img/sponsors/siili.png")
-              },
-              {
-                title: "Signant Health",
-                href: "https://signanthealth.com/",
-                img: require("@/assets/img/sponsors/signant.png")
-              },
-              {
-                title: "Testimate Oy",
-                href: "https://www.testimate.fi",
-                img: require("@/assets/img/sponsors/testimate.png")
-              },
-              {
-                title: "VALA Group Oy",
-                href: "https://www.valagroup.com/",
-                img: require("@/assets/img/sponsors/vala.png")
-              },
+                title: "Reaktor Oy",
+                href: "https://www.reaktor.com/",
+                img: require("@/assets/img/sponsors/reaktor.png")
+              },*/
             ]
           }
         },
@@ -339,70 +337,141 @@ export default {
               talks: [
                 { type: "workshop", header: 'Half-day workshops' },
                 { type: "workshop", author: "Kamal Girdher",
-                  title: "🇬🇧 Introduction to Robot framework [INDIA/EN]",
+                  title: "🇬🇧 Introduction to Robot framework [India/EN]",
                   description: "Basic workshop for robot framework beginners.",
-                  /*descriptionExpanded: "Adwisit works with automating tests for end-users that have many integrating systems from different suppliers and little to no own development. To test full business processes from end to end we combine different tools and libraries and usually let our robots work the same way a user does. In this workshop, we will work together to script a flow through different interfaces and applications. We will introduce the way we are working with our customers, but instead of warehouse management and ERP systems, we will work with fun test flow through applications that anyone can access.<br><br>You should already be acquainted with working with RF. We will challenge you with a flow to script, but also provide a step-by-step solution suggestion so you can work in a pace that suits you. This is a fun workshop that we already have run variants of live, where it was a success. The ideal participant is someone who knows RF a bit, but have previously focused on testing one system or through one interface.<br><br>To accommodate different levels of users, we will provide the step-by-step solution from the start. That way, an advanced participant can move forward in their own pace, while less experienced participants can choose how much help to use to keep up. Since we are two hosts, we can cover all questions that arise. We also always have checkpoints where we make sure everyone has finished up to that point. Participants will need to bring their own computer, and have an installation of Python 3, and we will provide an installation package.<br><br><h3>At least basic knowledge of Robot Framework is recommended.</h3>",
-                  bio: "<h3 class='mb-0 mt-2'>Elias Hachichou</h3>I’m a tester and a developer living and working in Stockholm, Sweden. Have a little more than a year of experience with Robot Framework and have built several libraries for it. Big Open Source and Linux enthusiast and I wish to contribute to the RF community through this workshop and through publishing some libraries in the future.<br>I spend a lot of time learning obscure things. Currently working on becoming a vim text editor expert.<h3 class='mb-0 mt-2'>Kristina Sabotic</h3>My professional roots are in test leading, but I have shifted towards test automation - because it's so much fun! I thrive on solving challenging technical issues, as much as I thrive on being the spider in the web, as a test leader often is.<br>I live in Stockholm, with a hubbie and two kids. Currently we spend every weekend renovating an old holiday house we bought last year.<br>If you don’t feel like gibbering more about RF, feel free to come and discuss knitting with me - I would love to learn which is Helsinki´s best yarn shop. Every time I have a chance to sit down a few minutes, you can find a knitting in my hands. At the moment it's a sock with pink flamingoes on."*/},
+                  descriptionExpanded: `<h3>Section 1 - Introduction & Installation</h3>
+                    <b>Duration:</b> 10-15 minutes<br>
+                    Introduction to Robot framework<br>
+                    Edge of Robot framework over other automation tools/frameworks<br>
+                    Installation<br>
+                    <h3>Section2 - Key Concepts</h3>
+                    <b>Duration:</b> 40 mins lecture 30 minutes for practice/questions<br>
+                    Test cases, Test Suite and User Keywords<br>
+                    Built-in Library<br>
+                    Scalars, Lists, Dictionaries and Variable files<br>
+                    Suite/Test setup teardown<br>
+                    External resources<br>
+                    Loop statements<br>
+                    Conditional functions<br>
+                    <h3>SECTION 3 - SeleniumLibrary</h3>
+                    <b>Duration:</b> 1 Hr + 40 mins practice<br>
+                    Introduction to Selenium & SeleniumLibrary<br>
+                    Object Identification techniques<br>
+                    Operations on web elements<br>
+                    Wait statements<br>
+                    Assertions<br>
+                    Switching to windows and popups<br>
+                    Switching to frames<br>
+                    Handling Alerts`,
+                  bio: "<h3 class='mb-0 mt-2'>Kamal Girdher</h3>" ,
+                  imgUrl: ["Kamal_Girdher.jpg"]
+                },
                 { type: "workshop",
                   author: "René Rohner",
-                  title: "🇩🇪 Browser library für SeleniumLibrary User [GERMANY/DE]",
+                  title: "🇩🇪 Browser library für SeleniumLibrary User [Germany/DE]",
                   description: "Einführung in die brandneue Robot Framework Browser library für alle Nutzer*Innen der SeleniumLibrary mit Vorkenntnissen in Web-Automatisierung.",
                   descriptionExpanded: "Die brandneue Robot Framework Browser library is eine top moderne Web-Automatisierungsbibliothek basierend auf Microsofts neuer Web-Automatisierungstechnologie Playwright. Dieser Halbtages-Workshop ist für alle Nutzer der SeleniumLibrary mit Vorkenntnissen in Web-Automatisierung.",
-                  bio: "<h3 class='mb-0 mt-4'>René Rohner</h3>René Rohner is a Senior Consultant for Testing Systems in Germany and member of the board of Robot Framework Foundation.<br><br>He has over 6 years of experience with Keyword-Driven and Behavior-Driven Testing in multiple small and huge projects in Germany." },
+                  bio: "<h3 class='mb-0 mt-4'>René Rohner</h3>René Rohner is a Senior Consultant for Testing Systems in Germany and member of the board of Robot Framework Foundation.<br><br>He has over 6 years of experience with Keyword-Driven and Behavior-Driven Testing in multiple small and huge projects in Germany." ,
+                  imgUrl: ["Rene_Rohner.png"]
+                },
                 { type: "workshop",
                   author: "René Rohner",
-                  title: "🇩🇪 Robot Framework Advanced [GERMANY/DE]",
+                  title: "🇩🇪 Robot Framework Advanced [Germany/DE]",
                   description: "Einführung in die APIs des Robot Framework. Listener, Pre-Run-Modifier, etc. ",
                   descriptionExpanded: "Robot Framework bietet manigfaltige APIs um Tests vor oder währen der Ausführung zu verändern, Tests live mitzulesen, Testprotokolle zu manipulieren oder Bibliotheken zu Entwickeln oder zu Dokumentieren. Dieser Workshop gibt einen guten Überblick über wichtigsten APIs des Robot Framework. Python Basiskenntnisse werden vorausgesetzt.",
-                  bio: "<h3 class='mb-0 mt-4'>René Rohner</h3>René Rohner is a Senior Consultant for Testing Systems in Germany and member of the board of Robot Framework Foundation.<br><br>He has over 6 years of experience with Keyword-Driven and Behavior-Driven Testing in multiple small and huge projects in Germany." },
-                /*{ type: "workshop", author: "Tommi Oinonen",
-                  title: "Get to grips with your test results",
-                  description: "09:00-12:00<br>Are your test results drowning you? Would you like to archive your results for later inspection and analysis but available tools do not fit your needs? Would you want all your test results in the same place with the Robot Framework results? Good news – we developed a solution for these issues.",
-                  descriptionExpanded: "If you have any of these issues (or any others) now there is a solution. SALabs has been developing a set of tools for managing your test results and the fundamental part of this tool set is the <a href='https://github.com/salabs/TestArchiver#testarchiver' target='blank'>TestArchiver</a>. It is a tool very similar to <a href='https://github.com/robotframework/DbBot' target='blank'>DbBot</a> (not maintained anymore) but much more capable. You can view it as DbBot 2.0 (or actually maybe 3.0).<br><br>The goal of the workshop is to explain the most useful features and give tips on how the best leverage the tool for:<br>* Collect almost all test execution data from RF tests in efficient and tested data structure<br>* Organise results arbitrarily into builds and different series of builds<br>* Collect results from different testing frameworks in to the place<br>* Run tests in parallel or at different times and organise them together for reporting<br>* Collect performance data on tests and keywords<br>* Profile the execution trees allowing you to find particular failures<br>* Set up reporting that allows complex and dynamic test execution<br>* Collect the vital data for machine learning algorithms in the feature<br><br>Or we can try solving your specific reporting and data collection challenges.<br><br>The basic usage of TestArchiver is very simple but since the tool is specifically designed to solve complex reporting issues there are some tips and tricks best explained in a workshop. Here I am talking about tens of thousands of RF test cases executed in multiple environments and multiple teams in complex and dynamic schedules.<br><br>In the same RoboCon SALabs is also going to premier a tool for browsing and managing tests archived using the TestArchiver so this workshop will allow you to also start using the managing tool with maximum benefits.<br><br><h3>For all skill levels</h3>",
-                  bio: "Tommi Oinonen has six years of experience in test automation and supporting teams with testing infrastructure and reporting. Currently working as a consultant at Siili Solutions in Software Automation Laboratories (SALabs) unit. SALabs is aiming to move both state-of-the-practice and state-of-the-art of software automation using and developing open source tools and technologies. For the last two years researching and implementing test prioritization techniques as part of the TESTOMAT project." },
-                { type: "workshop", author: "Adrian Yorke",
-                  title: "Test Automation for the Enterprise Data Warehouse or Teaching an Old Dog New Tricks!",
-                  description: "09:00-12:00<br>The concept of data warehousing dates back to the late 1980s so you would be forgiven for thinking that test automation has little to offer this domain. OP needed to find a way of improving the quality of DW solutions: enter Robot Framework. You really can teach an old dog new tricks!",
-                  descriptionExpanded: "<br><h2 class='no-arrow'>Workshop Outline Agenda</h2><br><h3 class='mb-0'>Preparation</h3>* Installation of Python<br>* Installation of Robot Framework<br>* Clone github repository for participants that wish to follow along<br><br><h3 class='mb-0'>Python Database API Specification v2.0</h3>* https://www.python.org/dev/peps/pep-0249/<br>* Python Database API Specification v2.0<br><br><h3 class='mb-0'>Robot Framework Database External Library</h3>* <a href='http://franz-see.github.io/Robotframework-Database-Library/' target='blank'>http://franz-see.github.io/Robotframework-Database-Library/</a><br>* <a href='https://github.com/franz-see/Robotframework-Database-Library' target='blank'>https://github.com/franz-see/Robotframework-Database-Library</a><br>* Review the tests found in test subfolder.<br>* Why SQLite?<br>* Work through SQLite3_DB_Tests.robot and check our installation is working.<br><br><h3 class='mb-0'>Robot Framework Testing with Teradata</h3>* Vendor-specific Database Interfaces<br>* <a href='https://wiki.python.org/moin/DatabaseInterfaces' target='blank'>https://wiki.python.org/moin/DatabaseInterfaces</a><br>* Teradata DevOps - A Python Module to make it easy to script powerful interactions with Teradata Database in a DevOps friendly way.<br>* <a href='https://github.com/Teradata/PyTd' target'blank'>https://github.com/Teradata/PyTd</a><br>* ODBC vs REST API<br><br><h3 class='mb-0'>Teradata Database Library (in-house development @ OP)</h3>* Let's look at some of the additional keywords we have added at OP<br>* Discuss the different methods of extending keywords both locally and at group level<br>* Smoke Testing<br>* Functional Testing<br>* Regression Testing<br><br><h3 class='mb-0'>Test Automation with Jenkins CI</h3>* Continuous Integration 101<br>* Introducing EDW Test Runner for batch testing<br><br><h3 class='mb-0'>IBM InfoSphere DataStage Library (in-house development @ OP)</h3>* Robotic Process Automation (RPA)<br>* Main use case: smart data loading<br><br><h3 class='mb-0'>The future - what are we working on next @ OP?</h3>* Fully Automated Smoke Testing<br>* Jira & ServiceNow RPA Libraries<br>* AWS Cloud Workflow<br>* Control-M Workload Automation<br>* Kibana Dashboard Integration<br>* Integrating Machine Learning and Data Science<br><br>Pre-installation of Python, Robot Framework & Robotframework-Database-Library (External Library) is recommended if participants wish to follow along and try some of the code during the workshop. Passive mode welcome but I ask participants to be focused.<br><br><h3>For all skill levels</h3><br>",
-                  bio: "Adrian Yorke is a senior Data Specialist and DevOps Engineer at OP, one of Finland's largest and oldest Financial groups.<br>* Driving force behind the adoption of DevOps and Test Automation using Robot Framework in the Data Warehousing tribe.<br>* During 2019 authored and presented a Python Summer Camp workshop series.  Some of the sessions had 60+ live attendees even though it was held during the month of July.<br>* Tech interests: Python, Raspberry Pi projects & recently I've been studying machine learning and data science.<br>* When I'm not being a geek: swimming (former national championship swimmer), long distance running (I actually completed the London marathon!), carpentry & just being there for my daughter and helping her grow." },
-                { type: "workshop", author: "Joshua Gorospe", title: "Strategies for creating your own conversational test assistant with Robot Framework and other tools",
-                  description: "13:00-16:00<br>Wouldn't it be nice to have a conversational approach to working with Robot Framework for RPA tasks and testing? In this workshop I will share some examples to help you come up with ideas to make your own conversational test assistant.",
-		              descriptionExpanded: "<h2 class='no-arrow'>Workshop Idea</h2>* Strategies for local machine and remote test triggering using the conversational test assistant with Robot Framework and various tools.<br>* I have created a customizable conversational assistant using <a href='https://github.com/jg8481/leon' target='blank'>leon-ai</a>, that can be used as a template. I will demonstrate how it can help with various workflows for testers and possibly non-testers too.<br>* Demonstrate how this assistant can be used to control test processes and RPA tasks with your voice or with a text message sent directly to the assistant.<br>* Demonstrate how to trigger Robot Framework through a Docker container running a <a href='https://github.com/adnanh/webhook' target='blank'>Go-lang Webhook</a> and the conversational test assistant.<br>* Demonstrate how to use the conversational test assistant with other tools to share test results and notify your team.<br><br><h3>For all skill levels</h3>",
-                  bio: "<a href='https://leanpub.com/toolstrategiesforlonetesters' target='blank'>Joshua is currently writing a book.</a> He was a Senior Test Engineer in Intersection Co. (a Sidewalk Labs and Alphabet owned company) and lead tester for the Intersection (ICS) Connected Communities Team working on test design and test strategy leadership for several initiatives with Hudson Yards, Related Company, and other clients. There he ran, monitored, and built the test infrastructure for the ICS (Intersection Consulting & Solutions) Buildkite CI pipelines. He also created and maintained several types of daily tests for the Hudson Yards Technology Platform, a technology platform used to integrate multiple building management systems for security, facial recognition, surveillance, visitor management systems, and building sensor data. He previously worked on the Hertz eCommerce Test Tools Team for approximately 5 years." },
-                /*{ type: "workshop", author: "Jani Mikkonen",
-                  title: "Moving from Python 2 to Python 3 and learn new tricks while doing it",
-                  description: "09:00-12:00<br>Going through the steps of porting or ensuring your libraries are Python 3 ready. Step by step guide and overview of tools and practices to help you take the steps for new brave world of Python 3 and learn new techniques to increase code quality afterwards. Workshop utilizes a set of existing libraries that are then ported to be useable within Python 3 ecosystem.",
-                  descriptionExpanded: "<h2 class='no-arrow mb-0'>Audience</h2>People working on integration and/or development of robot framework libraries in any fashion.<h2 class='no-arrow mb-0 mt-3'>Requirements</h2>* Laptop with working python and pip <br>* Some hands on experience of with extending robot framework via python<h2 class='no-arrow mb-0 mt-3'>Objectives</h2>Attendees have gone thru an experience by porting a robot framework library to python3. During the project, people should learn about how to apply static analysis, testing, code coverage, virtual environments and coding practices into the porting process and how those steps can help even after the project.<h2 class='no-arrow mb-3 mt-3'>Detailed abstract</h2><h3 class='mb-0 mt-2'>Intro</h3>Workshop starts with the quick recap of what's to be archived by the end of the workshop<h3 class='mb-0 mt-2'>Tests, tests and more tests</h3>Succesful and easy transformation from python 2 to 3 starts with good set of tests.  In this section we'll be implementing a set of new testsuites and/or adding and fixing existing ones.<h3 class='mb-0 mt-2'>Tooling for the journey</h3>In order to start the journey, one needs working environment to test with multiple versions of python and how we can produce information about  what and where changes are needed by utilizing static analysis, code coverage measurements. And then making changes with automated tooling and how different tools can help with each other.<h3 class='mb-0 mt-2'>Old and new code</h3>In this section, we'll cover some of the main topics that have changed since introduction of Python3 that need to be modified. And what sort of new features are available that could be used to ease the development and improve code quality.<h2 class='no-arrow mb-0 mt-3'>Outline</h2>1. Intro (15 mins)<br><span class='ml-4'>1. Who am I?</span><br><span class='ml-4'>2. Why we are here.</span><br>2. Tests, Tests and More Tests.  (20 mins)<br>3. Tooling For The Journey. (90 mins)<br><span class='ml-4'>1. Virtual Environments And Art Of Choosing Your Python Interpreter</span><br><span class='ml-4'>2. Code Coverage For Clarity</span><br><span class='ml-4'>3. Static Analysis To The Rescue</span><br><span class='ml-5'>1. Code Analysis</span><br><span class='ml-5'>2. Type Checking</span><br><span class='ml-4'>4. Code \"Converters\"</span><br><span class='ml-4'>5. Putting it all together.</span><br>4. Old And New Code (30 mins)<br><span class='ml-4'>1. Old things that need to be checked</span><br><span class='ml-4'>2. And new things to be had!</span><br><br><h3>For all skill levels</h3>",
-                  bio: "Jani Mikkonen - Automagician At Large - is recent convert to Robot Framework with few pull requests under his belt  so far but not a new comer to test automation and software development in general. He's currently maintaining few opensource projects like static analyzer frontend for C++ and tool to automate webdriver binary installations and on his spare time he's working on SeleniunTestability library that allows automatic waiting of asyncronous events from css animations to ajax requests. Jani works as a Testing Engineer at Varjo." },
-                { type: "workshop", author: "Asko Soukka",
-                  title: "Authoring Robot Framework tests and tasks with JupyterLab",
-                  description: "13:00-16:00<br>What's better than writing plain language testing and automation with Robot Framework? Doing that interactively! We will deliver gentle hands-on introduction into writing Robot Framework tests and tasks using JupyterLab: modern and easy to use interactive computing and authoring environment.",
-                  descriptionExpanded: "JupyterLab is a free and open source interactive computing environment from Project Jupyter. For Robot Framework users, JupyterLab provides an intuitive test authoring user-interface with many IDE-like features and built-in interactive test and keyword execution – logs and reports embedded.<br><br>For organisations, JupyterLab enables an option for controlled cloud-like deployment model called JupyterHub, where test authors may write and execute tests directly from their web browsers, without need of direct network access for the system under test from their own computers.<br><br>In this workshop we cover:<br><br>* installing JupyterLab with Robot Framework integration<br>* walkthrough on JupyterLab IDE features for Robot Framework<br>* authoring and executing Robot notebooks with JupyterLab<br>* authoring and using custom keyword libraries with JupyterLab<br>* authoring and using Python keyword libraries with JupyterLab<br>* advanced features of our Robot Framework Jupyter integrations<br>* writing interactive Robot Framework tutorials in JupyterLab<br>* executing Robot notebooks from command line<br>* exporting Robot notebooks into .robot-files<br><br>A testimony about RobotLab: \"After trying up few different setups ofRobot Framework combined with variety of GUI (graphical user interface) tools it turned out that there was a much easier way to do it. By installing Robotlab, the package mentioned earlier, the user can really focus on the testing  part  and  not  a  complicated  set  up.  This  is  especially  good  if  the  tester  is  not familiar with programming and updating advanced user settings for their operating sys-tem. GUI also provides testers easier ways to write and execute tests and view the test logs and screen captures.\" <a href='https://www.theseus.fi/bitstream/handle/10024/169008/Tiia-Rautavesi-thesis.pdf?sequence=2&isAllowed=y' target='blank'>(Link to the thesis)</a><br><br><h3>For all skill levels</h3>",
-                  bio: "Asko Soukka is the author of RobotKernel, which is the first Robot Framework integration developed for the popular interactive computing environment called Jupyter. Asko bootstrapped the work on RobotKernel at the sprints of RoboCon 2018, and together with Nicholas Bollweg from Project Jupyter, presented the project at RoboCon 2019. Asko works as a Software Architect at Digital Services of University of Jyväskylä, where Robot Framework is used for both acceptance testing and business process automation. When working on those topics, Asko continues to explore new ways to ease test and task authoring with Jupyter." },
-                */{ type: "workshop", header: 'Full-day workshops', margin: true },
+                  bio: "<h3 class='mb-0 mt-4'>René Rohner</h3>René Rohner is a Senior Consultant for Testing Systems in Germany and member of the board of Robot Framework Foundation.<br><br>He has over 6 years of experience with Keyword-Driven and Behavior-Driven Testing in multiple small and huge projects in Germany." ,
+                  imgUrl: ["Rene_Rohner.png"]
+                },
+                { type: "workshop",
+                  author: "Nils Balkow-Tychsen",
+                  title: "🇬🇧 KubeLibrary - Verify the state of objects in your Kubernetes Cluster [Germany/EN]",
+                  description: "RobotFramework library for testing Kubernetes cluster.",
+                  descriptionExpanded: "KubeLibrary is a Robot Framework test library for Kubernetes.<br><br>KubeLibrary is a wrapper for the Python Kubernetes Client. It enables you to assert the status of various objects in your Kubernetes Clusters. As the library can be integrated with any RobotFramework test suite, it is ideal to verify the testability of your System-under-Test by asserting the status of your nodes, deployments, pods, configmaps, and others Kubernetes objects before running any end to end tests.",
+                  bio: "<h3 class='mb-0 mt-4'>Nils Balkow-Tychsen</h3>Nils is Lead QA Engineer at Humanitec. He has worked in software testing for more than 20 years, in different industries like finance, games and developer platforms. He specializes in test automation for web apps based on Microservice Architectures.",
+                  imgUrl: ["Nils_Balkow.jpeg"]
+                },
+                { type: "workshop",
+                  author: "Michael Hallik",
+                  title: "🇳🇱 HTTP-level testing with the RF RequestsLibrary [Netherlands/NL]",
+                  description: "RobotFramework library for testing Kubernetes cluster.",
+                  descriptionExpanded: `<p><b>Language:</b> Workshop will be in Dutch.</p>
+                  <p>Experience the power, versatility and simplicity of Robot Framework. In this workshop you will learn the basics of HTTP-level test automation. We will cover everything from creating and maintaining an HTTP session, to validating every aspect of the response and everything in between.</p>
+                  <ul>
+                    <li style="margin-bottom: 0;">Use cases for HTTP-level test automation.</li>
+                    <li style="margin-bottom: 0;">HTTP compared to other API-level test automation interfaces (e.g. SOAP).</li>
+                    <li style="margin-bottom: 0;">Web-api vs. REST-api.</li>
+                    <li style="margin-bottom: 0;">Overview HTTP support within the RF ecosystem (all libraries compared).</li>
+                    <li style="margin-bottom: 0;">RequestsLibrary: it's place in a typical RF tool stack (architectural overview).</li>
+                    <li style="margin-bottom: 0;">Installation RequestsLibrary.</li>
+                    <li style="margin-bottom: 0;">Creating and maintaining an HTTP session with RequestsLibrary.</li>
+                    <li style="margin-bottom: 0;">The session object: exposed methods, attributes and how to access them.</li>
+                    <li style="margin-bottom: 0;">The session object: various ways to manipulate it (e,g, def headers, cookies).</li>
+                    <li style="margin-bottom: 0;">Making HTTP requests with RequestsLibrary (based on our session object).</li>
+                    <li style="margin-bottom: 0;">The response object: exposed methods, attributes and how to access them.</li>
+                    <li style="margin-bottom: 0;">Validate the response:</li>
+                    <ul>
+                    <li style="margin-bottom: 0;">status code and message</li>
+                    <li style="margin-bottom: 0;">headers</li>
+                    <li style="margin-bottom: 0;">cookies</li>
+                    <li style="margin-bottom: 0;">the cookieJar object</li>
+                    <li style="margin-bottom: 0;">the response body</li>
+                    </ul>
+                  </ul>
+
+                  <b>Required knowledge:</b>
+                  <ul>
+                    <li style="margin-bottom: 0;">Robot Framework - Good Knowledge</li>
+                    <li style="margin-bottom: 0;">HTTP concepts - Basic Knowledge</li>
+                    <li style="margin-bottom: 0;">Object oriented programming concepts - Basic Knowledge</li>
+                  </ul>`,
+                  bio: "<h3 class='mb-0 mt-4'>Michael Hallik</h3>",
+                  imgUrl: ["Michael_Hallik.jpeg"]
+                },
+
+                { type: "workshop", header: 'Full-day workshops', margin: true },
                 { type: "workshop", author: "Mikko Korpela",
                   title: "🇬🇧 Pabot Introduction / Tipps & Tricks [Finland/EN]",
                   description: "A hands-on introduction to parallel test execution with Robot Framework and Pabot.",
                   descriptionExpanded: "Introduction to parallel test execution with Pabot.",
-                  bio: "<h3 class='mb-0 mt-2'>Mikko Korpela</h3>Mikko Korpela is a consultant and former core developer of Robot Framework. He invented the awesome Pabot." },
+                  bio: "<h3 class='mb-0 mt-2'>Mikko Korpela</h3>Mikko Korpela is a consultant and former core developer of Robot Framework. He invented the awesome Pabot." ,
+                  imgUrl: ["Mikko_Korpela.png"]
+                },
                 { type: "workshop",
                   author: "Tatu Aalto",
                   title: "🇬🇧 SeleniumLibrary (Advanced) [Finland/EN]",
                   description: "Techniques and tooling to ease up web testing and automation by expert developers and maintainer of the SeleniumLibrary. If you need to beef up your Selenium tests, this is the course for you.",
                   descriptionExpanded: "<h2 class='no-arrow mb-3 mt-5'>Outline/overview of the workshop</h2><h3 class='mb-0 mt-2'>Browser Configuration</h3>We will be taking a look at desired capabilites, Selenium options and Firefox profile. Differences between Open Browser and Create WebDriver keywords will be highlighted. Finally we will build small examples showing how to configure the browser in diffrent situations.<h3 class='mb-0 mt-2'>Advanced Debuging</h3>The course will cover when encountering flaky test(s), where to look and how to stabilise them.<h3 class='mb-0 mt-2'>Parallel Execution</h3>We'll discuss running SeleniumLibrary in parallel with pabot and Selenium grid.<h3 class='mb-0 mt-2'>API</h3>SeleniumLibrary has an public API which allows users to extend on top of the SeleniumLibrary. Here we take a look what is available in the public API.<h3 class='mb-0 mt-2'>Expanding the library</h3>Looking at different pros and cons we will talk about how to extend SeleniumLibrary as well as building a new library and the Plugin API. We will show a small exmample. And we will discuss overriding existing keywords with functionality not covered by Selenium.<h3 class='mb-0 mt-2'>EventFiringWebDriver</h3>Using and abusing EventFiringWebDriver for monitoring events and how they affect the interactions with SUT will be covered.<h3 class='mb-0 mt-2'>Page Objects</h3>What are page objects and where it might be useful.<h3 class='mb-0 mt-2'>Python Page objects verses SeleniumLibrary</h3>Looking inside of a page object library and how to build one.<h3 class='mb-0 mt-2'>Checking for time of tests</h3>We will talk about verifying and reacting to execution times of tests/keywords/suites either via tags or the separate Timer library.<h3 class='mb-0 mt-2'>Using Javascript to interact with SUT</h3>Extending SeleniumLibrary with new keywords where functionality is implemented in Javascript.<h2 class='no-arrow mb-3 mt-5'>Learning Outcomes</h2>At the end of the workshop, user should have broad overview of advanced features of SeleniumLibrary, web automation and ways to extend and debug test tooling.<h2 class='no-arrow mb-3 mt-5'>Target Audience</h2>This workshop is for people with previous hands on experience with testing in Robot Framework & SeleniumLibrary. Students should already have experience testing web applications, know how to identify locators for webelements and validate those loctors, and feel comfortable working with SeleniumLibrary. Although the course will take a measured pace through the material, students should be prepared for advanced topics that will be thoroughly explained.<br><br>This workshop will be presented in English with two presentors, both who are bi-lingual in Finnish and English.<h2 class='no-arrow mb-3 mt-5'>Prerequisites</h2>* All participates will need to bring a laptop preconfigured to the workshop.<br>* Particapte must have access to add and modify software on their laptops.<br>* Detailed setup instructions will be shared couple of weeks before workshop day.<br>* Configure your laptops well before the workshop day<br><br>Any special needs should be requested through the conference organizers, at best two weeks prior to the workshop. We will do our best to accomidate any needs and will communicate back either our ability or inability to meet those needs.",
-                  bio: "<h3 class='mb-0 mt-4'>Ed Manlove</h3>Ed Manlove has been a part of the Robot Framework community since 2011. He inherited the leadership of the Selenium2Library project from Ryan Tomac sharing it with Jeremy Johnson and passing on that role to Tatu Aalto. He is the author of a couple libraries dealing with timing issues within AJAX enabled websites. Ed is currently a Senior Software Test Engineer at Cox Automotive testing with Robot Framework and taught several teams how to test with Robot Framework. A member of the Selenium user community Ed has presented at the Selenium Conference, ran an unconference focusing on user issues, and volunteered at the conferences (even being a maître d').<h3 class='mb-0 mt-5'>Tatu Aalto</h3>Tatu Aalto is the current lead developer of the <a href='https://github.com/robotframework/SeleniumLibrary' target='blank'>SeleniumLibrary</a> and he has been working with Robot Framework since 2011. In the 2011 he was a regular user, by sending many questions and problems to the community. After some time Tatu started to answer questions  send by other users and he did provide his very first pull request to the Robot Framework core in 2012. Tatu has been active community member all these years and 2016 he started as an SeleniumLibrary lead developer.<br><br>Tatu has used the Robot Framework in several work places to to guide and aid companies in their test automation efforts. Currently he is working at F-Secure as a Software Developer In Test, automating windows antivirus client for business users." },
+                  bio: /*`
+                  <h3 class='mb-0 mt-4'>Ed Manlove</h3>
+                  Ed Manlove has been a part of the Robot Framework community since 2011. He inherited the leadership of the Selenium2Library project from Ryan Tomac sharing it with Jeremy Johnson and passing on that role to Tatu Aalto. He is the author of a couple libraries dealing with timing issues within AJAX enabled websites. Ed is currently a Senior Software Test Engineer at Cox Automotive testing with Robot Framework and taught several teams how to test with Robot Framework. A member of the Selenium user community Ed has presented at the Selenium Conference, ran an unconference focusing on user issues, and volunteered at the conferences (even being a maître d').
+                  */`<h3 class='mb-0 mt-5'>Tatu Aalto</h3>
+                  Tatu Aalto is the current lead developer of the <a href='https://github.com/robotframework/SeleniumLibrary' target='blank'>SeleniumLibrary</a> and he has been working with Robot Framework since 2011. In the 2011 he was a regular user, by sending many questions and problems to the community. After some time Tatu started to answer questions  send by other users and he did provide his very first pull request to the Robot Framework core in 2012. Tatu has been active community member all these years and 2016 he started as an SeleniumLibrary lead developer.<br><br>Tatu has used the Robot Framework in several work places to to guide and aid companies in their test automation efforts. Currently he is working at F-Secure as a Software Developer In Test, automating windows antivirus client for business users.` ,
+                  imgUrl: ["Tatu_Aalto.jpg"]
+                },
                 { type: "workshop",
                   author: "Pekka Klärck",
                   title: "🇬🇧 Extending Robot Framework (Advanced) [Finland/EN]",
                   description: "In this workshop you will learn how to extend Robot Framework using various different interfaces.",
                   descriptionExpanded: "This workshop is for you if you already know basics of using Robot Framework, preferably also basics of writing tests libraries, and want to take your skills to the next level. These skills make it easier to adapt the framework to your own needs in different contexts.<br><br>The workshop is 100% hands-on, no slides, learn-by-doing. In addition to learning from the person who has designed these powerful APIs, you have a change to ask hard questions related to Robot Framework from its creator.<br><br>Participants should know basics of Robot Framework, including test library API, and Python programming. Participants should bring their own laptop with Python 3.6 or newer and Robot Framework 3.2 or newer installed. They should also have adequate admin rights to install possible additional Python modules using pip. A text editor or an IDE for writing Python code and Robot Framework tests is needed as well.<br><br><h3>Recommended for advanced users.</h3><h3>Max number of participants: 16</h3>",
-                  bio: "Pekka Klärck is a tester, developer and independent consultant from Finland. He is the original author and lead developer of Robot Framework."},
-                  { type: "workshop",
+                  bio: "Pekka Klärck is a tester, developer and independent consultant from Finland. He is the original author and lead developer of Robot Framework.",
+                  imgUrl: ["Pekka_Klarck.jpg"]
+                },
+                { type: "workshop",
                   author: "Christoph Singer",
-                  title: "🇩🇪 Einführung Webautomatisierung mit RF Browser [GERMANY/DE]",
+                  title: "🇩🇪 Einführung Webautomatisierung mit RF Browser [Germany/DE]",
                   description: "Einführung in die Webautomatisierung mit der brandneuen Robot Framework Browser library für alle Interessierte.",
                   descriptionExpanded: "Grundlagenschulung in Webautomatisierung. Von XPATH bis CSS Selektoren und von 'Open Browser' bis 'Execute Javascript' wird in diesem Grundlagen-Workshop alle nötige Basiswissen vermittelt was zum Einstieg in die Browserautomatisierung notwendig ist. Unter Nutzung der neuen Browser library werden wir ein Beispiel Testobjekt automatisieruen und dabei typische Probleme lösen lernen.",
-                  bio: "<h3 class='mb-0 mt-4'>Christoph Singer</h3>Christoph Singer is a Consultant for Test Automation in Germany." },
+                  bio: "<h3 class='mb-0 mt-4'>Christoph Singer</h3>Christoph Singer is a Consultant for Test Automation in Germany.",
+                  imgUrl: ["ChristophSinger.jpg"]
+                },
+                { type: "workshop",
+                  author: "Juho Saarinen",
+                  title: "🇬🇧 Remote library usage and advantages [Finland/EN]",
+                  description: "Learn first basics about remote library interface, and then how to make own libraries that utilize it.",
+                  descriptionExpanded: "At the latter part of the day we go through running remote libraries really remote (meaning not on “my machine”), and what advantages that brings.<br><br>Also showing what to do with the Java libraries when Python 2 support is dropped and no suitable replacement available.",
+                  bio: "Juho has been doing testing since 2005. He is interested of testing and it's efficiency, and eager to make all kind of testings as soon as possible.<br><br>Juho maintains various java-based RF libraries.<br><br>His 'normal working day' to contain also application development and various operations related things in addition to testing.",
+                  imgUrl: ["Juho_Saarinen.jpg"]
+                },
                 
               ]
             }

@@ -10,8 +10,8 @@
         <p v-html="user.text"></p>
         </div>
     </div>
-    <p style="text-align: end; width: 100%; font-size: 0.85rem;">
-    Want your logo here? More information: info@robocon.io
+    <p style="text-align: start; width: 100%; font-size: 0.85rem;">
+    Want your logo here? More information: <a href='mailto:mikko@robotframework.org'>mikko@robotframework.org</a>
     </p>
   </div>
 </div>
