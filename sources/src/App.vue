@@ -178,7 +178,7 @@ export default {
                   <td>200€</td>
                 </tr>
               </table>
-             
+
               <p>Workshops in Central Asia / India time zones (UTC +7 to UTC +4):</p>
               <table style="width: 100%; display: flex; margin-top: 0; margin-bottom: 5px">
                 <tr>
