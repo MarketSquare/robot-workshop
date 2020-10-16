@@ -10,7 +10,7 @@
   <b-navbar-brand class="p-0 m-0 d-block d-md-none" href="#">
     <b-img :src="require('@/assets/img/ROBOTFW_Mark_White_LOW_cropped.png')" class="" style="height:33px;"  alt="Robot Frameworkg logo"/>
   </b-navbar-brand>
-  <div class="mobile-header"><div style="float: left">RBCN></div>
+  <div class="mobile-header"><div style="float: left">WWWW></div>
     <transition name="header-slide" mode="out-in">
       <div :key="currentPageMutable" class="color" style="float: left">
         {{currentPageMutable}}
@@ -33,7 +33,7 @@ export default {
   props: ["pages", "currentPage"],
   data () {
   return {
-      currentPageMutable: this.currentPage || "14-17012020"
+      currentPageMutable: this.currentPage || "02122020"
     }
   },
   methods: {
