@@ -67,7 +67,7 @@ export default {
               },
               {
                 title: "Mikko Korpela",
-                text: "Mikko Korpela</b><br>Reaktor Oy<br><a href='mailto:mikko@robotframework.org'>mikko@robotframework.org</a><br>@mkorpela on Slack",
+                text: "<b>Mikko Korpela</b><br>Reaktor Oy<br><a href='mailto:mikko@robotframework.org'>mikko@robotframework.org</a><br>@mkorpela on Slack",
                 href: "mailto:mikko@robotframework.org",
                 img: require("@/assets/img/users/Mikko_Korpela.png")
               }
