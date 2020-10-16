@@ -35,7 +35,7 @@ Vue.use(VueScrollTo, {
 
 /* if (/robotframework.org/.test(window.location.href)) {
   Vue.use(VueAnalytics, {
-    id: ['UA-106835747-2']
+    id: ['UA-106835747-6']
   })
 } */
 
