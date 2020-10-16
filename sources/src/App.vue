@@ -36,8 +36,8 @@ export default {
                 `<p>We are happy to announce that the Robot Framework Foundation will be holding a World Wide Workshop Wednesday on <b>December 2nd</b> this year.</p>
                 <p>All Workshops will be held online on <a href="https://bigbluebutton.org/" target="blank">BigBlueButton</a> Servers located in Germany.<br>
                 </p>
-                <p>Due to COVID-19 we can not have an on-site conference next January and do not get revenues from that ticket sales. 
-                With this workshop event we want to give you the possibility to donate for Robot Framework. 
+                <p>Due to COVID-19 we can not have an on-site conference next January and do not get revenues from that ticket sales.
+                With this workshop event we want to give you the possibility to donate for Robot Framework.
                 But you do also get a lot for your money!<br>
                 We have gathered experts from the Robot Framework Community to hold great workshops.
                 The revenues of the day will be used entirely for the further development of Robot Framework.</p>
@@ -254,6 +254,20 @@ export default {
                   bio: "<h3 class='mb-0 mt-2'>Kamal Girdher</h3>" ,
                   imgUrl: ["Kamal_Girdher.jpg"]
                 },
+                { type: "workshop", author: "Mikko Korpela",
+                  title: "🇫🇮 Browser kirjasto suomeksi [Finland/FI]",
+                  description: "Käpistellään yhdessä selainkirjaston avulla internetin ihmeellistä maailmaa.",
+                  descriptionExpanded: "Katsahdus uuteen Browser kirjastoon, joka käyttää Playwright selainautomaatiotyökalua.",
+                  bio: "<h3 class='mb-0 mt-2'>Mikko Korpela</h3>Mikko Korpela on konsultti ja satunnainen Robot Framework core-kehittäjä Reaktorilta." ,
+                  imgUrl: ["Mikko_Korpela.png"]
+                },
+                { type: "workshop", author: "Mikko Korpela",
+                  title: "🇬🇧 Pabot Introduction / Tipps & Tricks [Finland/EN]",
+                  description: "A hands-on introduction to parallel test execution with Robot Framework and Pabot.",
+                  descriptionExpanded: "Introduction to parallel test execution with Pabot.",
+                  bio: "<h3 class='mb-0 mt-2'>Mikko Korpela</h3>Mikko Korpela is a consultant and former core developer of Robot Framework. He invented the awesome Pabot." ,
+                  imgUrl: ["Mikko_Korpela.png"]
+                },
                 { type: "workshop",
                   author: "René Rohner",
                   title: "🇩🇪 Browser library für SeleniumLibrary User [Germany/DE]",
@@ -336,13 +350,6 @@ export default {
                 },
 
                 { type: "workshop", header: 'Full-day workshops', margin: true },
-                { type: "workshop", author: "Mikko Korpela",
-                  title: "🇬🇧 Pabot Introduction / Tipps & Tricks [Finland/EN]",
-                  description: "A hands-on introduction to parallel test execution with Robot Framework and Pabot.",
-                  descriptionExpanded: "Introduction to parallel test execution with Pabot.",
-                  bio: "<h3 class='mb-0 mt-2'>Mikko Korpela</h3>Mikko Korpela is a consultant and former core developer of Robot Framework. He invented the awesome Pabot." ,
-                  imgUrl: ["Mikko_Korpela.png"]
-                },
                 { type: "workshop",
                   author: "Tatu Aalto",
                   title: "🇬🇧 SeleniumLibrary (Advanced) [Finland/EN]",
@@ -379,7 +386,7 @@ export default {
                   bio: "Juho has been doing testing since 2005. He is interested of testing and it's efficiency, and eager to make all kind of testings as soon as possible.<br><br>Juho maintains various java-based RF libraries.<br><br>His 'normal working day' to contain also application development and various operations related things in addition to testing.",
                   imgUrl: ["Juho_Saarinen.jpg"]
                 },
-                
+
               ]
             }
           }
@@ -442,7 +449,7 @@ export default {
                 `
 <p>All attendees, speakers, sponsors and volunteers at our workshops are required to agree with the following
     <a href='http://confcodeofconduct.com' target='blank'>code of conduct</a>.
-    Organisers will enforce this code throughout the event. 
+    Organisers will enforce this code throughout the event.
     We expect cooperation from all participants to help ensure a safe environment for everybody.<br>
     <br>
     Our conference is dedicated to providing a harassment-free conference experience for everyone,
