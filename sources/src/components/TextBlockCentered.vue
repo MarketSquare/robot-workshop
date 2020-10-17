@@ -24,7 +24,9 @@
           :description-expanded="talk.descriptionExpanded"
           :bio="talk.bio"
           :img-url="talk.imgUrl"
-          :url="talk.url"/>
+          :url="talk.url"
+          :sponsor-logo="talk.sponsorLogo"
+          :sponsor-url="talk.sponsorUrl"/>
       </div>
     </div>
     <div v-else>

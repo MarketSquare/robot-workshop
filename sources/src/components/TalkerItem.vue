@@ -44,20 +44,42 @@
             >
               <p v-html="description"></p>
               <p v-html="descriptionExpanded"></p>
-              <template v-if="bio">
-                <h2 class="no-arrow mb-0">Bio</h2>
-              </template>
-              <div v-if="imgUrl !== ''" class="col-lg-4">
-                <div v-for="image in imgUrl" :key="image">
-                  <img
-                    class="mb-3"
-                    style="border-radius: 50%; width: 100px"
-                    :src="require(`@/assets/img/users/${image}`)"
-                  />
+              <div
+                class="col-lg-12 mt-5"
+                style="display: flex; flex-wrap: wrap"
+              >
+                <div v-if="imgUrl !== ''" class="col-lg-4 col-md-6 col-sm-6 mt-auto">
+                  <div v-for="image in imgUrl" :key="image">
+                    <img
+                      class="mb-3"
+                      style="border-radius: 50%; width: 100px"
+                      :src="require(`@/assets/img/users/${image}`)"
+                    />
+                    <h3 v-if="author !== ''">
+                      {{ author }}
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  v-if="sponsorUrl !== ''"
+                  class="col-lg-6 col-md-6 col-sm-6 mt-auto"
+                >
+                  <div>
+                    <a
+                      :href="sponsorUrl"
+                      target="blank"
+                      ><img
+                        class="img-fluid mb-3 user-image"
+                        style="max-height: 100px"
+                        :src="sponsorLogo"
+                      />
+                    </a>
+                    <h3>sponsored by:</h3>
+                  </div>
                 </div>
               </div>
               <template v-if="bio">
-                <p v-html="bio"></p>
+                <p class="mt-5" v-html="bio"></p>
               </template>
             </div>
           </div>
@@ -118,6 +140,14 @@ export default {
       default: false,
     },
     type: {
+      type: String,
+      default: "",
+    },
+    sponsorLogo: {
+      type: String,
+      default: "",
+    },
+    sponsorUrl: {
       type: String,
       default: "",
     },

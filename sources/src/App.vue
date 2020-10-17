@@ -115,11 +115,6 @@ export default {
               twitter: false,
             },
             users: [
-              {
-                title: "Humanitec GmbH",
-                href: "https://www.humanitec.com",
-                img: require("@/assets/img/sponsors/humanitec.png")
-              },
               /*{
                 title: "imbus AG",
                 href: "https://www.imbus.de",
@@ -264,7 +259,7 @@ export default {
                     Switching to windows and popups<br>
                     Switching to frames<br>
                     Handling Alerts`,
-                  bio: "<h3 class='mb-0 mt-2'>Kamal Girdher</h3>",
+                  bio: "",
                   imgUrl: ["Kamal_Girdher.jpg"],
                 },
                 {
@@ -278,8 +273,10 @@ export default {
                   descriptionExpanded:
                     "Katsahdus uuteen Browser kirjastoon, joka käyttää Playwright selainautomaatiotyökalua.",
                   bio:
-                    "<h3 class='mb-0 mt-2'>Mikko Korpela</h3>Mikko Korpela on konsultti ja satunnainen Robot Framework core-kehittäjä Reaktorilta.",
+                    "Mikko Korpela on konsultti ja satunnainen Robot Framework core-kehittäjä Reaktorilta.",
                   imgUrl: ["Mikko_Korpela.png"],
+                  sponsorUrl: "https://www.reaktor.com/",
+                  sponsorLogo: require("@/assets/img/sponsors/reaktor.png"),
                 },
                 {
                   type: "workshop",
@@ -293,8 +290,10 @@ export default {
                   descriptionExpanded:
                     "Die brandneue Robot Framework Browser library is eine top moderne Web-Automatisierungsbibliothek basierend auf Microsofts neuer Web-Automatisierungstechnologie Playwright. Dieser Halbtages-Workshop ist für alle Nutzer der SeleniumLibrary mit Vorkenntnissen in Web-Automatisierung.",
                   bio:
-                    "<h3 class='mb-0 mt-4'>René Rohner</h3>René Rohner is a Senior Consultant for Testing Systems in Germany and member of the board of Robot Framework Foundation.<br><br>He has over 6 years of experience with Keyword-Driven and Behavior-Driven Testing in multiple small and huge projects in Germany.",
+                    "René Rohner is a Senior Consultant for Testing Systems in Germany and member of the board of Robot Framework Foundation.<br><br>He has over 6 years of experience with Keyword-Driven and Behavior-Driven Testing in multiple small and huge projects in Germany.",
                   imgUrl: ["Rene_Rohner.png"],
+                  sponsorUrl: "https://www.imbus.de",
+                  sponsorLogo: require("@/assets/img/sponsors/imbus.png"),
                 },
                 {
                   type: "workshop",
@@ -335,7 +334,7 @@ export default {
                     <li style="margin-bottom: 0;">HTTP concepts - Basic Knowledge</li>
                     <li style="margin-bottom: 0;">Object oriented programming concepts - Basic Knowledge</li>
                   </ul>`,
-                  bio: "<h3 class='mb-0 mt-4'>Michael Hallik</h3>",
+                  bio: "",
                   imgUrl: ["Michael_Hallik.jpeg"],
                 },
                 {
@@ -350,8 +349,10 @@ export default {
                   descriptionExpanded:
                     "KubeLibrary is a Robot Framework test library for Kubernetes.<br><br>KubeLibrary is a wrapper for the Python Kubernetes Client. It enables you to assert the status of various objects in your Kubernetes Clusters. As the library can be integrated with any RobotFramework test suite, it is ideal to verify the testability of your System-under-Test by asserting the status of your nodes, deployments, pods, configmaps, and others Kubernetes objects before running any end to end tests.",
                   bio:
-                    "<h3 class='mb-0 mt-4'>Nils Balkow-Tychsen</h3>Nils is Lead QA Engineer at Humanitec. He has worked in software testing for more than 20 years, in different industries like finance, games and developer platforms. He specializes in test automation for web apps based on Microservice Architectures.",
+                    "Nils is Lead QA Engineer at Humanitec. He has worked in software testing for more than 20 years, in different industries like finance, games and developer platforms. He specializes in test automation for web apps based on Microservice Architectures.",
                   imgUrl: ["Nils_Balkow.jpeg"],
+                  sponsorUrl: "https://www.humanitec.com",
+                  sponsorLogo: require("@/assets/img/sponsors/humanitec.png")
                 },
                 {
                   type: "workshop",
@@ -367,7 +368,7 @@ export default {
                   <p><h3>Contents:</h3>
                   Check out the github repository to see the material we will be covering:<br>
                   <a href='https://github.com/adrianyorke/robotframework-cookbook/tree/feature/actions#table-of-contents' target='blank'>Robot Framework Cookbook GitHub Repo</a></p> `,
-                  bio: `<h3 class='mb-0 mt-4'>Adrian Yorke</h3>
+                  bio: `
                   <p>Adrian Yorke is a senior Data Specialist and DevOps Engineer at OP, one of Finland's largest and oldest Financial groups.</p>
                   <ul>
                     <li style="margin-bottom: 0;">Driving force behind the adoption of DevOps and Test Automation using Robot Framework in the Data Warehousing tribe.</li>
@@ -388,8 +389,10 @@ export default {
                   descriptionExpanded:
                     "Robot Framework bietet manigfaltige APIs um Tests vor oder währen der Ausführung zu verändern, Tests live mitzulesen, Testprotokolle zu manipulieren oder Bibliotheken zu Entwickeln oder zu Dokumentieren. Dieser Workshop gibt einen guten Überblick über wichtigsten APIs des Robot Framework. Python Basiskenntnisse werden vorausgesetzt.",
                   bio:
-                    "<h3 class='mb-0 mt-4'>René Rohner</h3>René Rohner is a Senior Consultant for Testing Systems in Germany and member of the board of Robot Framework Foundation.<br><br>He has over 6 years of experience with Keyword-Driven and Behavior-Driven Testing in multiple small and huge projects in Germany.",
+                    "René Rohner is a Senior Consultant for Testing Systems in Germany and member of the board of Robot Framework Foundation.<br><br>He has over 6 years of experience with Keyword-Driven and Behavior-Driven Testing in multiple small and huge projects in Germany.",
                   imgUrl: ["Rene_Rohner.png"],
+                  sponsorUrl: "https://www.imbus.de",
+                  sponsorLogo: require("@/assets/img/sponsors/imbus.png"),
                 },
                 {
                   type: "workshop",
@@ -402,8 +405,10 @@ export default {
                   descriptionExpanded:
                     "Introduction to parallel test execution with Pabot.",
                   bio:
-                    "<h3 class='mb-0 mt-2'>Mikko Korpela</h3>Mikko Korpela is a consultant and former core developer of Robot Framework. He invented the awesome Pabot.",
+                    "Mikko Korpela is a consultant and former core developer of Robot Framework. He invented the awesome Pabot.",
                   imgUrl: ["Mikko_Korpela.png"],
+                  sponsorUrl: "https://www.reaktor.com/",
+                  sponsorLogo: require("@/assets/img/sponsors/reaktor.png"),
                 },
 
                 {
@@ -437,8 +442,10 @@ export default {
                   descriptionExpanded:
                     "Grundlagenschulung in Webautomatisierung. Von XPATH bis CSS Selektoren und von 'Open Browser' bis 'Execute Javascript' wird in diesem Grundlagen-Workshop alle nötige Basiswissen vermittelt was zum Einstieg in die Browserautomatisierung notwendig ist. Unter Nutzung der neuen Browser library werden wir ein Beispiel Testobjekt automatisieruen und dabei typische Probleme lösen lernen.",
                   bio:
-                    "<h3 class='mb-0 mt-4'>Christoph Singer</h3>Christoph Singer is a Consultant for Test Automation in Germany.",
+                    "Christoph Singer is a Consultant for Test Automation in Germany.",
                   imgUrl: ["ChristophSinger.jpg"],
+                  sponsorUrl: "https://www.imbus.de",
+                  sponsorLogo: require("@/assets/img/sponsors/imbus.png"),
                 },
                 {
                   type: "workshop",
@@ -465,9 +472,8 @@ export default {
                   descriptionExpanded:
                     "<h2 class='no-arrow mb-3 mt-5'>Outline/overview of the workshop</h2><h3 class='mb-0 mt-2'>Browser Configuration</h3>We will be taking a look at desired capabilites, Selenium options and Firefox profile. Differences between Open Browser and Create WebDriver keywords will be highlighted. Finally we will build small examples showing how to configure the browser in diffrent situations.<h3 class='mb-0 mt-2'>Advanced Debuging</h3>The course will cover when encountering flaky test(s), where to look and how to stabilise them.<h3 class='mb-0 mt-2'>Parallel Execution</h3>We'll discuss running SeleniumLibrary in parallel with pabot and Selenium grid.<h3 class='mb-0 mt-2'>API</h3>SeleniumLibrary has an public API which allows users to extend on top of the SeleniumLibrary. Here we take a look what is available in the public API.<h3 class='mb-0 mt-2'>Expanding the library</h3>Looking at different pros and cons we will talk about how to extend SeleniumLibrary as well as building a new library and the Plugin API. We will show a small exmample. And we will discuss overriding existing keywords with functionality not covered by Selenium.<h3 class='mb-0 mt-2'>EventFiringWebDriver</h3>Using and abusing EventFiringWebDriver for monitoring events and how they affect the interactions with SUT will be covered.<h3 class='mb-0 mt-2'>Page Objects</h3>What are page objects and where it might be useful.<h3 class='mb-0 mt-2'>Python Page objects verses SeleniumLibrary</h3>Looking inside of a page object library and how to build one.<h3 class='mb-0 mt-2'>Checking for time of tests</h3>We will talk about verifying and reacting to execution times of tests/keywords/suites either via tags or the separate Timer library.<h3 class='mb-0 mt-2'>Using Javascript to interact with SUT</h3>Extending SeleniumLibrary with new keywords where functionality is implemented in Javascript.<h2 class='no-arrow mb-3 mt-5'>Learning Outcomes</h2>At the end of the workshop, user should have broad overview of advanced features of SeleniumLibrary, web automation and ways to extend and debug test tooling.<h2 class='no-arrow mb-3 mt-5'>Target Audience</h2>This workshop is for people with previous hands on experience with testing in Robot Framework & SeleniumLibrary. Students should already have experience testing web applications, know how to identify locators for webelements and validate those loctors, and feel comfortable working with SeleniumLibrary. Although the course will take a measured pace through the material, students should be prepared for advanced topics that will be thoroughly explained.<br><br>This workshop will be presented in English with two presentors, both who are bi-lingual in Finnish and English.<h2 class='no-arrow mb-3 mt-5'>Prerequisites</h2>* All participates will need to bring a laptop preconfigured to the workshop.<br>* Particapte must have access to add and modify software on their laptops.<br>* Detailed setup instructions will be shared couple of weeks before workshop day.<br>* Configure your laptops well before the workshop day<br><br>Any special needs should be requested through the conference organizers, at best two weeks prior to the workshop. We will do our best to accomidate any needs and will communicate back either our ability or inability to meet those needs.",
                   bio: /*`
-                  <h3 class='mb-0 mt-4'>Ed Manlove</h3>
                   Ed Manlove has been a part of the Robot Framework community since 2011. He inherited the leadership of the Selenium2Library project from Ryan Tomac sharing it with Jeremy Johnson and passing on that role to Tatu Aalto. He is the author of a couple libraries dealing with timing issues within AJAX enabled websites. Ed is currently a Senior Software Test Engineer at Cox Automotive testing with Robot Framework and taught several teams how to test with Robot Framework. A member of the Selenium user community Ed has presented at the Selenium Conference, ran an unconference focusing on user issues, and volunteered at the conferences (even being a maître d').
-                  */ `<h3 class='mb-0 mt-5'>Tatu Aalto</h3>
+                  */ `
                   Tatu Aalto is the current lead developer of the <a href='https://github.com/robotframework/SeleniumLibrary' target='blank'>SeleniumLibrary</a> and he has been working with Robot Framework since 2011. In the 2011 he was a regular user, by sending many questions and problems to the community. After some time Tatu started to answer questions  send by other users and he did provide his very first pull request to the Robot Framework core in 2012. Tatu has been active community member all these years and 2016 he started as an SeleniumLibrary lead developer.<br><br>Tatu has used the Robot Framework in several work places to to guide and aid companies in their test automation efforts. Currently he is working at F-Secure as a Software Developer In Test, automating windows antivirus client for business users.`,
                   imgUrl: ["Tatu_Aalto.jpg"],
                 },
