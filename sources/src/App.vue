@@ -21,6 +21,7 @@
 </template>
 <script>
 import PageBlock from "@/Components/PageBlock.vue";
+import moment, { locale } from 'moment-timezone';
 
 export default {
   components: {
@@ -155,9 +156,9 @@ export default {
             text: {
               twitter: false,
               header: "Workshops",
-              text: `<p>Date: December 02, 2020<br>Location: The World Wide Web.<br>
+              text: `<p>Date: ${utc_time("2020-12-02T00:00:00+0000").format("LL")}<br>Location: The World Wide Web.<br>
               Detailed information will be sent to workshops participants separately.<br>
-              <br>Ticket sale starts on Wednesday, November 4, at 08:00 UTC.</p>
+              <br>Ticket sale: ${utc_time("2020-11-04T08:00:00+0000").format("LLL")} (UTC) <span class="local-time">${local_time("2020-12-02T08:00:00+0000").format("LT")} (${local_tz()})</span></p>
               <p>
               Prices:<br>
               <br>
@@ -558,4 +559,21 @@ export default {
     };
   },
 };
+
+
+function utc_time(dataTime) {
+  var locale = window.navigator.userLanguage || window.navigator.language;
+  moment.locale(locale);
+  return moment.tz(dataTime, "Africa/Freetown");
+}
+
+function local_time(dataTime) {
+  var locale = window.navigator.userLanguage || window.navigator.language;
+  moment.locale(locale);
+  return moment.tz(dataTime, moment.tz.guess());
+}
+
+function local_tz() {
+  return moment.tz.guess();
+}
 </script>

@@ -157,6 +157,10 @@ h2:not(.no-arrow)::before {
   left: 1rem;
 }
 
+.local-time {
+    color: #1E88E5;
+}
+
 .color {
   color: #1E88E5;
 }

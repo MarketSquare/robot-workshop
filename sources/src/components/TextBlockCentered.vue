@@ -26,7 +26,9 @@
           :img-url="talk.imgUrl"
           :url="talk.url"
           :sponsor-logo="talk.sponsorLogo"
-          :sponsor-url="talk.sponsorUrl"/>
+          :sponsor-url="talk.sponsorUrl"
+          :start="talk.start"
+          :end="talk.end"/>
       </div>
     </div>
     <div v-else>

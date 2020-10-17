@@ -1,6 +1,10 @@
 <template>
   <div
-    :class="header === '' && (type === 'workshop' || type === 'workshop-last') ? 'mb-5 pb-4' : 'mb-5'"
+    :class="
+      header === '' && (type === 'workshop' || type === 'workshop-last')
+        ? 'mb-5 pb-4'
+        : 'mb-5'
+    "
     :style="
       header === '' &&
       /*author !== 'Asko Soukka' &&
@@ -42,13 +46,19 @@
             <div
               class="col-lg-12 word-break ml-4 pr-4 mt-2 workshop-description"
             >
+              <p>Start: {{ utc_time(start).format("LT") }} (UTC) <span class="local-time">/ {{ local_time(start).format("LT") }} ({{local_tz()}})</span><br>
+              End: {{ utc_time(end).format("LT") }} (UTC) <span class="local-time">/ {{ local_time(end).format("LT") }} ({{local_tz()}})</span></p>
+
               <p v-html="description"></p>
               <p v-html="descriptionExpanded"></p>
               <div
                 class="col-lg-12 mt-5"
                 style="display: flex; flex-wrap: wrap"
               >
-                <div v-if="imgUrl !== ''" class="col-lg-4 col-md-6 col-sm-6 mt-auto">
+                <div
+                  v-if="imgUrl !== ''"
+                  class="col-lg-4 col-md-6 col-sm-6 mt-auto"
+                >
                   <div v-for="image in imgUrl" :key="image">
                     <img
                       class="mb-3"
@@ -65,9 +75,7 @@
                   class="col-lg-6 col-md-6 col-sm-6 mt-auto"
                 >
                   <div>
-                    <a
-                      :href="sponsorUrl"
-                      target="blank"
+                    <a :href="sponsorUrl" target="blank"
                       ><img
                         class="img-fluid mb-3 user-image"
                         style="max-height: 100px"
@@ -88,18 +96,21 @@
       <p
         v-else-if="header === ''"
         class="workshop-description ml-4 mt-2 cursor--pointer"
-        v-html="description"
         @click="
           descriptionExpanded !== '' || url !== ''
             ? (expanded = !expanded)
             : false
         "
-      ></p>
+      >
+      Start: <span class="local-time">{{ local_time(start).format("LT") }}</span> / End: <span class="local-time">{{ local_time(end).format("LT") }} ({{local_tz()}})</span><br>
+      {{description}}</p> 
     </transition>
   </div>
 </template>
 
 <script>
+import moment from 'moment-timezone';
+
 export default {
   name: "TalkerItem",
   props: {
@@ -151,9 +162,18 @@ export default {
       type: String,
       default: "",
     },
+    start: {
+      type: String,
+      default: "",
+    },
+    end: {
+      type: String,
+      default: "",
+    },
   },
   data: () => ({
     expanded: false,
+
   }),
   watch: {
     expanded: {
@@ -173,5 +193,29 @@ export default {
     if (anchor === this.title.replace(/ /g, "-").toLowerCase())
       this.expanded = true;
   },
+  methods: {
+    moment,
+    local_time,
+    utc_time,
+    local_tz
+  },
 };
+
+
+function utc_time(dataTime) {
+  var locale = window.navigator.userLanguage || window.navigator.language;
+  moment.locale(locale);
+  return moment.tz(dataTime, "Africa/Freetown");
+}
+
+function local_time(dataTime) {
+  var locale = window.navigator.userLanguage || window.navigator.language;
+  moment.locale(locale);
+  return moment.tz(dataTime, moment.tz.guess());
+}
+
+function local_tz() {
+  return moment.tz.guess();
+}
+
 </script>
