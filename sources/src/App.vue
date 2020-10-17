@@ -1,9 +1,13 @@
 <template>
   <div class="row no-gutters">
-    <navigation-horizontal :pages="pages"/>
-    <b-img :src="require('@/assets/img/ROBOTFW_Mark_White_LOW_cropped.png')" class="logo-fixed" alt="Robot Framework logo"/>
+    <navigation-horizontal :pages="pages" />
+    <b-img
+      :src="require('@/assets/img/ROBOTFW_Mark_White_LOW_cropped.png')"
+      class="logo-fixed"
+      alt="Robot Framework logo"
+    />
     <div class="col-md-12" ref="content" style="width: 100%">
-      <app-header/>
+      <app-header />
       <page-block
         v-for="(page, index) in pages"
         v-bind:page="page"
@@ -11,7 +15,7 @@
         v-bind:key="index"
         class="pl-md-5 px-lg-2 p-sm-2 p-xs-1 link-fix"
       />
-      <app-footer class="mt-3 py-5"/>
+      <app-footer class="mt-3 py-5" />
     </div>
   </div>
 </template>
@@ -20,7 +24,7 @@ import PageBlock from "@/Components/PageBlock.vue";
 
 export default {
   components: {
-    PageBlock
+    PageBlock,
   },
   data() {
     return {
@@ -32,8 +36,7 @@ export default {
             text: {
               twitter: false,
               header: "World Wide Workshop Wednesday",
-              text:
-                `<p>We are happy to announce that the Robot Framework Foundation will be holding a World Wide Workshop Wednesday on <b>December 2nd</b> this year.</p>
+              text: `<p>We are happy to announce that the Robot Framework Foundation will be holding a World Wide Workshop Wednesday on <b>December 2nd</b> this year.</p>
                 <p>All Workshops will be held online on <a href="https://bigbluebutton.org/" target="blank">BigBlueButton</a> Servers located in Germany.<br>
                 </p>
                 <p>Due to COVID-19 we can not have an on-site conference next January and do not get revenues from that ticket sales.
@@ -42,9 +45,9 @@ export default {
                 We have gathered experts from the Robot Framework Community to hold great workshops.
                 The revenues of the day will be used entirely for the further development of Robot Framework.</p>
                 <p>Special thanks go to all workshop organizers who will share their experience with the community.</p>
-                <h2 style="margin-left: 1.5rem !important;">Thank you very much! You are the best ❤️ </h2></p>`
-            }
-          }
+                <h2 style="margin-left: 1.5rem !important;">Thank you very much! You are the best ❤️ </h2></p>`,
+            },
+          },
         },
         {
           title: "Contribute",
@@ -54,25 +57,26 @@ export default {
             text: {
               twitter: false,
               header: "Contribution",
-              text:
-                `<p>We are still looking for community members who want to share their knowledge in a workshop.<br>
-                Please contact us if you want to contribute:`
+              text: `<p>We are still looking for community members who want to share their knowledge in a workshop.<br>
+                Please contact us if you want to contribute:`,
             },
             users: [
               {
                 title: "René Rohner",
-                text: "<b>René Rohner</b><br>imbus AG<br><a href='mailto:rene@robotframework.org'>rene@robotframework.org</a><br>@René on Slack",
+                text:
+                  "<b>René Rohner</b><br>imbus AG<br><a href='mailto:rene@robotframework.org'>rene@robotframework.org</a><br>@René on Slack",
                 href: "mailto:rene@robotframework.org",
-                img: require("@/assets/img/users/Rene_Rohner.png")
+                img: require("@/assets/img/users/Rene_Rohner.png"),
               },
               {
                 title: "Mikko Korpela",
-                text: "<b>Mikko Korpela</b><br>Reaktor Oy<br><a href='mailto:mikko@robotframework.org'>mikko@robotframework.org</a><br>@mkorpela on Slack",
+                text:
+                  "<b>Mikko Korpela</b><br>Reaktor Oy<br><a href='mailto:mikko@robotframework.org'>mikko@robotframework.org</a><br>@mkorpela on Slack",
                 href: "mailto:mikko@robotframework.org",
-                img: require("@/assets/img/users/Mikko_Korpela.png")
-              }
-            ]
-          }
+                img: require("@/assets/img/users/Mikko_Korpela.png"),
+              },
+            ],
+          },
         },
         {
           title: "Sponsors",
@@ -83,21 +87,21 @@ export default {
           data: {
             text: {
               header: "Main Sponsors",
-              twitter: false
+              twitter: false,
             },
             users: [
               {
                 title: "imbus AG",
                 href: "https://www.imbus.de",
-                img: require("@/assets/img/sponsors/imbus.png")
+                img: require("@/assets/img/sponsors/imbus.png"),
               },
               {
                 title: "Reaktor Oy",
                 href: "https://www.reaktor.com/",
-                img: require("@/assets/img/sponsors/reaktor.png")
+                img: require("@/assets/img/sponsors/reaktor.png"),
               },
-            ]
-          }
+            ],
+          },
         },
         {
           title: "",
@@ -108,7 +112,7 @@ export default {
           data: {
             text: {
               header: "Sponsors",
-              twitter: false
+              twitter: false,
             },
             users: [
               {
@@ -126,8 +130,8 @@ export default {
                 href: "https://www.reaktor.com/",
                 img: require("@/assets/img/sponsors/reaktor.png")
               },*/
-            ]
-          }
+            ],
+          },
         },
         /*{
           title: "Tickets",
@@ -228,8 +232,12 @@ export default {
               <p style="font-size: 0.95rem">*) Budget Tickets are for anyone who can not afford normal ticket price. Just send an email to <a href="mailto:rene@robotframework.org">Ren&eacute;</a> or contact me on slack @Ren&eacute; and you get a voucher code to buy a budget ticket. No questions! No explanation requested!</p>`,
               /*<a class="col-sm-12 pl-0 mb-5 mt-3" href="https://www.lyyti.fi/reg/robocon2020workshops" target="blank">Tickets available here!</a>`,*/
               talks: [
-                { type: "workshop", header: 'Half-day workshops' },
-                { type: "workshop", author: "Kamal Girdher",
+                { type: "workshop", header: "Half-day workshops" },
+                {
+                  type: "workshop",
+                  author: "Kamal Girdher",
+                  start: "2020-12-02T02:30:00+0000",
+                  end: "2020-12-02T06:00:00+0000",
                   title: "🇬🇧 Introduction to Robot framework [India/EN]",
                   description: "Basic workshop for robot framework beginners.",
                   descriptionExpanded: `<h3>Section 1 - Introduction & Installation</h3>
@@ -256,51 +264,47 @@ export default {
                     Switching to windows and popups<br>
                     Switching to frames<br>
                     Handling Alerts`,
-                  bio: "<h3 class='mb-0 mt-2'>Kamal Girdher</h3>" ,
-                  imgUrl: ["Kamal_Girdher.jpg"]
+                  bio: "<h3 class='mb-0 mt-2'>Kamal Girdher</h3>",
+                  imgUrl: ["Kamal_Girdher.jpg"],
                 },
-                { type: "workshop", author: "Mikko Korpela",
+                {
+                  type: "workshop",
+                  author: "Mikko Korpela",
+                  start: "2020-12-02T07:00:00+0000",
+                  end: "2020-12-02T11:00:00+0000",
                   title: "🇫🇮 Browser kirjasto suomeksi [Finland/FI]",
-                  description: "Käpistellään yhdessä selainkirjaston avulla internetin ihmeellistä maailmaa.",
-                  descriptionExpanded: "Katsahdus uuteen Browser kirjastoon, joka käyttää Playwright selainautomaatiotyökalua.",
-                  bio: "<h3 class='mb-0 mt-2'>Mikko Korpela</h3>Mikko Korpela on konsultti ja satunnainen Robot Framework core-kehittäjä Reaktorilta." ,
-                  imgUrl: ["Mikko_Korpela.png"]
+                  description:
+                    "Käpistellään yhdessä selainkirjaston avulla internetin ihmeellistä maailmaa.",
+                  descriptionExpanded:
+                    "Katsahdus uuteen Browser kirjastoon, joka käyttää Playwright selainautomaatiotyökalua.",
+                  bio:
+                    "<h3 class='mb-0 mt-2'>Mikko Korpela</h3>Mikko Korpela on konsultti ja satunnainen Robot Framework core-kehittäjä Reaktorilta.",
+                  imgUrl: ["Mikko_Korpela.png"],
                 },
-                { type: "workshop", author: "Mikko Korpela",
-                  title: "🇬🇧 Pabot Introduction / Tipps & Tricks [Finland/EN]",
-                  description: "A hands-on introduction to parallel test execution with Robot Framework and Pabot.",
-                  descriptionExpanded: "Introduction to parallel test execution with Pabot.",
-                  bio: "<h3 class='mb-0 mt-2'>Mikko Korpela</h3>Mikko Korpela is a consultant and former core developer of Robot Framework. He invented the awesome Pabot." ,
-                  imgUrl: ["Mikko_Korpela.png"]
-                },
-                { type: "workshop",
+                {
+                  type: "workshop",
                   author: "René Rohner",
-                  title: "🇩🇪 Browser library für SeleniumLibrary User [Germany/DE]",
-                  description: "Einführung in die brandneue Robot Framework Browser library für alle Nutzer*Innen der SeleniumLibrary mit Vorkenntnissen in Web-Automatisierung.",
-                  descriptionExpanded: "Die brandneue Robot Framework Browser library is eine top moderne Web-Automatisierungsbibliothek basierend auf Microsofts neuer Web-Automatisierungstechnologie Playwright. Dieser Halbtages-Workshop ist für alle Nutzer der SeleniumLibrary mit Vorkenntnissen in Web-Automatisierung.",
-                  bio: "<h3 class='mb-0 mt-4'>René Rohner</h3>René Rohner is a Senior Consultant for Testing Systems in Germany and member of the board of Robot Framework Foundation.<br><br>He has over 6 years of experience with Keyword-Driven and Behavior-Driven Testing in multiple small and huge projects in Germany." ,
-                  imgUrl: ["Rene_Rohner.png"]
+                  start: "2020-12-02T08:00:00+0000",
+                  end: "2020-12-02T12:00:00+0000",
+                  title:
+                    "🇩🇪 Browser library für SeleniumLibrary User [Germany/DE]",
+                  description:
+                    "Einführung in die brandneue Robot Framework Browser library für alle Nutzer*Innen der SeleniumLibrary mit Vorkenntnissen in Web-Automatisierung.",
+                  descriptionExpanded:
+                    "Die brandneue Robot Framework Browser library is eine top moderne Web-Automatisierungsbibliothek basierend auf Microsofts neuer Web-Automatisierungstechnologie Playwright. Dieser Halbtages-Workshop ist für alle Nutzer der SeleniumLibrary mit Vorkenntnissen in Web-Automatisierung.",
+                  bio:
+                    "<h3 class='mb-0 mt-4'>René Rohner</h3>René Rohner is a Senior Consultant for Testing Systems in Germany and member of the board of Robot Framework Foundation.<br><br>He has over 6 years of experience with Keyword-Driven and Behavior-Driven Testing in multiple small and huge projects in Germany.",
+                  imgUrl: ["Rene_Rohner.png"],
                 },
-                { type: "workshop",
-                  author: "René Rohner",
-                  title: "🇩🇪 Robot Framework Advanced [Germany/DE]",
-                  description: "Einführung in die APIs des Robot Framework. Listener, Pre-Run-Modifier, etc. ",
-                  descriptionExpanded: "Robot Framework bietet manigfaltige APIs um Tests vor oder währen der Ausführung zu verändern, Tests live mitzulesen, Testprotokolle zu manipulieren oder Bibliotheken zu Entwickeln oder zu Dokumentieren. Dieser Workshop gibt einen guten Überblick über wichtigsten APIs des Robot Framework. Python Basiskenntnisse werden vorausgesetzt.",
-                  bio: "<h3 class='mb-0 mt-4'>René Rohner</h3>René Rohner is a Senior Consultant for Testing Systems in Germany and member of the board of Robot Framework Foundation.<br><br>He has over 6 years of experience with Keyword-Driven and Behavior-Driven Testing in multiple small and huge projects in Germany." ,
-                  imgUrl: ["Rene_Rohner.png"]
-                },
-                { type: "workshop",
-                  author: "Nils Balkow-Tychsen",
-                  title: "🇬🇧 KubeLibrary - Verify the state of objects in your Kubernetes Cluster [Germany/EN]",
-                  description: "RobotFramework library for testing Kubernetes cluster.",
-                  descriptionExpanded: "KubeLibrary is a Robot Framework test library for Kubernetes.<br><br>KubeLibrary is a wrapper for the Python Kubernetes Client. It enables you to assert the status of various objects in your Kubernetes Clusters. As the library can be integrated with any RobotFramework test suite, it is ideal to verify the testability of your System-under-Test by asserting the status of your nodes, deployments, pods, configmaps, and others Kubernetes objects before running any end to end tests.",
-                  bio: "<h3 class='mb-0 mt-4'>Nils Balkow-Tychsen</h3>Nils is Lead QA Engineer at Humanitec. He has worked in software testing for more than 20 years, in different industries like finance, games and developer platforms. He specializes in test automation for web apps based on Microservice Architectures.",
-                  imgUrl: ["Nils_Balkow.jpeg"]
-                },
-                { type: "workshop",
+                {
+                  type: "workshop",
                   author: "Michael Hallik",
-                  title: "🇳🇱 HTTP-level testing with the RF RequestsLibrary [Netherlands/NL]",
-                  description: "In this workshop you will learn the basics of HTTP-level test automation.",
+                  start: "2020-12-02T09:00:00+0000",
+                  end: "2020-12-02T12:00:00+0000",
+                  title:
+                    "🇳🇱 HTTP-level testing with the RF RequestsLibrary [Netherlands/NL]",
+                  description:
+                    "In this workshop you will learn the basics of HTTP-level test automation.",
                   descriptionExpanded: `<p><b>Language:</b> Workshop will be in Dutch.</p>
                   <p>Experience the power, versatility and simplicity of Robot Framework. We will cover everything from creating and maintaining an HTTP session, to validating every aspect of the response and everything in between.</p>
                   <ul>
@@ -332,12 +336,32 @@ export default {
                     <li style="margin-bottom: 0;">Object oriented programming concepts - Basic Knowledge</li>
                   </ul>`,
                   bio: "<h3 class='mb-0 mt-4'>Michael Hallik</h3>",
-                  imgUrl: ["Michael_Hallik.jpeg"]
+                  imgUrl: ["Michael_Hallik.jpeg"],
                 },
-                { type: "workshop",
+                {
+                  type: "workshop",
+                  author: "Nils Balkow-Tychsen",
+                  start: "2020-12-02T09:00:00+0000",
+                  end: "2020-12-02T12:00:00+0000",
+                  title:
+                    "🇬🇧 KubeLibrary - Verify the state of objects in your Kubernetes Cluster [Germany/EN]",
+                  description:
+                    "RobotFramework library for testing Kubernetes cluster.",
+                  descriptionExpanded:
+                    "KubeLibrary is a Robot Framework test library for Kubernetes.<br><br>KubeLibrary is a wrapper for the Python Kubernetes Client. It enables you to assert the status of various objects in your Kubernetes Clusters. As the library can be integrated with any RobotFramework test suite, it is ideal to verify the testability of your System-under-Test by asserting the status of your nodes, deployments, pods, configmaps, and others Kubernetes objects before running any end to end tests.",
+                  bio:
+                    "<h3 class='mb-0 mt-4'>Nils Balkow-Tychsen</h3>Nils is Lead QA Engineer at Humanitec. He has worked in software testing for more than 20 years, in different industries like finance, games and developer platforms. He specializes in test automation for web apps based on Microservice Architectures.",
+                  imgUrl: ["Nils_Balkow.jpeg"],
+                },
+                {
+                  type: "workshop",
                   author: "Adrian Yorke",
-                  title: "🇬🇧 Robot Framework Cookbook - The Journey So Far [Finland/EN]",
-                  description: "This will be a hands-on workshop exploring numerous curated test recipes from Robot Framework Cookbook.",
+                  start: "2020-12-02T11:00:00+0000",
+                  end: "2020-12-02T14:00:00+0000",
+                  title:
+                    "🇬🇧 Robot Framework Cookbook - The Journey So Far [Finland/EN]",
+                  description:
+                    "This will be a hands-on workshop exploring numerous curated test recipes from Robot Framework Cookbook.",
                   descriptionExpanded: `We will explain how the CI has been implemented for this project and how we use Robocop for linting services.
                   Excellent for beginners and intermediates who want to learn more across a diverse set of libraries and technology areas.
                   <p><h3>Contents:</h3>
@@ -351,50 +375,105 @@ export default {
                     <li style="margin-bottom: 0;">Tech interests: Python, Raspberry Pi projects & recently I've been studying machine learning and data science.</li>
                     <li style="margin-bottom: 0;">When I'm not being a geek: swimming (former national championship swimmer), long distance running (I actually completed the London marathon!), carpentry & just being there for my daughter and helping her grow.</li>
                   </ul>`,
-                  imgUrl: ["Adrian_Yorke.jpeg"]
+                  imgUrl: ["Adrian_Yorke.jpeg"],
+                },
+                {
+                  type: "workshop",
+                  author: "René Rohner",
+                  start: "2020-12-02T13:00:00+0000",
+                  end: "2020-12-02T16:00:00+0000",
+                  title: "🇩🇪 Robot Framework Advanced [Germany/DE]",
+                  description:
+                    "Einführung in die APIs des Robot Framework. Listener, Pre-Run-Modifier, etc. ",
+                  descriptionExpanded:
+                    "Robot Framework bietet manigfaltige APIs um Tests vor oder währen der Ausführung zu verändern, Tests live mitzulesen, Testprotokolle zu manipulieren oder Bibliotheken zu Entwickeln oder zu Dokumentieren. Dieser Workshop gibt einen guten Überblick über wichtigsten APIs des Robot Framework. Python Basiskenntnisse werden vorausgesetzt.",
+                  bio:
+                    "<h3 class='mb-0 mt-4'>René Rohner</h3>René Rohner is a Senior Consultant for Testing Systems in Germany and member of the board of Robot Framework Foundation.<br><br>He has over 6 years of experience with Keyword-Driven and Behavior-Driven Testing in multiple small and huge projects in Germany.",
+                  imgUrl: ["Rene_Rohner.png"],
+                },
+                {
+                  type: "workshop",
+                  author: "Mikko Korpela",
+                  start: "2020-12-02T15:00:00+0000",
+                  end: "2020-12-02T19:00:00+0000",
+                  title: "🇬🇧 Pabot Introduction / Tipps & Tricks [Finland/EN]",
+                  description:
+                    "A hands-on introduction to parallel test execution with Robot Framework and Pabot.",
+                  descriptionExpanded:
+                    "Introduction to parallel test execution with Pabot.",
+                  bio:
+                    "<h3 class='mb-0 mt-2'>Mikko Korpela</h3>Mikko Korpela is a consultant and former core developer of Robot Framework. He invented the awesome Pabot.",
+                  imgUrl: ["Mikko_Korpela.png"],
                 },
 
-                { type: "workshop", header: 'Full-day workshops', margin: true },
-                { type: "workshop",
+                {
+                  type: "workshop",
+                  header: "Full-day workshops",
+                  margin: true,
+                },
+                {
+                  type: "workshop",
+                  author: "Juho Saarinen",
+                  start: "2020-12-02T07:00:00+0000",
+                  end: "2020-12-02T15:00:00+0000",
+                  title: "🇬🇧 Remote library usage and advantages [Finland/EN]",
+                  description:
+                    "Learn first basics about remote library interface, and then how to make own libraries that utilize it.",
+                  descriptionExpanded:
+                    "At the latter part of the day we go through running remote libraries really remote (meaning not on “my machine”), and what advantages that brings.<br><br>Also showing what to do with the Java libraries when Python 2 support is dropped and no suitable replacement available.",
+                  bio:
+                    "Juho has been doing testing since 2005. He is interested of testing and it's efficiency, and eager to make all kind of testings as soon as possible.<br><br>Juho maintains various java-based RF libraries.<br><br>His 'normal working day' to contain also application development and various operations related things in addition to testing.",
+                  imgUrl: ["Juho_Saarinen.jpg"],
+                },
+                {
+                  type: "workshop",
+                  author: "Christoph Singer",
+                  start: "2020-12-02T08:00:00+0000",
+                  end: "2020-12-02T16:00:00+0000",
+                  title:
+                    "🇩🇪 Einführung Webautomatisierung mit RF Browser [Germany/DE]",
+                  description:
+                    "Einführung in die Webautomatisierung mit der brandneuen Robot Framework Browser library für alle Interessierte.",
+                  descriptionExpanded:
+                    "Grundlagenschulung in Webautomatisierung. Von XPATH bis CSS Selektoren und von 'Open Browser' bis 'Execute Javascript' wird in diesem Grundlagen-Workshop alle nötige Basiswissen vermittelt was zum Einstieg in die Browserautomatisierung notwendig ist. Unter Nutzung der neuen Browser library werden wir ein Beispiel Testobjekt automatisieruen und dabei typische Probleme lösen lernen.",
+                  bio:
+                    "<h3 class='mb-0 mt-4'>Christoph Singer</h3>Christoph Singer is a Consultant for Test Automation in Germany.",
+                  imgUrl: ["ChristophSinger.jpg"],
+                },
+                {
+                  type: "workshop",
+                  author: "Pekka Klärck",
+                  start: "2020-12-02T09:00:00+0000",
+                  end: "2020-12-02T17:00:00+0000",
+                  title: "🇬🇧 Extending Robot Framework (Advanced) [Finland/EN]",
+                  description:
+                    "In this workshop you will learn how to extend Robot Framework using various different interfaces.",
+                  descriptionExpanded:
+                    "This workshop is for you if you already know basics of using Robot Framework, preferably also basics of writing tests libraries, and want to take your skills to the next level. These skills make it easier to adapt the framework to your own needs in different contexts.<br><br>The workshop is 100% hands-on, no slides, learn-by-doing. In addition to learning from the person who has designed these powerful APIs, you have a chance to ask hard questions related to Robot Framework from its creator.<br><br>Participants should know basics of Robot Framework, including test library API, and Python programming. Participants should bring their own laptop with Python 3.6 or newer and Robot Framework 3.2 or newer installed. They should also have adequate admin rights to install possible additional Python modules using pip. A text editor or an IDE for writing Python code and Robot Framework tests is needed as well.<br><br><h3>Recommended for advanced users.</h3><h3>Max number of participants: 16</h3>",
+                  bio:
+                    "Pekka Klärck is a tester, developer and independent consultant from Finland. He is the original author and lead developer of Robot Framework.",
+                  imgUrl: ["Pekka_Klarck.jpg"],
+                },
+                {
+                  type: "workshop",
                   author: "Tatu Aalto",
+                  start: "2020-12-02T14:00:00+0000",
+                  end: "2020-12-02T22:00:00+0000",
                   title: "🇬🇧 SeleniumLibrary (Advanced) [Finland/EN]",
-                  description: "Techniques and tooling to ease up web testing and automation by expert developers and maintainer of the SeleniumLibrary. If you need to beef up your Selenium tests, this is the course for you.",
-                  descriptionExpanded: "<h2 class='no-arrow mb-3 mt-5'>Outline/overview of the workshop</h2><h3 class='mb-0 mt-2'>Browser Configuration</h3>We will be taking a look at desired capabilites, Selenium options and Firefox profile. Differences between Open Browser and Create WebDriver keywords will be highlighted. Finally we will build small examples showing how to configure the browser in diffrent situations.<h3 class='mb-0 mt-2'>Advanced Debuging</h3>The course will cover when encountering flaky test(s), where to look and how to stabilise them.<h3 class='mb-0 mt-2'>Parallel Execution</h3>We'll discuss running SeleniumLibrary in parallel with pabot and Selenium grid.<h3 class='mb-0 mt-2'>API</h3>SeleniumLibrary has an public API which allows users to extend on top of the SeleniumLibrary. Here we take a look what is available in the public API.<h3 class='mb-0 mt-2'>Expanding the library</h3>Looking at different pros and cons we will talk about how to extend SeleniumLibrary as well as building a new library and the Plugin API. We will show a small exmample. And we will discuss overriding existing keywords with functionality not covered by Selenium.<h3 class='mb-0 mt-2'>EventFiringWebDriver</h3>Using and abusing EventFiringWebDriver for monitoring events and how they affect the interactions with SUT will be covered.<h3 class='mb-0 mt-2'>Page Objects</h3>What are page objects and where it might be useful.<h3 class='mb-0 mt-2'>Python Page objects verses SeleniumLibrary</h3>Looking inside of a page object library and how to build one.<h3 class='mb-0 mt-2'>Checking for time of tests</h3>We will talk about verifying and reacting to execution times of tests/keywords/suites either via tags or the separate Timer library.<h3 class='mb-0 mt-2'>Using Javascript to interact with SUT</h3>Extending SeleniumLibrary with new keywords where functionality is implemented in Javascript.<h2 class='no-arrow mb-3 mt-5'>Learning Outcomes</h2>At the end of the workshop, user should have broad overview of advanced features of SeleniumLibrary, web automation and ways to extend and debug test tooling.<h2 class='no-arrow mb-3 mt-5'>Target Audience</h2>This workshop is for people with previous hands on experience with testing in Robot Framework & SeleniumLibrary. Students should already have experience testing web applications, know how to identify locators for webelements and validate those loctors, and feel comfortable working with SeleniumLibrary. Although the course will take a measured pace through the material, students should be prepared for advanced topics that will be thoroughly explained.<br><br>This workshop will be presented in English with two presentors, both who are bi-lingual in Finnish and English.<h2 class='no-arrow mb-3 mt-5'>Prerequisites</h2>* All participates will need to bring a laptop preconfigured to the workshop.<br>* Particapte must have access to add and modify software on their laptops.<br>* Detailed setup instructions will be shared couple of weeks before workshop day.<br>* Configure your laptops well before the workshop day<br><br>Any special needs should be requested through the conference organizers, at best two weeks prior to the workshop. We will do our best to accomidate any needs and will communicate back either our ability or inability to meet those needs.",
+                  description:
+                    "Techniques and tooling to ease up web testing and automation by expert developers and maintainer of the SeleniumLibrary. If you need to beef up your Selenium tests, this is the course for you.",
+                  descriptionExpanded:
+                    "<h2 class='no-arrow mb-3 mt-5'>Outline/overview of the workshop</h2><h3 class='mb-0 mt-2'>Browser Configuration</h3>We will be taking a look at desired capabilites, Selenium options and Firefox profile. Differences between Open Browser and Create WebDriver keywords will be highlighted. Finally we will build small examples showing how to configure the browser in diffrent situations.<h3 class='mb-0 mt-2'>Advanced Debuging</h3>The course will cover when encountering flaky test(s), where to look and how to stabilise them.<h3 class='mb-0 mt-2'>Parallel Execution</h3>We'll discuss running SeleniumLibrary in parallel with pabot and Selenium grid.<h3 class='mb-0 mt-2'>API</h3>SeleniumLibrary has an public API which allows users to extend on top of the SeleniumLibrary. Here we take a look what is available in the public API.<h3 class='mb-0 mt-2'>Expanding the library</h3>Looking at different pros and cons we will talk about how to extend SeleniumLibrary as well as building a new library and the Plugin API. We will show a small exmample. And we will discuss overriding existing keywords with functionality not covered by Selenium.<h3 class='mb-0 mt-2'>EventFiringWebDriver</h3>Using and abusing EventFiringWebDriver for monitoring events and how they affect the interactions with SUT will be covered.<h3 class='mb-0 mt-2'>Page Objects</h3>What are page objects and where it might be useful.<h3 class='mb-0 mt-2'>Python Page objects verses SeleniumLibrary</h3>Looking inside of a page object library and how to build one.<h3 class='mb-0 mt-2'>Checking for time of tests</h3>We will talk about verifying and reacting to execution times of tests/keywords/suites either via tags or the separate Timer library.<h3 class='mb-0 mt-2'>Using Javascript to interact with SUT</h3>Extending SeleniumLibrary with new keywords where functionality is implemented in Javascript.<h2 class='no-arrow mb-3 mt-5'>Learning Outcomes</h2>At the end of the workshop, user should have broad overview of advanced features of SeleniumLibrary, web automation and ways to extend and debug test tooling.<h2 class='no-arrow mb-3 mt-5'>Target Audience</h2>This workshop is for people with previous hands on experience with testing in Robot Framework & SeleniumLibrary. Students should already have experience testing web applications, know how to identify locators for webelements and validate those loctors, and feel comfortable working with SeleniumLibrary. Although the course will take a measured pace through the material, students should be prepared for advanced topics that will be thoroughly explained.<br><br>This workshop will be presented in English with two presentors, both who are bi-lingual in Finnish and English.<h2 class='no-arrow mb-3 mt-5'>Prerequisites</h2>* All participates will need to bring a laptop preconfigured to the workshop.<br>* Particapte must have access to add and modify software on their laptops.<br>* Detailed setup instructions will be shared couple of weeks before workshop day.<br>* Configure your laptops well before the workshop day<br><br>Any special needs should be requested through the conference organizers, at best two weeks prior to the workshop. We will do our best to accomidate any needs and will communicate back either our ability or inability to meet those needs.",
                   bio: /*`
                   <h3 class='mb-0 mt-4'>Ed Manlove</h3>
                   Ed Manlove has been a part of the Robot Framework community since 2011. He inherited the leadership of the Selenium2Library project from Ryan Tomac sharing it with Jeremy Johnson and passing on that role to Tatu Aalto. He is the author of a couple libraries dealing with timing issues within AJAX enabled websites. Ed is currently a Senior Software Test Engineer at Cox Automotive testing with Robot Framework and taught several teams how to test with Robot Framework. A member of the Selenium user community Ed has presented at the Selenium Conference, ran an unconference focusing on user issues, and volunteered at the conferences (even being a maître d').
-                  */`<h3 class='mb-0 mt-5'>Tatu Aalto</h3>
-                  Tatu Aalto is the current lead developer of the <a href='https://github.com/robotframework/SeleniumLibrary' target='blank'>SeleniumLibrary</a> and he has been working with Robot Framework since 2011. In the 2011 he was a regular user, by sending many questions and problems to the community. After some time Tatu started to answer questions  send by other users and he did provide his very first pull request to the Robot Framework core in 2012. Tatu has been active community member all these years and 2016 he started as an SeleniumLibrary lead developer.<br><br>Tatu has used the Robot Framework in several work places to to guide and aid companies in their test automation efforts. Currently he is working at F-Secure as a Software Developer In Test, automating windows antivirus client for business users.` ,
-                  imgUrl: ["Tatu_Aalto.jpg"]
+                  */ `<h3 class='mb-0 mt-5'>Tatu Aalto</h3>
+                  Tatu Aalto is the current lead developer of the <a href='https://github.com/robotframework/SeleniumLibrary' target='blank'>SeleniumLibrary</a> and he has been working with Robot Framework since 2011. In the 2011 he was a regular user, by sending many questions and problems to the community. After some time Tatu started to answer questions  send by other users and he did provide his very first pull request to the Robot Framework core in 2012. Tatu has been active community member all these years and 2016 he started as an SeleniumLibrary lead developer.<br><br>Tatu has used the Robot Framework in several work places to to guide and aid companies in their test automation efforts. Currently he is working at F-Secure as a Software Developer In Test, automating windows antivirus client for business users.`,
+                  imgUrl: ["Tatu_Aalto.jpg"],
                 },
-                { type: "workshop",
-                  author: "Pekka Klärck",
-                  title: "🇬🇧 Extending Robot Framework (Advanced) [Finland/EN]",
-                  description: "In this workshop you will learn how to extend Robot Framework using various different interfaces.",
-                  descriptionExpanded: "This workshop is for you if you already know basics of using Robot Framework, preferably also basics of writing tests libraries, and want to take your skills to the next level. These skills make it easier to adapt the framework to your own needs in different contexts.<br><br>The workshop is 100% hands-on, no slides, learn-by-doing. In addition to learning from the person who has designed these powerful APIs, you have a chance to ask hard questions related to Robot Framework from its creator.<br><br>Participants should know basics of Robot Framework, including test library API, and Python programming. Participants should bring their own laptop with Python 3.6 or newer and Robot Framework 3.2 or newer installed. They should also have adequate admin rights to install possible additional Python modules using pip. A text editor or an IDE for writing Python code and Robot Framework tests is needed as well.<br><br><h3>Recommended for advanced users.</h3><h3>Max number of participants: 16</h3>",
-                  bio: "Pekka Klärck is a tester, developer and independent consultant from Finland. He is the original author and lead developer of Robot Framework.",
-                  imgUrl: ["Pekka_Klarck.jpg"]
-                },
-                { type: "workshop",
-                  author: "Christoph Singer",
-                  title: "🇩🇪 Einführung Webautomatisierung mit RF Browser [Germany/DE]",
-                  description: "Einführung in die Webautomatisierung mit der brandneuen Robot Framework Browser library für alle Interessierte.",
-                  descriptionExpanded: "Grundlagenschulung in Webautomatisierung. Von XPATH bis CSS Selektoren und von 'Open Browser' bis 'Execute Javascript' wird in diesem Grundlagen-Workshop alle nötige Basiswissen vermittelt was zum Einstieg in die Browserautomatisierung notwendig ist. Unter Nutzung der neuen Browser library werden wir ein Beispiel Testobjekt automatisieruen und dabei typische Probleme lösen lernen.",
-                  bio: "<h3 class='mb-0 mt-4'>Christoph Singer</h3>Christoph Singer is a Consultant for Test Automation in Germany.",
-                  imgUrl: ["ChristophSinger.jpg"]
-                },
-                { type: "workshop",
-                  author: "Juho Saarinen",
-                  title: "🇬🇧 Remote library usage and advantages [Finland/EN]",
-                  description: "Learn first basics about remote library interface, and then how to make own libraries that utilize it.",
-                  descriptionExpanded: "At the latter part of the day we go through running remote libraries really remote (meaning not on “my machine”), and what advantages that brings.<br><br>Also showing what to do with the Java libraries when Python 2 support is dropped and no suitable replacement available.",
-                  bio: "Juho has been doing testing since 2005. He is interested of testing and it's efficiency, and eager to make all kind of testings as soon as possible.<br><br>Juho maintains various java-based RF libraries.<br><br>His 'normal working day' to contain also application development and various operations related things in addition to testing.",
-                  imgUrl: ["Juho_Saarinen.jpg"]
-                },
-
-              ]
-            }
-          }
+              ],
+            },
+          },
         },
         /*{
           title: "Sprints",
@@ -450,8 +529,7 @@ export default {
             text: {
               twitter: false,
               header: "Workshop Code of Conduct",
-              text:
-                `
+              text: `
 <p>All attendees, speakers, sponsors and volunteers at our workshops are required to agree with the following
     <a href='http://confcodeofconduct.com' target='blank'>code of conduct</a>.
     Organisers will enforce this code throughout the event.
@@ -466,12 +544,12 @@ export default {
     organisers.<br>
     <br>
     For more detailed code of conduct, see: <a href='http://confcodeofconduct.com' target='blank'>confcodeofconduct.com</a>
-</p>`
-            }
-          }
+</p>`,
+            },
+          },
         },
-      ]
-    }
-  }
-}
+      ],
+    };
+  },
+};
 </script>
