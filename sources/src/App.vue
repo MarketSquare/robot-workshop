@@ -45,7 +45,7 @@ export default {
                 We have gathered experts from the Robot Framework Community to hold great workshops.
                 The revenues of the day will be used entirely for the further development of Robot Framework.</p>
                 <p>Special thanks go to all workshop organizers who will share their experience with the community.</p>
-                <h2 style="margin-left: 1.5rem !important;">Thank you very much! You are the best ❤️ </h2></p>`,
+                <h2>Thank you very much! You are the best ❤️ </h2></p>`,
             },
           },
         },
@@ -395,7 +395,7 @@ export default {
                   sponsorLogo: require("@/assets/img/sponsors/imbus.png"),
                 },
                 {
-                  type: "workshop",
+                  type: "workshop-last",
                   author: "Mikko Korpela",
                   start: "2020-12-02T15:00:00+0000",
                   end: "2020-12-02T19:00:00+0000",
@@ -462,7 +462,7 @@ export default {
                   imgUrl: ["Pekka_Klarck.jpg"],
                 },
                 {
-                  type: "workshop",
+                  type: "workshop-last",
                   author: "Tatu Aalto",
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T22:00:00+0000",

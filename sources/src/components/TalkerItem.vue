@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="header === '' && type === 'workshop' ? 'mb-5 pb-4' : 'mb-5'"
+    :class="header === '' && (type === 'workshop' || type === 'workshop-last') ? 'mb-5 pb-4' : 'mb-5'"
     :style="
       header === '' &&
       /*author !== 'Asko Soukka' &&
@@ -12,7 +12,7 @@
   >
     <div v-if="margin" class="mt-5" />
     <div v-if="header !== ''">
-      <h2 class="white no-arrow mt-4">{{ header }}</h2>
+      <h2 class="no-arrow mt-5">{{ header }}</h2>
     </div>
     <div v-else class="ml-0">
       <h3 class="white mb-0 ml-4" v-if="author !== ''">

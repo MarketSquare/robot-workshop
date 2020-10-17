@@ -146,7 +146,7 @@ h2, .link-title {
 h2:not(.no-arrow)::before {
   content: '> ';
   color: #1E88E5;
-  position: absolute;
+  /*position: absolute;*/
   left: 1rem;
 }
 
