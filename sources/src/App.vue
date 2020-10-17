@@ -111,6 +111,11 @@ export default {
               twitter: false
             },
             users: [
+              {
+                title: "Humanitec GmbH",
+                href: "https://www.humanitec.com",
+                img: require("@/assets/img/sponsors/humanitec.png")
+              },
               /*{
                 title: "imbus AG",
                 href: "https://www.imbus.de",
