@@ -46,8 +46,10 @@
             <div
               class="col-lg-12 word-break ml-4 pr-4 mt-2 workshop-description"
             >
-              <p>Start: {{ utc_time(start).format("LT") }} (UTC) <span class="local-time">/ {{ local_time(start).format("LT") }} ({{local_tz()}})</span><br>
+              <p>
+              Start: {{ utc_time(start).format("LT") }} (UTC) <span class="local-time">/ {{ local_time(start).format("LT") }} ({{local_tz()}})</span><br>
               End: {{ utc_time(end).format("LT") }} (UTC) <span class="local-time">/ {{ local_time(end).format("LT") }} ({{local_tz()}})</span></p>
+              <a v-if="pretixid !== ''" :href="'https://pretix.eu/robocon/WWWW2020/' + pretixid" target="blank" ><h3>&gt; Tickets</h3></a>
 
               <p v-html="description"></p>
               <p v-html="descriptionExpanded"></p>
@@ -109,12 +111,16 @@
 </template>
 
 <script>
-import moment from 'moment-timezone';
+import moment from "moment-timezone";
 
 export default {
   name: "TalkerItem",
   props: {
     title: {
+      type: String,
+      default: "",
+    },
+    pretixid: {
       type: String,
       default: "",
     },
@@ -173,7 +179,6 @@ export default {
   },
   data: () => ({
     expanded: false,
-
   }),
   watch: {
     expanded: {
@@ -197,10 +202,9 @@ export default {
     moment,
     local_time,
     utc_time,
-    local_tz
+    local_tz,
   },
 };
-
 
 function utc_time(dataTime) {
   var locale = window.navigator.userLanguage || window.navigator.language;
@@ -217,5 +221,4 @@ function local_time(dataTime) {
 function local_tz() {
   return moment.tz.guess();
 }
-
 </script>

@@ -28,7 +28,8 @@
           :sponsor-logo="talk.sponsorLogo"
           :sponsor-url="talk.sponsorUrl"
           :start="talk.start"
-          :end="talk.end"/>
+          :end="talk.end"
+          :pretixid="talk.pretixid"/>
       </div>
     </div>
     <div v-else>

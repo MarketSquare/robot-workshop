@@ -129,7 +129,7 @@ export default {
             ],
           },
         },
-        /*{
+        {
           title: "Tickets",
           text_block: false,
           text_block_centered: true,
@@ -140,29 +140,12 @@ export default {
               twitter: false,
               header: "Tickets",
               text:
-                '<p><a href="https://www.lyyti.in/Robocon_2020_6339" target="blank">Tickets available here!</a></p> <table style="width: 100%; display: flex; margin-top: 10px"><tr><th></th><th>1 day</th><th>2 days</th><th>Available until</th></tr><tr><td><del>Blind Robot</del></td><td>-</td><td><del>600€</del></td><td><del>2019-09-30</del></td></tr><tr><td><del>Early Robot</del></td><td><del>600€</del></td><td><del>900€</del></td><td><del>2019-12-31</del></td></tr><tr><td>Late Robot</td><td>800€</td><td>1200€</td><td>2020-01-15</td></tr></table><br><p>All prices are exclusive of 24 % VAT. <a href="#workshops">Workshop</a> tickets are sold separately.</p>'
-            }
-          }
-        },*/
-        {
-          title: "Workshops",
-          text_block: false,
-          text_block_centered: true,
-          tab_box: false,
-          feature_box: false,
-          user_box: false,
-          user_box_centered: false,
-          data: {
-            text: {
-              twitter: false,
-              header: "Workshops",
-              text: `<p>Date: ${utc_time("2020-12-02T00:00:00+0000").format("LL")}<br>Location: The World Wide Web.<br>
-              Detailed information will be sent to workshops participants separately.<br>
-              <br>Ticket sale: ${utc_time("2020-11-04T08:00:00+0000").format("LLL")} (UTC) <span class="local-time">${local_time("2020-12-02T08:00:00+0000").format("LT")} (${local_tz()})</span></p>
-              <p>
-              Prices:<br>
-              <br>
-              Workshops in East Asia / Oceania time zones (UTC +12 to UTC +8):</p>
+                `
+              <div><p><a href="https://pretix.eu/robocon/WWWW2020" target="blank">Tickets will be available here!</a>
+              <br>Ticket sale: ${utc_time("2020-11-04T08:00:00+0000").format("L")} ${utc_time("2020-11-04T08:00:00+0000").format("LT")} (UTC) <span class="local-time">${local_time("2020-12-02T08:00:00+0000").format("LT")} (${local_tz()})</span></p>
+
+              <p>Workshops in East Asia / Oceania time zones (UTC +12 to UTC +8):</p>
+              
               <table style="width: 100%; display: flex; margin-top: 0; margin-bottom: 5px">
                 <tr>
                   <th></th>
@@ -225,16 +208,38 @@ export default {
                   <td>300€</td>
                 </tr>
               </table>
-              <p style="font-size: 0.95rem">*) Budget Tickets are for anyone who can not afford normal ticket price. Just send an email to <a href="mailto:rene@robotframework.org">Ren&eacute;</a> or contact me on slack @Ren&eacute; and you get a voucher code to buy a budget ticket. No questions! No explanation requested!</p>`,
+              <p style="font-size: 0.95rem">*) Budget Tickets are for anyone who can not afford normal ticket price. Just send an email to <a href="mailto:rene@robotframework.org">Ren&eacute;</a> or contact me on slack @Ren&eacute; and you get a voucher code to buy a budget ticket. No questions! No explanation requested!</p>
+              <p>All prices are exclusive of 24 % VAT.</p>
+              </div>`
+            }
+          }
+        },
+        {
+          title: "Workshops",
+          text_block: false,
+          text_block_centered: true,
+          tab_box: false,
+          feature_box: false,
+          user_box: false,
+          user_box_centered: false,
+          data: {
+            text: {
+              twitter: false,
+              header: "Workshops",
+              text: `<p>Date: ${utc_time("2020-12-02T00:00:00+0000").format("L")}<br>Location: The World Wide Web.<br>
+              Detailed information will be sent to workshops participants separately.<br>
+              </p>
+              `,
               /*<a class="col-sm-12 pl-0 mb-5 mt-3" href="https://www.lyyti.fi/reg/robocon2020workshops" target="blank">Tickets available here!</a>`,*/
               talks: [
                 { type: "workshop", header: "Half-day workshops" },
                 {
                   type: "workshop",
+                  pretixid: "239850",
                   author: "Kamal Girdher",
                   start: "2020-12-02T02:30:00+0000",
                   end: "2020-12-02T06:00:00+0000",
-                  title: "🇬🇧 Introduction to Robot framework [India/EN]",
+                  title: "🇬🇧 Introduction to Robot framework [India/English]",
                   description: "Basic workshop for robot framework beginners.",
                   descriptionExpanded: `<h3>Section 1 - Introduction & Installation</h3>
                     <b>Duration:</b> 10-15 minutes<br>
@@ -250,7 +255,7 @@ export default {
                     External resources<br>
                     Loop statements<br>
                     Conditional functions<br>
-                    <h3>SECTION 3 - SeleniumLibrary</h3>
+                    <h3>Section 3 - SeleniumLibrary</h3>
                     <b>Duration:</b> 1 Hr + 40 mins practice<br>
                     Introduction to Selenium & SeleniumLibrary<br>
                     Object Identification techniques<br>
@@ -265,10 +270,11 @@ export default {
                 },
                 {
                   type: "workshop",
+                  pretixid: "239594",
                   author: "Mikko Korpela",
                   start: "2020-12-02T07:00:00+0000",
                   end: "2020-12-02T11:00:00+0000",
-                  title: "🇫🇮 Browser kirjasto suomeksi [Finland/FI]",
+                  title: "🇫🇮 Browser kirjasto suomeksi [Finland/Suomi]",
                   description:
                     "Käpistellään yhdessä selainkirjaston avulla internetin ihmeellistä maailmaa.",
                   descriptionExpanded:
@@ -281,11 +287,12 @@ export default {
                 },
                 {
                   type: "workshop",
+                  pretixid: "239596",
                   author: "René Rohner",
                   start: "2020-12-02T08:00:00+0000",
                   end: "2020-12-02T12:00:00+0000",
                   title:
-                    "🇩🇪 Browser library für SeleniumLibrary User [Germany/DE]",
+                    "🇩🇪 Browser library für SeleniumLibrary User [Germany/Deutsch]",
                   description:
                     "Einführung in die brandneue Robot Framework Browser library für alle Nutzer*Innen der SeleniumLibrary mit Vorkenntnissen in Web-Automatisierung.",
                   descriptionExpanded:
@@ -298,11 +305,12 @@ export default {
                 },
                 {
                   type: "workshop",
+                  pretixid: "239853",
                   author: "Michael Hallik",
                   start: "2020-12-02T09:00:00+0000",
                   end: "2020-12-02T12:00:00+0000",
                   title:
-                    "🇳🇱 HTTP-level testing with the RF RequestsLibrary [Netherlands/NL]",
+                    "🇳🇱 HTTP-level testing with the RF RequestsLibrary [Netherlands/Dutch]",
                   description:
                     "In this workshop you will learn the basics of HTTP-level test automation.",
                   descriptionExpanded: `<p><b>Language:</b> Workshop will be in Dutch.</p>
@@ -340,28 +348,12 @@ export default {
                 },
                 {
                   type: "workshop",
-                  author: "Nils Balkow-Tychsen",
-                  start: "2020-12-02T09:00:00+0000",
-                  end: "2020-12-02T12:00:00+0000",
-                  title:
-                    "🇬🇧 KubeLibrary - Verify the state of objects in your Kubernetes Cluster [Germany/EN]",
-                  description:
-                    "RobotFramework library for testing Kubernetes cluster.",
-                  descriptionExpanded:
-                    "KubeLibrary is a Robot Framework test library for Kubernetes.<br><br>KubeLibrary is a wrapper for the Python Kubernetes Client. It enables you to assert the status of various objects in your Kubernetes Clusters. As the library can be integrated with any RobotFramework test suite, it is ideal to verify the testability of your System-under-Test by asserting the status of your nodes, deployments, pods, configmaps, and others Kubernetes objects before running any end to end tests.",
-                  bio:
-                    "Nils is Lead QA Engineer at Humanitec. He has worked in software testing for more than 20 years, in different industries like finance, games and developer platforms. He specializes in test automation for web apps based on Microservice Architectures.",
-                  imgUrl: ["Nils_Balkow.jpeg"],
-                  sponsorUrl: "https://www.humanitec.com",
-                  sponsorLogo: require("@/assets/img/sponsors/humanitec.png")
-                },
-                {
-                  type: "workshop",
+                  pretixid: "239854",
                   author: "Adrian Yorke",
                   start: "2020-12-02T11:00:00+0000",
                   end: "2020-12-02T14:00:00+0000",
                   title:
-                    "🇬🇧 Robot Framework Cookbook - The Journey So Far [Finland/EN]",
+                    "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Robot Framework Cookbook - The Journey So Far [Finland/British English]",
                   description:
                     "This will be a hands-on workshop exploring numerous curated test recipes from Robot Framework Cookbook.",
                   descriptionExpanded: `We will explain how the CI has been implemented for this project and how we use Robocop for linting services.
@@ -381,10 +373,11 @@ export default {
                 },
                 {
                   type: "workshop",
+                  pretixid: "239851",
                   author: "René Rohner",
                   start: "2020-12-02T13:00:00+0000",
                   end: "2020-12-02T16:00:00+0000",
-                  title: "🇩🇪 Robot Framework Advanced [Germany/DE]",
+                  title: "🇩🇪 Robot Framework Advanced [Germany/Deutsch]",
                   description:
                     "Einführung in die APIs des Robot Framework. Listener, Pre-Run-Modifier, etc. ",
                   descriptionExpanded:
@@ -396,11 +389,56 @@ export default {
                   sponsorLogo: require("@/assets/img/sponsors/imbus.png"),
                 },
                 {
+                  type: "workshop",
+                  pretixid: "239852",
+                  author: "Nils Balkow-Tychsen",
+                  start: "2020-12-02T14:00:00+0000",
+                  end: "2020-12-02T17:00:00+0000",
+                  title:
+                    "🇬🇧 KubeLibrary - Verify the state of objects in your Kubernetes Cluster [Germany/English]",
+                  description:
+                    "RobotFramework library for testing Kubernetes cluster.",
+                  descriptionExpanded:
+                    `<p><h3 class='mb-0 mt-2'>Language</h3>
+                    Workshop will be in English, Questions in German can also be answered.<br>
+                    <h3 class='mb-0 mt-2'>Required knowledge</h3>
+                    Basic knowledge of Robotframework, Basic knowledge of Kubernetes
+                    <h3 class='mb-0 mt-2'>Description</h3>
+                    In this workshop you will learn how to connect from your robot tests to a k8s cluster. Feel free to bring your own GKE/EKS/AKS cluster or work with a local cluster in K3S/KinD/MiniKube. You will build your own test suite to assert objects in your cluster. Finally we'll go over contribution to the KubeLibrary.`,
+                  bio:
+                    "Nils is Lead QA Engineer at Humanitec. He has worked in software testing for more than 20 years, in different industries like finance, games and developer platforms. He specializes in test automation for web apps based on Microservice Architectures.",
+                  imgUrl: ["Nils_Balkow.jpeg"],
+                  sponsorUrl: "https://www.humanitec.com",
+                  sponsorLogo: require("@/assets/img/sponsors/humanitec.png")
+                },
+                {
+                  type: "workshop",
+                  pretixid: "239858",
+                  author: "TBA",
+                  start: "2020-12-02T14:00:00+0000",
+                  end: "2020-12-02T18:00:00+0000",
+                  title:
+                    "🇬🇧 RPA INTRODUCTION WITH RF AND RPAFramework [Finnland/English] ",
+                  description:
+                    "RPA Framework is a collection of open-source libraries and tools for Robotic Process Automation (RPA), and it is designed to be used with both Robot Framework and Python.",
+                  descriptionExpanded:
+                    `<p>
+                    The goal is to offer well-documented and actively maintained core libraries for Software Robot Developers.<br>
+                    <br>
+                    This workshops give you an introduction to the basics of RPA and how to use Robot Framework for that usecase.</p>`,
+                  bio:
+                    "",
+                  imgUrl: [],
+                  sponsorUrl: "https://robocorp.com/",
+                  sponsorLogo: require("@/assets/img/sponsors/robocorp.png")
+                },
+                {
                   type: "workshop-last",
+                  pretixid: "239595",
                   author: "Mikko Korpela",
                   start: "2020-12-02T15:00:00+0000",
                   end: "2020-12-02T19:00:00+0000",
-                  title: "🇬🇧 Pabot Introduction / Tipps & Tricks [Finland/EN]",
+                  title: "🇬🇧 Pabot Introduction / Tipps & Tricks [Finland/English]",
                   description:
                     "A hands-on introduction to parallel test execution with Robot Framework and Pabot.",
                   descriptionExpanded:
@@ -412,6 +450,8 @@ export default {
                   sponsorLogo: require("@/assets/img/sponsors/reaktor.png"),
                 },
 
+
+
                 {
                   type: "workshop",
                   header: "Full-day workshops",
@@ -419,10 +459,11 @@ export default {
                 },
                 {
                   type: "workshop",
+                  pretixid: "239857",
                   author: "Juho Saarinen",
                   start: "2020-12-02T07:00:00+0000",
                   end: "2020-12-02T15:00:00+0000",
-                  title: "🇬🇧 Remote library usage and advantages [Finland/EN]",
+                  title: "🇬🇧 Remote library usage and advantages [Finland/English]",
                   description:
                     "Learn first basics about remote library interface, and then how to make own libraries that utilize it.",
                   descriptionExpanded:
@@ -433,11 +474,12 @@ export default {
                 },
                 {
                   type: "workshop",
+                  pretixid: "239856",
                   author: "Christoph Singer",
                   start: "2020-12-02T08:00:00+0000",
                   end: "2020-12-02T16:00:00+0000",
                   title:
-                    "🇩🇪 Einführung Webautomatisierung mit RF Browser [Germany/DE]",
+                    "🇩🇪 Einführung Webautomatisierung mit RF Browser [Germany/Deutsch]",
                   description:
                     "Einführung in die Webautomatisierung mit der brandneuen Robot Framework Browser library für alle Interessierte.",
                   descriptionExpanded:
@@ -450,10 +492,11 @@ export default {
                 },
                 {
                   type: "workshop",
+                  pretixid: "239855",
                   author: "Pekka Klärck",
-                  start: "2020-12-02T09:00:00+0000",
-                  end: "2020-12-02T17:00:00+0000",
-                  title: "🇬🇧 Extending Robot Framework (Advanced) [Finland/EN]",
+                  start: "2020-12-02T14:00:00+0000",
+                  end: "2020-12-02T21:00:00+0000",
+                  title: "🇬🇧 Extending Robot Framework (Advanced) [Finland/English]",
                   description:
                     "In this workshop you will learn how to extend Robot Framework using various different interfaces.",
                   descriptionExpanded:
@@ -464,10 +507,11 @@ export default {
                 },
                 {
                   type: "workshop-last",
+                  pretixid: "239849",
                   author: "Tatu Aalto",
                   start: "2020-12-02T14:00:00+0000",
-                  end: "2020-12-02T22:00:00+0000",
-                  title: "🇬🇧 SeleniumLibrary (Advanced) [Finland/EN]",
+                  end: "2020-12-02T21:00:00+0000",
+                  title: "🇬🇧 SeleniumLibrary (Advanced) [Finland/English]",
                   description:
                     "Techniques and tooling to ease up web testing and automation by expert developers and maintainer of the SeleniumLibrary. If you need to beef up your Selenium tests, this is the course for you.",
                   descriptionExpanded:

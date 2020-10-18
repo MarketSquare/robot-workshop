@@ -44,8 +44,8 @@
           vouchers.<br>
             With these voucher codes, you enable the owner of this code to buy a ticket before the public ticket sales starts.<br>
             <br>
-            <b>Voucher Sale:</b> October 26st 2020<br>
-            <b>Normal Ticket Sale:</b> November 4th 2020<br>
+            <b>Voucher Sale:</b> {{ utc_time("2020-10-26T08:00:00+0000").format("L") }} {{ utc_time("2020-10-26T08:00:00+0000").format("LT") }} (UTC) <span class="local-time">/ {{ local_time("2020-10-26T08:00:00+0000").format("LT") }} ({{local_tz()}})</span><br>
+            <b>Normal Ticket Sale:</b> {{ utc_time("2020-11-04T08:00:00+0000").format("L") }} {{ utc_time("2020-11-04T08:00:00+0000").format("LT") }} (UTC) <span class="local-time">/ {{ local_time("2020-11-04T08:00:00+0000").format("LT") }} ({{local_tz()}})</span><br>
             <br>
             <a href="mailto:mikko@robotframework.org">mikko@robotframework.org</a>
             </p>
@@ -56,6 +56,8 @@
 </template>
 
 <script>
+import moment from 'moment-timezone';
+
 export default {
   props: ["data"],
   data: () => ({
@@ -73,5 +75,28 @@ export default {
       },
     },
   },
+  methods: {
+    moment,
+    local_time,
+    utc_time,
+    local_tz
+  },
 };
+
+
+function utc_time(dataTime) {
+  var locale = window.navigator.userLanguage || window.navigator.language;
+  moment.locale(locale);
+  return moment.tz(dataTime, "Africa/Freetown");
+}
+
+function local_time(dataTime) {
+  var locale = window.navigator.userLanguage || window.navigator.language;
+  moment.locale(locale);
+  return moment.tz(dataTime, moment.tz.guess());
+}
+
+function local_tz() {
+  return moment.tz.guess();
+}
 </script>
