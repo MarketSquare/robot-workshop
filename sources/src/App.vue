@@ -21,7 +21,7 @@
 </template>
 <script>
 import PageBlock from "@/Components/PageBlock.vue";
-import moment, { locale } from 'moment-timezone';
+import moment, { locale } from "moment-timezone";
 
 export default {
   components: {
@@ -139,10 +139,15 @@ export default {
             text: {
               twitter: false,
               header: "Tickets",
-              text:
-                `
+              text: `
               <div><p><a href="https://pretix.eu/robocon/WWWW2020" target="blank">Tickets will be available here!</a>
-              <br>Ticket sale: ${utc_time("2020-11-04T08:00:00+0000").format("L")} ${utc_time("2020-11-04T08:00:00+0000").format("LT")} (UTC) <span class="local-time">${local_time("2020-12-02T08:00:00+0000").format("LT")} (${local_tz()})</span></p>
+              <br>Ticket sale: ${utc_time("2020-11-04T08:00:00+0000").format(
+                "L"
+              )} ${utc_time("2020-11-04T08:00:00+0000").format(
+                "LT"
+              )} (UTC) <span class="local-time">${local_time(
+                "2020-12-02T08:00:00+0000"
+              ).format("LT")} (${local_tz()})</span></p>
 
               <p>Workshops in East Asia / Oceania time zones (UTC +12 to UTC +8):</p>
               
@@ -210,9 +215,9 @@ export default {
               </table>
               <p style="font-size: 0.95rem">*) Budget Tickets are for anyone who can not afford normal ticket price. Just send an email to <a href="mailto:rene@robotframework.org">Ren&eacute;</a> or contact me on slack @Ren&eacute; and you get a voucher code to buy a budget ticket. No questions! No explanation requested!</p>
               <p>All prices are exclusive of 24 % VAT.</p>
-              </div>`
-            }
-          }
+              </div>`,
+            },
+          },
         },
         {
           title: "Workshops",
@@ -226,7 +231,9 @@ export default {
             text: {
               twitter: false,
               header: "Workshops",
-              text: `<p>Date: ${utc_time("2020-12-02T00:00:00+0000").format("L")}<br>Location: The World Wide Web.<br>
+              text: `<p>Date: ${utc_time("2020-12-02T00:00:00+0000").format(
+                "L"
+              )}<br>Location: The World Wide Web.<br>
               Detailed information will be sent to workshops participants separately.<br>
               </p>
               `,
@@ -398,8 +405,7 @@ export default {
                     "🇬🇧 KubeLibrary - Verify the state of objects in your Kubernetes Cluster [Germany/English]",
                   description:
                     "RobotFramework library for testing Kubernetes cluster.",
-                  descriptionExpanded:
-                    `<p><h3 class='mb-0 mt-2'>Language</h3>
+                  descriptionExpanded: `<p><h3 class='mb-0 mt-2'>Language</h3>
                     Workshop will be in English, Questions in German can also be answered.<br>
                     <h3 class='mb-0 mt-2'>Required knowledge</h3>
                     Basic knowledge of Robotframework, Basic knowledge of Kubernetes
@@ -409,7 +415,7 @@ export default {
                     "Nils is Lead QA Engineer at Humanitec. He has worked in software testing for more than 20 years, in different industries like finance, games and developer platforms. He specializes in test automation for web apps based on Microservice Architectures.",
                   imgUrl: ["Nils_Balkow.jpeg"],
                   sponsorUrl: "https://www.humanitec.com",
-                  sponsorLogo: require("@/assets/img/sponsors/humanitec.png")
+                  sponsorLogo: require("@/assets/img/sponsors/humanitec.png"),
                 },
                 {
                   type: "workshop",
@@ -421,16 +427,14 @@ export default {
                     "🇬🇧 RPA INTRODUCTION WITH RF AND RPAFramework [Finnland/English] ",
                   description:
                     "RPA Framework is a collection of open-source libraries and tools for Robotic Process Automation (RPA), and it is designed to be used with both Robot Framework and Python.",
-                  descriptionExpanded:
-                    `<p>
+                  descriptionExpanded: `<p>
                     The goal is to offer well-documented and actively maintained core libraries for Software Robot Developers.<br>
                     <br>
                     This workshops give you an introduction to the basics of RPA and how to use Robot Framework for that usecase.</p>`,
-                  bio:
-                    "",
+                  bio: "",
                   imgUrl: [],
                   sponsorUrl: "https://robocorp.com/",
-                  sponsorLogo: require("@/assets/img/sponsors/robocorp.png")
+                  sponsorLogo: require("@/assets/img/sponsors/robocorp.png"),
                 },
                 {
                   type: "workshop-last",
@@ -438,7 +442,8 @@ export default {
                   author: "Mikko Korpela",
                   start: "2020-12-02T15:00:00+0000",
                   end: "2020-12-02T19:00:00+0000",
-                  title: "🇬🇧 Pabot Introduction / Tipps & Tricks [Finland/English]",
+                  title:
+                    "🇬🇧 Pabot Introduction / Tipps & Tricks [Finland/English]",
                   description:
                     "A hands-on introduction to parallel test execution with Robot Framework and Pabot.",
                   descriptionExpanded:
@@ -449,8 +454,6 @@ export default {
                   sponsorUrl: "https://www.reaktor.com/",
                   sponsorLogo: require("@/assets/img/sponsors/reaktor.png"),
                 },
-
-
 
                 {
                   type: "workshop",
@@ -463,7 +466,8 @@ export default {
                   author: "Juho Saarinen",
                   start: "2020-12-02T07:00:00+0000",
                   end: "2020-12-02T15:00:00+0000",
-                  title: "🇬🇧 Remote library usage and advantages [Finland/English]",
+                  title:
+                    "🇬🇧 Remote library usage and advantages [Finland/English]",
                   description:
                     "Learn first basics about remote library interface, and then how to make own libraries that utilize it.",
                   descriptionExpanded:
@@ -496,7 +500,8 @@ export default {
                   author: "Pekka Klärck",
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T21:00:00+0000",
-                  title: "🇬🇧 Extending Robot Framework (Advanced) [Finland/English]",
+                  title:
+                    "🇬🇧 Extending Robot Framework (Advanced) [Finland/English]",
                   description:
                     "In this workshop you will learn how to extend Robot Framework using various different interfaces.",
                   descriptionExpanded:
@@ -504,6 +509,8 @@ export default {
                   bio:
                     "Pekka Klärck is a tester, developer and independent consultant from Finland. He is the original author and lead developer of Robot Framework.",
                   imgUrl: ["Pekka_Klarck.jpg"],
+                  sponsorUrl: "https://eliga.fi/",
+                  sponsorLogo: require("@/assets/img/sponsors/Eliga.png"),
                 },
                 {
                   type: "workshop-last",
@@ -526,50 +533,6 @@ export default {
             },
           },
         },
-        /*{
-          title: "Sprints",
-          text_block: false,
-          text_block_centered: true,
-          tab_box: false,
-          feature_box: false,
-          data: {
-            text: {
-              twitter: false,
-              header: "Sprints",
-              text: "<div><p>Date: January 17, 2020<br>Start time: 10:00<br>Location: Eficode, <a href='https://goo.gl/maps/h3FYLAHAW8TCvadX6' target='blank'>Pohjoinen Rautatiekatu 25</a><br><br>After the main conference we still have development sprints on Friday. Sprints are for you if you want to contribute to some existing project in Robot Framework ecosystem, have a project or project idea you'd like to work with others, or just want to meet with other Robot Framework users and developers.<br><br>Sprints are free of charge and open for everyone. No sign-up is needed so you can just pop by, but please bring your conference badge and show it at the door. Joining sprints is possible also if you cannot participate the conference, but please send an email to info@robocon.io beforehand in that case. Lunch and beverages will be provided and we'll also have sauna afterwards!<br><br>Some existing projects that are known to be present at the sprints are listed below. If you have a project to be added to the list, send an email to info@robocon.io or simply come to the sprints and present your project there.<br><br>- <a target='blank' href='https://github.com/robotframework/robotframework'>Robot Framework</a><br>- <a target='blank' href='https://github.com/robotframework/SeleniumLibrary/'>SeleniumLibrary</a><br>- <a target='blank' href='https://robots-from-jupyter.github.io/'>RobotLab</a><br>- <a target='blank' href='https://github.com/Snooz82/robotframework-datadriver'>DataDriver</a><br>- <a target='blank' href='https://github.com/Omenia/robotframework-whitelibrary'>WhiteLibary</a><br>- <a target='blank' href='https://robotframework.org/MavenPlugin/'>MavenPlugin</a> and other Java tooling<br>- <a target='blank' href='https://github.com/bulkan/robotframework-requests'>RequestsLibrary</a><br><br>Project maintainers are advised to add common <code>good first issue</code> and <code>help wanted</code> labels to issues they believe are good for new contributors and to issues they'd especially like someone to help with, respectively. Participants can use these labels to find suitable issues for them, but they are obviously free to work with anything they feel interesting. Many of the tasks are likely to involve coding, but there certainly are also non-coding tasks like testing, documentation and work with infrastructure like CI.</p> <p>If you are new to contributing to open source, we recommend you to take a look at the <a target='blank' href='https://opensource.guide/how-to-contribute/'>How to Contribute to Open Source</a> guide. Individual projects typically also have their own contribution guidelines that you can find via their project pages. We'll also have a dedicated session for new contributors at the sprints.<br><br><p><h3 class='mb-0 mt-4'>ROUGH AGENDA:</h3></p><p>10:00 - Welcome! Introduction to participating projects and tasks they have available.</p> <p>10:30 - Development! Participants can work with tasks they find interesting either alone, in pairs, or in small groups. Project leaders help as much as they can.</p><p>10:30 - Introduction to contributing to open source session for interested new contributors.</p><p>12:30 - Lunch (most likely pizza).</p><p>15:30 - Presenting what has been accomplished.</p> <p>16:00 -  Official program ends. Sauna opens. Coding can continue.</p></div>"
-            }
-          }
-        },
-        {
-          title: "Arrival",
-          text_block: false,
-          text_block_centered: true,
-          tab_box: false,
-          feature_box: false,
-          data: {
-            text: {
-              twitter: false,
-              header: "Arrival",
-              text:
-                "<div><p>The main conference venue is Bio Rex, <a href='https://goo.gl/maps/gnd4duvnunP2' target='blank'>Mannerheimintie 22-24</a>. Pre-conference workshops are organize at Siili, <a href='https://goo.gl/maps/CPUAifmpZ56sTUaH9' target='blank'>Ruoholahdenkatu 21</a>, and post-conference sprints at Eficode, <a href='https://goo.gl/maps/h3FYLAHAW8TCvadX6' target='blank'>Pohjoinen Rautatiekatu 25</a>.</p><h2 class='no-arrow'>TRANSPORTATION: AIRPORT</h2><p>The distance from Helsinki airport to Bio Rex is 21 km. Trains marked as “I” and “P” go from the airport to Helsinki Central Station. From the Helsinki Central Station it is only 5 minutes' walk to Bio Rex.</p><p>Buses operate between Helsinki airport and Helsinki Central Station. The bus stops for both arriving and departing buses are located in front of the terminals (T1 & T2). Finnair bus goes from airport to Eliel Square and bus nr. 615 goes from airport to Rautatientori. There is a short walk to Bio Rex from both Eliel Square (300 meters) and Rautatientori (350 meters).</p><p>Time estimation for the journey is 40 minutes by bus and about 30-35 minutes by train or taxi. Taxi cost is approximately 40-55 euros depending on the traffic and the taxi company.</p><p>At Helsinki airport there are informative signage for trains, buses and taxis to ensure that you won’t get lost.</p><h2 class='no-arrow'>TRANSPORTATION: RAILWAY STATION</h2><p>Railway station is only 5 minutes’ walk (350 meters) from Bio Rex. To reach Siili's and Eficode's offices you can either walk or go one stop to Kamppi with the metro departing from Railway station.</p><h2 class='no-arrow'>TRANSPORTATION: BUS STATION</h2><p>Intercity bus connections from Kamppi bus station (400 meters away) and bus connections for Helsinki's internal traffic from Rautatientori (350 meters) located close to Helsinki Central Station. Buses to Helsinki Airport leave from Eliel Square (300 meters) and Rautatientori (350 meters).</p></div>"
-            }
-          }
-        },
-        {
-          title: "Accommodation",
-          text_block: false,
-          text_block_centered: true,
-          tab_box: false,
-          feature_box: false,
-          data: {
-            text: {
-              twitter: false,
-              header: "Accommodation",
-              text:
-                "<div><h2 class='no-arrow'>Hotel deals</h2><p><a href='https://www.sokoshotels.fi/en/helsinki/sokos-hotel-presidentti' target='blank'>Original Sokos Hotel Presidentti</a><br>- Standard single room: 150€ / night<br>- Standard double room: 170€ / night<br>- Breakfast and Wi-Fi included<br>- Promo code will be sent after ticket purchase</p></div>"
-            }
-          }
-        },*/
         {
           title: "CoC",
           text_block: false,
@@ -581,21 +544,21 @@ export default {
               twitter: false,
               header: "Workshop Code of Conduct",
               text: `
-<p>All attendees, speakers, sponsors and volunteers at our workshops are required to agree with the following
-    <a href='http://confcodeofconduct.com' target='blank'>code of conduct</a>.
-    Organisers will enforce this code throughout the event.
-    We expect cooperation from all participants to help ensure a safe environment for everybody.<br>
-    <br>
-    Our conference is dedicated to providing a harassment-free conference experience for everyone,
-    regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body
-    size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of
-    conference participants in any form. Sexual language and imagery is not appropriate for any conference venue,
-    including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules
-    may be sanctioned or expelled from the conference without a refund at the discretion of the conference
-    organisers.<br>
-    <br>
-    For more detailed code of conduct, see: <a href='http://confcodeofconduct.com' target='blank'>confcodeofconduct.com</a>
-</p>`,
+              <p>All attendees, speakers, sponsors and volunteers at our workshops are required to agree with the following
+                <a href='http://confcodeofconduct.com' target='blank'>code of conduct</a>.
+                Organisers will enforce this code throughout the event.
+                We expect cooperation from all participants to help ensure a safe environment for everybody.<br>
+                <br>
+                Our conference is dedicated to providing a harassment-free conference experience for everyone,
+                regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body
+                size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of
+                conference participants in any form. Sexual language and imagery is not appropriate for any conference venue,
+                including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules
+                may be sanctioned or expelled from the conference without a refund at the discretion of the conference
+                organisers.<br>
+                <br>
+                For more detailed code of conduct, see: <a href='http://confcodeofconduct.com' target='blank'>confcodeofconduct.com</a>
+              </p>`,
             },
           },
         },
@@ -603,7 +566,6 @@ export default {
     };
   },
 };
-
 
 function utc_time(dataTime) {
   var locale = window.navigator.userLanguage || window.navigator.language;
