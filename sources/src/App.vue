@@ -509,7 +509,7 @@ export default {
                   bio:
                     "Pekka Klärck is a tester, developer and independent consultant from Finland. He is the original author and lead developer of Robot Framework.",
                   imgUrl: ["Pekka_Klarck.jpg"],
-                  sponsorUrl: "https://eliga.fi/",
+                  sponsorUrl: "http://eliga.fi/",
                   sponsorLogo: require("@/assets/img/sponsors/Eliga.png"),
                 },
                 {
