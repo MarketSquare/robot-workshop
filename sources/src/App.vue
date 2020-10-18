@@ -424,7 +424,7 @@ export default {
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T18:00:00+0000",
                   title:
-                    "🇬🇧 RPA INTRODUCTION WITH RF AND RPAFramework [Finnland/English] ",
+                    "🇬🇧 RPA INTRODUCTION WITH RF AND RPAFramework [Finland/English] ",
                   description:
                     "RPA Framework is a collection of open-source libraries and tools for Robotic Process Automation (RPA), and it is designed to be used with both Robot Framework and Python.",
                   descriptionExpanded: `<p>
