@@ -451,7 +451,7 @@ export default {
                   start: "2020-12-02T15:00:00+0000",
                   end: "2020-12-02T19:00:00+0000",
                   title:
-                    "🇬🇧 Pabot Introduction / Tipps & Tricks [Finland/English]",
+                    "🇬🇧 Pabot Introduction / Tips & Tricks [Finland/English]",
                   description:
                     "A hands-on introduction to parallel test execution with Robot Framework and Pabot.",
                   descriptionExpanded:
