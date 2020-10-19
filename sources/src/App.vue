@@ -150,7 +150,7 @@ export default {
               ).format("LT")} (${local_tz()})</span></p>
 
               <p>Workshops in East Asia / Oceania time zones (UTC +12 to UTC +8):</p>
-              
+
               <table style="width: 100%; display: flex; margin-top: 0; margin-bottom: 5px">
                 <tr>
                   <th></th>
@@ -352,6 +352,8 @@ export default {
                   </ul>`,
                   bio: "",
                   imgUrl: ["Michael_Hallik.jpeg"],
+                  sponsorUrl: "https://immune.it/",
+                  sponsorLogo: require("@/assets/img/sponsors/immune.png"),
                 },
                 {
                   type: "workshop",
