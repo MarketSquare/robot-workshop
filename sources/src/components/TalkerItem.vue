@@ -25,7 +25,8 @@
       <div v-else class="mt-4" />
       <a
         class="mb-0 ml-4 link-title"
-        :id="title.replace(/ /g, '-').toLowerCase()"
+        :id="title.replace(/[^a-z0-9]/gmi, '').replace(/\s+/g, '').toLowerCase()"
+        :name="title.replace(/[^a-z0-9]/gmi, '').replace(/\s+/g, '').toLowerCase()"
         :class="{ 'clickable-title': descriptionExpanded !== '' || url !== '' }"
         @click="
           descriptionExpanded !== '' || url !== ''
@@ -187,7 +188,7 @@ export default {
           history.pushState(
             null,
             null,
-            `#${this.title.replace(/ /g, "-").toLowerCase()}`
+            `#${this.title.replace(/[^a-z0-9]/gmi, "").replace(/\s+/g, "").toLowerCase()}`
           );
       },
     },
@@ -195,7 +196,7 @@ export default {
   mounted() {
     const anchor =
       document.URL.split("#").length > 1 ? document.URL.split("#")[1] : null;
-    if (anchor === this.title.replace(/ /g, "-").toLowerCase())
+    if (anchor === this.title.replace(/[^a-z0-9]/gmi, "").replace(/\s+/g, "").toLowerCase())
       this.expanded = true;
   },
   methods: {

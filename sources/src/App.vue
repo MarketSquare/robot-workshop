@@ -40,6 +40,9 @@ export default {
               text: `<p>We are happy to announce that the Robot Framework Foundation will be holding a World Wide Workshop Wednesday on <b>December 2nd</b> this year.</p>
                 <p>All Workshops will be held online on <a href="https://bigbluebutton.org/" target="blank">BigBlueButton</a> Servers located in Germany.<br>
                 </p>
+                <p>
+                ⚠️ Please try out our <a href="https://pretix.eu/robocon/BBB/ticket/Q0QRP/1/z39cjbggz466x9fs/call/" target="blank">Test Platform here</a>. ⚠️
+                </p>
                 <p>Due to COVID-19 we can not have an on-site conference next January and do not get revenues from that ticket sales.
                 With this workshop event we want to give you the possibility to donate for Robot Framework.
                 But you do also get a lot for your money!<br>
@@ -149,8 +152,33 @@ export default {
                 "2020-12-02T08:00:00+0000"
               ).format("LT")} (${local_tz()})</span></p>
 
-              <p>Workshops in East Asia / Oceania time zones (UTC +12 to UTC +8):</p>
+              <p>Workshops are sold in three different price zones. 
+              With these zones we try to set fair prices all around the globe.
+              The zones are selected based on the expected participants.
+              We want to create an event where everyone can afford tickets.
+            
+              <p>Workshops in price zone 1️⃣:</p>
+              <table style="width: 100%; display: flex; margin-top: 0; margin-bottom: 5px">
+                <tr>
+                  <th></th>
+                  <th>Supporter</th>
+                  <th>Standard</th>
+                  <th>Budget *</th>
+                </tr>
+                <tr>
+                  <td>Half-day</td>
+                  <td>300€</td>
+                  <td>100€</td>
+                  <td>50€</td>
+                </tr><tr>
+                  <td>Full-day</td>
+                  <td>500€</td>
+                  <td>200€</td>
+                  <td>100€</td>
+                </tr>
+              </table>
 
+              <p>Workshops in price zone 2️⃣:</p>
               <table style="width: 100%; display: flex; margin-top: 0; margin-bottom: 5px">
                 <tr>
                   <th></th>
@@ -172,28 +200,7 @@ export default {
                 </tr>
               </table>
 
-              <p>Workshops in Central Asia / India time zones (UTC +7 to UTC +4):</p>
-              <table style="width: 100%; display: flex; margin-top: 0; margin-bottom: 5px">
-                <tr>
-                  <th></th>
-                  <th>Supporter</th>
-                  <th>Standard</th>
-                  <th>Budget *</th>
-                </tr>
-                <tr>
-                  <td>Half-day</td>
-                  <td>300€</td>
-                  <td>100€</td>
-                  <td>50€</td>
-                </tr><tr>
-                  <td>Full-day</td>
-                  <td>500€</td>
-                  <td>200€</td>
-                  <td>100€</td>
-                </tr>
-              </table>
-
-              <p>Workshops in Europe / Africa / America time zones (UTC +3 to UTC -12):</p>
+              <p>Workshops in price zone 3️⃣:</p>
               <table style="width: 100%; display: flex; margin-top: 0; margin-bottom: 5px">
                 <tr>
                   <th></th>
@@ -246,7 +253,7 @@ export default {
                   author: "Kamal Girdher",
                   start: "2020-12-02T02:30:00+0000",
                   end: "2020-12-02T06:00:00+0000",
-                  title: "🇬🇧 Introduction to Robot framework [India/English]",
+                  title: "🇬🇧 Introduction to Robot framework [India/English] 1️⃣",
                   description: "Basic workshop for robot framework beginners.",
                   descriptionExpanded: `<h3>Section 1 - Introduction & Installation</h3>
                     <b>Duration:</b> 10-15 minutes<br>
@@ -281,7 +288,7 @@ export default {
                   author: "Mikko Korpela",
                   start: "2020-12-02T07:00:00+0000",
                   end: "2020-12-02T11:00:00+0000",
-                  title: "🇫🇮 Browser kirjasto suomeksi [Finland/Suomi]",
+                  title: "🇫🇮 Browser kirjasto suomeksi [Finland/Suomi] 3️⃣",
                   description:
                     "Käpistellään yhdessä selainkirjaston avulla internetin ihmeellistä maailmaa.",
                   descriptionExpanded:
@@ -294,12 +301,48 @@ export default {
                 },
                 {
                   type: "workshop",
+                  pretixid: "",
+                  author: "Liviu Avram",
+                  start: "2020-12-02T08:00:00+0000",
+                  end: "2020-12-02T12:00:00+0000",
+                  title:
+                    "🇬🇧 Mobile Automation With Robot Framework And Appium [Romania/English] 3️⃣",
+                  description:
+                    "In this workshop you will learn the basics about automating a native mobile application on Android.",
+                  descriptionExpanded:
+                    ` We will also take a quick look at iOS.<br>
+                    <h3 class='mb-0 mt-2'>Topics that will be covered<h3>
+                    <p>
+                    <ul>
+                    <li>Prerequisites for mobile Automation</li>
+                    <li>Tools and Operating systems</li>
+                    <li>How to create Android emulators with Android Studio with different versions of Android</li>
+                    <li>How to use ADB to interact with the Android device (install/uninstall applications, interact with the Android interface and more)</li>
+                    <li>How to locate elements on the mobile interface using UiautomatorViewer and Appium inspector</li>
+                    <li>How to create Appium server sessions with desired capabilities</li>
+                    <li>How to correctly launch the application on the mobile device using Robot Framework and Appium</li>
+                    <li>Create simple automation scripts for some of the application features</li>
+                    <li>Implement automation best practices for Keywords and Variables</li>
+                    <li>Overview of Android vs iOS when it comes to automation</li>
+                    <li>Tips and tricks about mobile automation</li>
+                    <li>Q&A session</li>
+                    </ul></p>
+                    `,
+                  bio:
+                    `I am a QA Engineer since 2007 and since 2015 I started automating on web, mobile and desktop with Robot Framework.<br>
+                    Since 2018 I am also a scrum master on a qa project in my company`,
+                  imgUrl: ["Liviu_Avram.png"],
+                  sponsorUrl: "https://www.pentalog.com",
+                  sponsorLogo: require("@/assets/img/sponsors/Pentalog.png"),
+                },
+                {
+                  type: "workshop",
                   pretixid: "239596",
                   author: "René Rohner",
                   start: "2020-12-02T08:00:00+0000",
                   end: "2020-12-02T12:00:00+0000",
                   title:
-                    "🇩🇪 Browser library für SeleniumLibrary User [Germany/Deutsch]",
+                    "🇩🇪 Browser library für SeleniumLibrary User [Germany/Deutsch] 3️⃣",
                   description:
                     "Einführung in die brandneue Robot Framework Browser library für alle Nutzer*Innen der SeleniumLibrary mit Vorkenntnissen in Web-Automatisierung.",
                   descriptionExpanded:
@@ -317,7 +360,7 @@ export default {
                   start: "2020-12-02T09:00:00+0000",
                   end: "2020-12-02T13:00:00+0000",
                   title:
-                    "🇳🇱 HTTP-level testing with the RF RequestsLibrary [Netherlands/Dutch]",
+                    "🇳🇱 HTTP-level testing with the RF RequestsLibrary [Netherlands/Dutch] 3️⃣",
                   description:
                     "In this workshop you will learn the basics of HTTP-level test automation.",
                   descriptionExpanded: `<p><b>Language:</b> Workshop will be in Dutch.</p>
@@ -363,12 +406,32 @@ export default {
                 },
                 {
                   type: "workshop",
+                  pretixid: "243985",
+                  author: "Hélio Guilherme",
+                  start: "2020-12-02T10:00:00+0000",
+                  end: "2020-12-02T13:00:00+0000",
+                  title:
+                    "🇬🇧 Tips and Tricks with Robot Framework IDE (RIDE) [Portugal/English] 3️⃣",
+                  description:
+                    "Introduction to Robot Framework, installation and use of internal and external libraries with RIDE.",
+                  descriptionExpanded: `In this Workshop, we'll start by installing Robot Framework and RIDE, and run some small examples on command window/shell or terminal, and then in RIDE Run tab.<br>
+                    We will explore the internal libraries with some examples, and then with external libraries see the full power of Robot Framework, and at the same time getting to know most useful RIDE features.`,
+                  bio: `Hélio Guilherme is an experienced Software Tester since 2008 when he first had contact with Robot Framework and RIDE, at Nokia Networks in Lisbon, Portugal.<br>
+                    During his work activities he used all the Robot Framework internal libraries, and other libraries like: <b>SikuliLibrary, SSHLibrary, SeleniumLibrary, RequestsLibrary and AppiumLibrary</b>.<br>
+                    He is currently the lead developer and maintainer of RIDE.<br>
+                    Professionally, he is QA Engineer at LOAD in Aveiro, Portugal (http://load.digital/), which is sponsoring his time for this Workshop.`,
+                  imgUrl: ["Helio_Guilherme.png"],
+                  sponsorUrl: "http://load.digital/",
+                  sponsorLogo: require("@/assets/img/sponsors/Load.png"),
+                },
+                {
+                  type: "workshop",
                   pretixid: "239854",
                   author: "Adrian Yorke",
                   start: "2020-12-02T11:00:00+0000",
                   end: "2020-12-02T14:00:00+0000",
                   title:
-                    "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Robot Framework Cookbook - The Journey So Far [Finland/British English]",
+                    "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Robot Framework Cookbook - The Journey So Far [Finland/British English] 3️⃣",
                   description:
                     "This will be a hands-on workshop exploring numerous curated test recipes from Robot Framework Cookbook.",
                   descriptionExpanded: `We will explain how the CI has been implemented for this project and how we use Robocop for linting services.
@@ -392,7 +455,8 @@ export default {
                   author: "René Rohner",
                   start: "2020-12-02T13:00:00+0000",
                   end: "2020-12-02T16:00:00+0000",
-                  title: "🇩🇪 Robot Framework Advanced [Germany/Deutsch]",
+                  title: 
+                    "🇩🇪 Robot Framework Advanced [Germany/Deutsch] 3️⃣",
                   description:
                     "Einführung in die APIs des Robot Framework. Listener, Pre-Run-Modifier, etc. ",
                   descriptionExpanded:
@@ -410,7 +474,7 @@ export default {
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T17:00:00+0000",
                   title:
-                    "🇬🇧 KubeLibrary - Verify the state of objects in your Kubernetes Cluster [Germany/English]",
+                    "🇬🇧 KubeLibrary - Verify state of your Kubernetes Cluster [Germany/English] 3️⃣",
                   description:
                     "RobotFramework library for testing Kubernetes cluster.",
                   descriptionExpanded: `<p><h3 class='mb-0 mt-2'>Language</h3>
@@ -432,17 +496,45 @@ export default {
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T18:00:00+0000",
                   title:
-                    "🇬🇧 RPA INTRODUCTION WITH RF AND RPAFramework [Finland/English] ",
+                    "🇬🇧 RPA with Robot Framework [Finland/English] 3️⃣",
                   description:
                     "RPA Framework is a collection of open-source libraries and tools for Robotic Process Automation (RPA), and it is designed to be used with both Robot Framework and Python.",
                   descriptionExpanded: `<p>
                     The goal is to offer well-documented and actively maintained core libraries for Software Robot Developers.<br>
                     <br>
-                    This workshops give you an introduction to the basics of RPA and how to use Robot Framework for that usecase.</p>`,
+                    This workshops give you an introduction to the basics of RPA and how to use Robot Framework for that usecase.</p>
+                    Agenda:<br>
+                    -Robocorp & introductions 00-00:15<br>
+                    -Test automation and RPA differences 00:15-00:30<br>
+                    -Building a robot with Robocorp 00:30-1:30<br>
+                    -Break 01:30-01:45<br>
+                    -Continue building / running the robot on Cloud, scheduling 01:45-2:45<br>
+                    -Wrap up & feedback 2:45-3:00<br>`,
                   bio: "",
                   imgUrl: [],
                   sponsorUrl: "https://robocorp.com/",
                   sponsorLogo: require("@/assets/img/sponsors/robocorp.png"),
+                },
+                {
+                  type: "workshop-last",
+                  pretixid: "244001",
+                  author: "Hélio Guilherme",
+                  start: "2020-12-02T15:00:00+0000",
+                  end: "2020-12-02T18:00:00+0000",
+                  title:
+                    "🇵🇹 Dicas e Truques com Robot Framework IDE (RIDE) [Portugal/Portuguese] 2️⃣",
+                  description:
+                    "Introdução ao Robot Framework, instalação e uso das bibliotecas internas e externas com o RIDE",
+                  descriptionExpanded:
+                    `Neste Workshop, começamos pela instalação do Robot Framework e do RIDE, correremos alguns pequenos exemplos na linha de comandos e no separador Run do RIDE.<br>
+                    Iremos explorar as bibliotecas internas com alguns exemplos, e depois com as bibliotecas externas veremos o potencial do Robot Framework, e ao mesmo tempo conhecer as importantes funcionalidades do RIDE.`,
+                  bio:
+                    `Hélio Guilherme é um Testador de Software desde 2008 quando teve o primeiro contacto com Robot Framework e o RIDE, na Nokia Networks em Lisboa, Portugal.<br>
+                    Durante as suas actividades profissionais, ele utilizou todas as bibliotecas internas do Robot Framework, e outras bibliotecas como sejam: SikuliLibrary, SSHLibrary, SeleniumLibrary, RequestsLibrary e AppiumLibrary.<br>
+                    Ele é presentemente o líder de desenvolvimento e manutenção do RIDE. Profissionalmente, ele é Engenheiro de Qualidade na LOAD em Aveiro, Portugal (http://load.digital/), que patroncina o seu tempo neste Workshop.`,
+                  imgUrl: ["Helio_Guilherme.png"],
+                  sponsorUrl: "http://load.digital/",
+                  sponsorLogo: require("@/assets/img/sponsors/Load.png"),
                 },
                 {
                   type: "workshop-last",
@@ -451,7 +543,7 @@ export default {
                   start: "2020-12-02T15:00:00+0000",
                   end: "2020-12-02T19:00:00+0000",
                   title:
-                    "🇬🇧 Pabot Introduction / Tips & Tricks [Finland/English]",
+                    "🇬🇧 Pabot Introduction / Tips & Tricks [Finland/English] 3️⃣",
                   description:
                     "A hands-on introduction to parallel test execution with Robot Framework and Pabot.",
                   descriptionExpanded:
@@ -475,7 +567,7 @@ export default {
                   start: "2020-12-02T07:00:00+0000",
                   end: "2020-12-02T15:00:00+0000",
                   title:
-                    "🇬🇧 Remote library usage and advantages [Finland/English]",
+                    "🇬🇧 Remote library usage and advantages [Finland/English] 3️⃣",
                   description:
                     "Learn first basics about remote library interface, and then how to make own libraries that utilize it.",
                   descriptionExpanded:
@@ -491,7 +583,7 @@ export default {
                   start: "2020-12-02T08:00:00+0000",
                   end: "2020-12-02T16:00:00+0000",
                   title:
-                    "🇩🇪 Einführung Webautomatisierung mit RF Browser [Germany/Deutsch]",
+                    "🇩🇪 Einführung Webautomatisierung mit RF Browser [Germany/Deutsch] 3️⃣",
                   description:
                     "Einführung in die Webautomatisierung mit der brandneuen Robot Framework Browser library für alle Interessierte.",
                   descriptionExpanded:
@@ -509,7 +601,7 @@ export default {
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T21:00:00+0000",
                   title:
-                    "🇬🇧 Extending Robot Framework (Advanced) [Finland/English]",
+                    "🇬🇧 Extending Robot Framework (Advanced) [Finland/English] 3️⃣",
                   description:
                     "In this workshop you will learn how to extend Robot Framework using various different interfaces.",
                   descriptionExpanded:
@@ -526,7 +618,7 @@ export default {
                   author: "Tatu Aalto",
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T21:00:00+0000",
-                  title: "🇬🇧 SeleniumLibrary (Advanced) [Finland/English]",
+                  title: "🇬🇧 SeleniumLibrary (Advanced) [Finland/English] 3️⃣",
                   description:
                     "Techniques and tooling to ease up web testing and automation by expert developers and maintainer of the SeleniumLibrary. If you need to beef up your Selenium tests, this is the course for you.",
                   descriptionExpanded:
