@@ -315,7 +315,7 @@ export default {
                   pretixid: "239853",
                   author: "Michael Hallik",
                   start: "2020-12-02T09:00:00+0000",
-                  end: "2020-12-02T12:00:00+0000",
+                  end: "2020-12-02T13:00:00+0000",
                   title:
                     "🇳🇱 HTTP-level testing with the RF RequestsLibrary [Netherlands/Dutch]",
                   description:
