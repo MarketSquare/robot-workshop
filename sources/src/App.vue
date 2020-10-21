@@ -301,7 +301,7 @@ export default {
                 },
                 {
                   type: "workshop",
-                  pretixid: "",
+                  pretixid: "244011",
                   author: "Liviu Avram",
                   start: "2020-12-02T08:00:00+0000",
                   end: "2020-12-02T12:00:00+0000",
