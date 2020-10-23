@@ -152,11 +152,11 @@ export default {
                 "2020-12-02T08:00:00+0000"
               ).format("LT")} (${local_tz()})</span></p>
 
-              <p>Workshops are sold in three different price zones. 
+              <p>Workshops are sold in three different price zones.
               With these zones we try to set fair prices all around the globe.
               The zones are selected based on the expected participants.
               We want to create an event where everyone can afford tickets.
-            
+
               <p>Workshops in price zone 1️⃣:</p>
               <table style="width: 100%; display: flex; margin-top: 0; margin-bottom: 5px">
                 <tr>
@@ -455,7 +455,7 @@ export default {
                   author: "René Rohner",
                   start: "2020-12-02T13:00:00+0000",
                   end: "2020-12-02T16:00:00+0000",
-                  title: 
+                  title:
                     "🇩🇪 Robot Framework Advanced [Germany/Deutsch] 3️⃣",
                   description:
                     "Einführung in die APIs des Robot Framework. Listener, Pre-Run-Modifier, etc. ",
@@ -516,6 +516,28 @@ export default {
                   sponsorLogo: require("@/assets/img/sponsors/robocorp.png"),
                 },
                 {
+                  type: "workshop",
+                  author: "Luca Giovenzana",
+                  start: "2020-12-02T14:00:00+0000",
+                  end: "2020-12-02T17:00:00+0000",
+                  title:
+                    "🇮🇹 HTTP api testing and RPA with RequestsLibrary [Italy/English]",
+                  description:
+                    "RPA Framework is a collection of open-source libraries and tools for Robotic Process Automation (RPA), and it is designed to be used with both Robot Framework and Python.",
+                  descriptionExpanded: `<p>
+                  This workshop is about HTTP api for direct test or as prerequisites for your end to end test automation suite.
+                  <br>
+                  You will learn:<br>
+                  - how to setup a basic API testing/rpa project using the RequestsLibrary<br>
+                  - how to handle shared session and authentication<br>
+                  - how to validate the response<br>
+                  - what to address with api testing in your test suite<br>
+                  - how to use RF for basic stress tests<br>
+                  - how to use pabot and RequestsLibrary to execute many requests in parallel<br>`,
+                  bio: "",
+                  imgUrl: [],
+                },
+                {
                   type: "workshop-last",
                   pretixid: "244001",
                   author: "Hélio Guilherme",
@@ -535,6 +557,19 @@ export default {
                   imgUrl: ["Helio_Guilherme.png"],
                   sponsorUrl: "http://load.digital/",
                   sponsorLogo: require("@/assets/img/sponsors/Load.png"),
+                },
+                {
+                  type: "workshop-last",
+                  author: "Maria Prokhorova",
+                  start: "2020-12-02T15:00:00+0000",
+                  end: "2020-12-02T18:00:00+0000",
+                  title:
+                    "🇷🇺 Практический семинар по работе с библиотекой Image Library. [Russian/Русский]",
+                  description:
+                    "На семинаре будет много практики с объяснением нюансов работы с библиотекой для анализа изображений. А также знакомство с новыми кейвордами и их использованием в задачах автоматизации тестирования графических интерфейсов.",
+                  descriptionExpanded: "",
+                  bio: "",
+                  imgUrl: [],
                 },
                 {
                   type: "workshop-last",
