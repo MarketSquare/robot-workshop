@@ -4,9 +4,9 @@
       <div
         v-for="(user, index) in data"
         :key="index"
-        class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-2 pr-lg-1 pl-lg-3 pl-md-0 pl-sm-3 p-xs-1"
+        class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mt-2 pr-lg-1 pl-lg-3 pl-md-1 pl-sm-3 p-xs-1"
       >
-        <div class="text-center p-3" :style="'height:100px'">
+        <div class="text-center" :style="'height:100px'">
           <a
             :href="user.href"
             target="blank"

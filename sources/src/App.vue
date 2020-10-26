@@ -613,6 +613,8 @@ export default {
                   bio:
                     "Juho has been doing testing since 2005. He is interested of testing and it's efficiency, and eager to make all kind of testings as soon as possible.<br><br>Juho maintains various java-based RF libraries.<br><br>His 'normal working day' to contain also application development and various operations related things in addition to testing.",
                   imgUrl: ["Juho_Saarinen.jpg"],
+                  sponsorUrl: "https://mavericks.fi/",
+                  sponsorLogo: require("@/assets/img/sponsors/mavericks.png")
                 },
                 {
                   type: "workshop",
