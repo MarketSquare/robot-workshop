@@ -143,7 +143,9 @@ export default {
               twitter: false,
               header: "Tickets",
               text: `
-              <div><p><a href="https://pretix.eu/robocon/WWWW2020" target="blank">Tickets will be available here!</a>
+              <div><p><a href="https://pretix.eu/robocon/WWWW2020" target="blank">Tickets are available here!</a>
+              <br>Supporter Tickets are available NOW!!
+              <br>
               <br>Ticket sale: ${utc_time("2020-11-04T08:00:00+0000").format(
                 "L"
               )} ${utc_time("2020-11-04T08:00:00+0000").format(
@@ -250,7 +252,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239850",
-                  author: "Kamal Girdher",
+                  author: "Kamal Girdher 🇮🇳",
                   start: "2020-12-02T02:30:00+0000",
                   end: "2020-12-02T06:00:00+0000",
                   title: "🇬🇧 Introduction to Robot framework [India/English] 1️⃣",
@@ -285,7 +287,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239594",
-                  author: "Mikko Korpela",
+                  author: "Mikko Korpela 🇫🇮",
                   start: "2020-12-02T07:00:00+0000",
                   end: "2020-12-02T11:00:00+0000",
                   title: "🇫🇮 Browser kirjasto suomeksi [Finland/Suomi] 3️⃣",
@@ -302,7 +304,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "244011",
-                  author: "Liviu Avram",
+                  author: "Liviu Avram 🇷🇴",
                   start: "2020-12-02T08:00:00+0000",
                   end: "2020-12-02T12:00:00+0000",
                   title:
@@ -338,7 +340,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239596",
-                  author: "René Rohner",
+                  author: "René Rohner 🇩🇪",
                   start: "2020-12-02T08:00:00+0000",
                   end: "2020-12-02T12:00:00+0000",
                   title:
@@ -356,7 +358,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239853",
-                  author: "Michael Hallik",
+                  author: "Michael Hallik 🇳🇱",
                   start: "2020-12-02T09:00:00+0000",
                   end: "2020-12-02T13:00:00+0000",
                   title:
@@ -407,7 +409,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "243985",
-                  author: "Hélio Guilherme",
+                  author: "Hélio Guilherme 🇵🇹",
                   start: "2020-12-02T10:00:00+0000",
                   end: "2020-12-02T13:00:00+0000",
                   title:
@@ -427,7 +429,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239854",
-                  author: "Adrian Yorke",
+                  author: "Adrian Yorke 🇫🇮",
                   start: "2020-12-02T11:00:00+0000",
                   end: "2020-12-02T14:00:00+0000",
                   title:
@@ -452,7 +454,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239851",
-                  author: "René Rohner",
+                  author: "René Rohner 🇩🇪",
                   start: "2020-12-02T13:00:00+0000",
                   end: "2020-12-02T16:00:00+0000",
                   title:
@@ -470,7 +472,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239852",
-                  author: "Nils Balkow-Tychsen",
+                  author: "Nils Balkow-Tychsen 🇩🇪",
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T17:00:00+0000",
                   title:
@@ -492,41 +494,42 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239858",
-                  author: "TBA",
+                  author: "Jani Palsamäki 🇫🇮 & Mika Hänninen 🇫🇮",
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T18:00:00+0000",
                   title:
-                    "🇬🇧 RPA with Robot Framework [Finland/English] 3️⃣",
+                    "🇬🇧 RPA with Robot Framework and Robocorp Cloud [Finland/English] 3️⃣",
                   description:
-                    "RPA Framework is a collection of open-source libraries and tools for Robotic Process Automation (RPA), and it is designed to be used with both Robot Framework and Python.",
+                    "Robocorp is making RPA accessible to everyone through license-free open source technologies, delivered from a cloud platform. Join us and learn to build and orchestrate software robots with Robocorp's developer tools and RPA Framework's open-source libraries.",
                   descriptionExpanded: `<p>
                     The goal is to offer well-documented and actively maintained core libraries for Software Robot Developers.<br>
                     <br>
                     This workshops give you an introduction to the basics of RPA and how to use Robot Framework for that usecase.</p>
                     Agenda:<br>
-                    -Robocorp & introductions 00-00:15<br>
-                    -Test automation and RPA differences 00:15-00:30<br>
-                    -Building a robot with Robocorp 00:30-1:30<br>
-                    -Break 01:30-01:45<br>
-                    -Continue building / running the robot on Cloud, scheduling 01:45-2:45<br>
-                    -Wrap up & feedback 2:45-3:00<br>`,
-                  bio: "",
-                  imgUrl: [],
+                    - Robocorp & introductions 00-00:15<br>
+                    - Test automation and RPA differences 00:15-00:30<br>
+                    - Building a robot with Robocorp 00:30-1:30<br>
+                    - Break 01:30-01:45<br>
+                    - Continue building 01:45-2:45<br>
+                    - Running the robot on Cloud, scheduling 2:45-3:30<br>
+                    - Wrap up & feedback 3:30-4:00<br>`,
+                  bio:`<p>Jani is a technical content author at Robocorp with a background in software development. He likes bad humor and enjoys writing tongue-in-cheek.</p>
+                  <p>Mika is a developer for RPA Framework libraries with a background as a software and test automation developer. He likes to help people implement their robots as smooth as possible. Known also as a provider of bad jokes.</p>`,
+                  imgUrl: ["Jani_Palsamäki.jpg","Mika_Hänninen.jpeg"],
                   sponsorUrl: "https://robocorp.com/",
                   sponsorLogo: require("@/assets/img/sponsors/robocorp.png"),
                 },
                 {
                   type: "workshop",
-                  author: "Luca Giovenzana",
+                  pretixid: "250361",
+                  author: "Luca Giovenzana 🇮🇹",
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T17:00:00+0000",
                   title:
-                    "🇮🇹 HTTP api testing and RPA with RequestsLibrary [Italy/English]",
+                    "🇬🇧 HTTP api testing and RPA with RequestsLibrary [Italy/English] 3️⃣",
                   description:
-                    "RPA Framework is a collection of open-source libraries and tools for Robotic Process Automation (RPA), and it is designed to be used with both Robot Framework and Python.",
+                    "This workshop is about HTTP api for direct test or as prerequisites for your end to end test automation suite.",
                   descriptionExpanded: `<p>
-                  This workshop is about HTTP api for direct test or as prerequisites for your end to end test automation suite.
-                  <br>
                   You will learn:<br>
                   - how to setup a basic API testing/rpa project using the RequestsLibrary<br>
                   - how to handle shared session and authentication<br>
@@ -535,12 +538,12 @@ export default {
                   - how to use RF for basic stress tests<br>
                   - how to use pabot and RequestsLibrary to execute many requests in parallel<br>`,
                   bio: "",
-                  imgUrl: [],
+                  imgUrl: ["Luca_Giovenzana.jpeg"],
                 },
                 {
                   type: "workshop-last",
                   pretixid: "244001",
-                  author: "Hélio Guilherme",
+                  author: "Hélio Guilherme 🇵🇹",
                   start: "2020-12-02T15:00:00+0000",
                   end: "2020-12-02T18:00:00+0000",
                   title:
@@ -560,21 +563,21 @@ export default {
                 },
                 {
                   type: "workshop-last",
-                  author: "Maria Prokhorova",
+                  author: "Maria Prokhorova 🇷🇺",
                   start: "2020-12-02T15:00:00+0000",
                   end: "2020-12-02T18:00:00+0000",
                   title:
-                    "🇷🇺 Практический семинар по работе с библиотекой Image Library. [Russian/Русский]",
+                    "🇷🇺 Практический семинар по работе с библиотекой Image Library [Russian/Русский] 2️⃣",
                   description:
-                    "На семинаре будет много практики с объяснением нюансов работы с библиотекой для анализа изображений. А также знакомство с новыми кейвордами и их использованием в задачах автоматизации тестирования графических интерфейсов.",
-                  descriptionExpanded: "",
+                    "На семинаре будет много практики с объяснением нюансов работы с библиотекой для анализа изображений.",
+                  descriptionExpanded: " А также знакомство с новыми кейвордами и их использованием в задачах автоматизации тестирования графических интерфейсов.",
                   bio: "",
-                  imgUrl: [],
+                  imgUrl: ["Maria_Prokhorova.jpeg"],
                 },
                 {
                   type: "workshop-last",
                   pretixid: "239595",
-                  author: "Mikko Korpela",
+                  author: "Mikko Korpela 🇫🇮",
                   start: "2020-12-02T15:00:00+0000",
                   end: "2020-12-02T19:00:00+0000",
                   title:
@@ -598,7 +601,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239857",
-                  author: "Juho Saarinen",
+                  author: "Juho Saarinen 🇫🇮",
                   start: "2020-12-02T07:00:00+0000",
                   end: "2020-12-02T15:00:00+0000",
                   title:
@@ -614,7 +617,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239856",
-                  author: "Christoph Singer",
+                  author: "Christoph Singe 🇩🇪",
                   start: "2020-12-02T08:00:00+0000",
                   end: "2020-12-02T16:00:00+0000",
                   title:
@@ -632,7 +635,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239855",
-                  author: "Pekka Klärck",
+                  author: "Pekka Klärck 🇫🇮",
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T21:00:00+0000",
                   title:
@@ -650,7 +653,7 @@ export default {
                 {
                   type: "workshop-last",
                   pretixid: "239849",
-                  author: "Tatu Aalto",
+                  author: "Tatu Aalto 🇫🇮",
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T21:00:00+0000",
                   title: "🇬🇧 SeleniumLibrary (Advanced) [Finland/English] 3️⃣",

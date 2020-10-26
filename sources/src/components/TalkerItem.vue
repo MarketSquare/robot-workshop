@@ -62,13 +62,16 @@
                   v-if="imgUrl !== ''"
                   class="col-lg-4 col-md-6 col-sm-6 mt-auto"
                 >
-                  <div v-for="image in imgUrl" :key="image">
+                  <div v-for="(image, index) in imgUrl" :key="image">
                     <img
                       class="mb-3"
                       style="border-radius: 50%; width: 100px"
                       :src="require(`@/assets/img/users/${image}`)"
                     />
-                    <h3 v-if="author !== ''">
+                    <h3 v-if="author !== '' && author.includes('&')">
+                      {{ author.split(' & ')[index]}}
+                    </h3>
+                    <h3 v-else-if="author !== ''">
                       {{ author }}
                     </h3>
                   </div>
