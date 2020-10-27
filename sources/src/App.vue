@@ -119,11 +119,12 @@ export default {
               twitter: false,
             },
             users: [
-              /*{
-                title: "imbus AG",
-                href: "https://www.imbus.de",
-                img: require("@/assets/img/sponsors/imbus.png")
-              },
+              {
+                title: "Robocorp Oy",
+                href: "https://robocorp.com/",
+                img: require("@/assets/img/sponsors/robocorp.png"),
+                text: "Robocorp is making RPA accessible to everyone through license-free open source technologies."
+              }/*,
               {
                 title: "Reaktor Oy",
                 href: "https://www.reaktor.com/",
