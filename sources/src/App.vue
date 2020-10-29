@@ -454,6 +454,29 @@ export default {
                 },
                 {
                   type: "workshop",
+                  pretixid: "250361",
+                  author: "Kerkko Pelttari 🇫🇮",
+                  start: "2020-12-02T12:00:00+0000",
+                  end: "2020-12-02T16:00:00+0000",
+                  title:
+                    "🇬🇧 Advantages and possibilities of Robotframework-Browser library [Finland/English] 3️⃣",
+                  description:
+                    "Let’s get familiar and experiment with the best features of RobotFramework Browser:",
+                  descriptionExpanded: `<p>
+                  You will learn:<br>
+                  - Control of Pages, Contexts and Browsers<br>
+                  - Implicit waits (How playwright’s implicit wait heuristics work?)<br>
+                  - Implicit cleanup<br>
+                  - Assertion syntax<br>
+                  - Performance<br>
+                  - Possibilities and interest for future features and plugins<br>`,
+                  bio: "Kerkko worked as a Reaktor consultant in building the robotframework-browser library in summer of 2020. Now he participates through open-source work and creates RobotFramework based RPA-tooling at Robocor.",
+                  imgUrl: ["Kerkko_Pelttari.jpeg"],
+                  sponsorUrl: "https://robocorp.com/",
+                  sponsorLogo: require("@/assets/img/sponsors/robocorp.png"),
+                },
+                {
+                  type: "workshop",
                   pretixid: "239851",
                   author: "René Rohner 🇩🇪",
                   start: "2020-12-02T13:00:00+0000",
@@ -499,7 +522,7 @@ export default {
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T18:00:00+0000",
                   title:
-                    "🇬🇧 RPA with Robot Framework and Robocorp Cloud [Finland/English] 3️⃣",
+                    "🇬🇧 RPA with Robot Framework and Robocorp Cloud [Finland/English] 1️⃣",
                   description:
                     "Robocorp is making RPA accessible to everyone through license-free open source technologies, delivered from a cloud platform. Join us and learn to build and orchestrate software robots with Robocorp's developer tools and RPA Framework's open-source libraries.",
                   descriptionExpanded: `<p>
@@ -519,27 +542,6 @@ export default {
                   imgUrl: ["Jani_Palsamäki.jpg","Mika_Hänninen.jpeg"],
                   sponsorUrl: "https://robocorp.com/",
                   sponsorLogo: require("@/assets/img/sponsors/robocorp.png"),
-                },
-                {
-                  type: "workshop",
-                  pretixid: "250361",
-                  author: "Luca Giovenzana 🇮🇹",
-                  start: "2020-12-02T14:00:00+0000",
-                  end: "2020-12-02T17:00:00+0000",
-                  title:
-                    "🇬🇧 HTTP api testing and RPA with RequestsLibrary [Italy/English] 3️⃣",
-                  description:
-                    "This workshop is about HTTP api for direct test or as prerequisites for your end to end test automation suite.",
-                  descriptionExpanded: `<p>
-                  You will learn:<br>
-                  - how to setup a basic API testing/rpa project using the RequestsLibrary<br>
-                  - how to handle shared session and authentication<br>
-                  - how to validate the response<br>
-                  - what to address with api testing in your test suite<br>
-                  - how to use RF for basic stress tests<br>
-                  - how to use pabot and RequestsLibrary to execute many requests in parallel<br>`,
-                  bio: "",
-                  imgUrl: ["Luca_Giovenzana.jpeg"],
                 },
                 {
                   type: "workshop-last",
@@ -592,6 +594,29 @@ export default {
                   imgUrl: ["Mikko_Korpela.png"],
                   sponsorUrl: "https://www.reaktor.com/",
                   sponsorLogo: require("@/assets/img/sponsors/reaktor.png"),
+                },
+                {
+                  type: "workshop",
+                  pretixid: "250361",
+                  author: "Luca Giovenzana 🇮🇹",
+                  start: "2020-12-02T17:00:00+0000",
+                  end: "2020-12-02T20:00:00+0000",
+                  title:
+                    "🇬🇧 HTTP api testing and RPA with RequestsLibrary [Italy/English] 3️⃣",
+                  description:
+                    "This workshop is about HTTP api for direct test or as prerequisites for your end to end test automation suite.",
+                  descriptionExpanded: `<p>
+                  You will learn:<br>
+                  - how to setup a basic API testing/rpa project using the RequestsLibrary<br>
+                  - how to handle shared session and authentication<br>
+                  - how to validate the response<br>
+                  - what to address with api testing in your test suite<br>
+                  - how to use RF for basic stress tests<br>
+                  - how to use pabot and RequestsLibrary to execute many requests in parallel<br>`,
+                  bio: "I'm an Open Source and Linux passionate guy.<br><br>I worked for 9 years in a security company www.endian.com that build up from scratch an Open Soucre Linux distribution. <br><br>At Endian I discovered RobotFramework but never used since we already have created our own testing framework in python, based on unittest and around fabric library to remotely control via ssh our firewalls.<br>2 years ago I moved to a shining streaming company www.chili.com where I made up a 7 people QA team and initiated the company to test automation with RobotFramework.<br><br>The whole team enjoyed RF, me and Angelo attended the 2019 RoboCon edition. Back in Italy we started contributing and founded RobotFramework Italy/Milan Meetup.<br><br>I'm now an active contributor to RequestsLibrary, I'm very exited about it!",
+                  imgUrl: ["Luca_Giovenzana.jpeg"],
+                  sponsorUrl: "https://chili.com",
+                  sponsorLogo: require("@/assets/img/sponsors/Chili.png"),
                 },
 
                 {

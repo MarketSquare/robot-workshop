@@ -27,7 +27,7 @@
         class="mb-0 ml-4 link-title"
         :id="title.replace(/[^a-z0-9]/gmi, '').replace(/\s+/g, '').toLowerCase()"
         :name="title.replace(/[^a-z0-9]/gmi, '').replace(/\s+/g, '').toLowerCase()"
-        :class="{ 'clickable-title': descriptionExpanded !== '' || url !== '' }"
+        :class="{ 'clickable-title': descriptionExpanded !== '' || url !== '', 'cyr': title.startsWith('🇷🇺')}"
         @click="
           descriptionExpanded !== '' || url !== ''
             ? (expanded = !expanded)
@@ -52,8 +52,8 @@
               End: {{ utc_time(end).format("LT") }} (UTC) <span class="local-time">/ {{ local_time(end).format("LT") }} ({{local_tz()}})</span></p>
               <a v-if="pretixid !== ''" :href="'https://pretix.eu/robocon/WWWW2020/' + pretixid" target="blank" ><h3>&gt; Tickets</h3></a>
 
-              <p v-html="description"></p>
-              <p v-html="descriptionExpanded"></p>
+              <p :class="{ 'cyr': title.startsWith('🇷🇺')}" v-html="description"></p>
+              <p :class="{ 'cyr': title.startsWith('🇷🇺')}" v-html="descriptionExpanded"></p>
               <div
                 class="col-lg-12 mt-5"
                 style="display: flex; flex-wrap: wrap"
@@ -93,7 +93,7 @@
                 </div>
               </div>
               <template v-if="bio">
-                <p class="mt-5" v-html="bio"></p>
+                <p :class="{ 'cyr': title.startsWith('🇷🇺')}" class="mt-5" v-html="bio"></p>
               </template>
             </div>
           </div>
@@ -109,7 +109,7 @@
         "
       >
       Start: <span class="local-time">{{ local_time(start).format("LT") }}</span> / End: <span class="local-time">{{ local_time(end).format("LT") }} ({{local_tz()}})</span><br>
-      {{description}}</p> 
+      <span :class="{ 'cyr': title.startsWith('🇷🇺')}">{{description}}</span></p>
     </transition>
   </div>
 </template>
