@@ -1062,10 +1062,18 @@ function updateKeywords () {
 updateKeywords();
 initFramebuffers();
 multipleSplats(parseInt(Math.random() * 5) + 15);
-
-
+let splatsing = true;
+document.addEventListener("visibilitychange", (e) => {
+    if (document.visibilityState === 'visible') {
+        splatsing = true;
+    } else {
+        splatsing = false;
+    }
+});
 const splatshis = () => {
-    multipleSplats(Math.random() * 10);
+    if (splatsing) {
+        multipleSplats(Math.random() * 10);
+    };
     setTimeout(splatshis, Math.random()*4000+1000);
 }
 splatshis();
