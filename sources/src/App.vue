@@ -51,7 +51,7 @@ export default {
               header: "World Wide Workshop Wednesday",
               text: `<p>Come and learn new skills and support Robot Framework development!</p>
                 <p>
-                We have gathered experts from the Robot Framework Community to hold great workshops for you.
+                We have gathered experts around the world from the Robot Framework Community to hold great workshops for you.
                 The revenue of the day will be used entirely for the development of Robot Framework.</p>
                 <p>Workshops in English, Suomeksi, Deutsch, Dutch, Portuguese, Русский and Español.</p>
                 <p>Special thanks to all workshop organizers who will share their experience with the community.</p>
