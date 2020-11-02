@@ -618,8 +618,14 @@ export default {
                   - how to validate the response<br>
                   - what to address with api testing in your test suite<br>
                   - how to use RF for basic stress tests<br>
-                  - how to use pabot and RequestsLibrary to execute many requests in parallel<br>`,
-                  bio: "I'm an Open Source and Linux passionate guy.<br><br>I worked for 9 years in a security company www.endian.com that build up from scratch an Open Soucre Linux distribution. <br><br>At Endian I discovered RobotFramework but never used since we already have created our own testing framework in python, based on unittest and around fabric library to remotely control via ssh our firewalls.<br>2 years ago I moved to a shining streaming company www.chili.com where I made up a 7 people QA team and initiated the company to test automation with RobotFramework.<br><br>The whole team enjoyed RF, me and Angelo attended the 2019 RoboCon edition. Back in Italy we started contributing and founded RobotFramework Italy/Milan Meetup.<br><br>I'm now an active contributor to RequestsLibrary, I'm very exited about it!",
+                  - how to use pabot and RequestsLibrary to execute many requests in parallel<br>
+                  We will use the new 0.8 pre-release version and we will talk about the development roadmap.<br>`,
+                  bio: `Luca Giovenzana is an Open Source and Linux passionate guy.<br>
+                  Before discovering RobotFramework he built his own Python framework to remotely control and test Linux based firewalls.<br>
+                  He has been Head of QA for many years and, together with an amazing team, created a full stack test automation suite with more than 2 thousands test cases.<br>
+                  Now he fosters the Quality culture as an Agile Coach.<br>
+                  Together with Angelo Caovilla founded the RobotFramework Italian community and Meetup.<br>
+                  He contributes to the community and he is the maintainer of RequestsLibrary.`,
                   imgUrl: ["Luca_Giovenzana.jpeg"],
                   sponsorUrl: "https://chili.com",
                   sponsorLogo: require("@/assets/img/sponsors/Chili.png"),
