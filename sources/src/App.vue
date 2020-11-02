@@ -182,7 +182,7 @@ export default {
                 </div>
               </div>
               <div><p><a href="https://pretix.eu/robocon/WWWW2020" target="blank">Tickets are available here!</a>
-              <br>Supporter Tickets are available NOW!!
+              <br>Supporter Tickets are available NOW!! Note: times in the shop are in UTC.
               <br>
               <br>Ticket sale: ${utc_time("2020-11-04T08:00:00+0000").format(
                 "L"
