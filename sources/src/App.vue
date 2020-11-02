@@ -24,19 +24,6 @@ import PageBlock from "@/Components/PageBlock.vue";
 import moment, { locale } from "moment-timezone";
 
 setTimeout(() => {
-  function is_touch_device4() {
-    if ("ontouchstart" in window || window.TouchEvent)
-        return true;
-
-    if (window.DocumentTouch && document instanceof DocumentTouch)
-        return true;
-
-    const prefixes = ["", "-webkit-", "-moz-", "-o-", "-ms-"];
-    const queries = prefixes.map(prefix => `(${prefix}touch-enabled)`);
-
-    return window.matchMedia(queries.join(",")).matches;
-  }
-  if (is_touch_device4()) return;
   window.addEventListener('mousemove', (e) => {
         const ticketElm = document.getElementById('ticket');
         const { x, y, width, height } = ticketElm.getBoundingClientRect();
