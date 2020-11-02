@@ -260,6 +260,7 @@ h1.main-header {
   backdrop-filter: blur(15px);
   border-radius: 3px;
   cursor: pointer;
+  pointer-events: all;
 }
 
 .ticket-buy-container:hover {
