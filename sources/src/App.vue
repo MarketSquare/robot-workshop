@@ -49,49 +49,18 @@ export default {
             text: {
               twitter: false,
               header: "World Wide Workshop Wednesday",
-              text: `<p>We are happy to announce that the Robot Framework Foundation will be holding a World Wide Workshop Wednesday on <b>December 2nd</b> this year.</p>
+              text: `<p>Come and learn new skills and support Robot Framework development!</p>
+                <p>
+                We have gathered experts from the Robot Framework Community to hold great workshops for you.
+                The revenue of the day will be used entirely for the development of Robot Framework.</p>
                 <p>All Workshops will be held online on <a href="https://bigbluebutton.org/" target="blank">BigBlueButton</a> Servers located in Germany.<br>
                 </p>
                 <p>
                 ⚠️ Please try out our <a href="https://pretix.eu/robocon/BBB/ticket/Q0QRP/1/z39cjbggz466x9fs/call/" target="blank">Test Platform here</a>. ⚠️
                 </p>
-                <p>Due to COVID-19 we can not have an on-site conference next January and do not get revenues from that ticket sales.
-                With this workshop event we want to give you the possibility to donate for Robot Framework.
-                But you do also get a lot for your money!<br>
-                We have gathered experts from the Robot Framework Community to hold great workshops.
-                The revenues of the day will be used entirely for the further development of Robot Framework.</p>
                 <p>Special thanks go to all workshop organizers who will share their experience with the community.</p>
                 <h2>Thank you very much! You are the best ❤️ </h2></p>`,
             },
-          },
-        },
-        {
-          title: "Contribute",
-          text_block_centered: true,
-          user_contact: true,
-          data: {
-            text: {
-              twitter: false,
-              header: "Contribution",
-              text: `<p>We are still looking for community members who want to share their knowledge in a workshop.<br>
-                Please contact us if you want to contribute:`,
-            },
-            users: [
-              {
-                title: "René Rohner",
-                text:
-                  "<b>René Rohner</b><br>imbus AG<br><a href='mailto:rene@robotframework.org'>rene@robotframework.org</a><br>@René on Slack",
-                href: "mailto:rene@robotframework.org",
-                img: require("@/assets/img/users/Rene_Rohner.png"),
-              },
-              {
-                title: "Mikko Korpela",
-                text:
-                  "<b>Mikko Korpela</b><br>Reaktor Oy<br><a href='mailto:mikko@robotframework.org'>mikko@robotframework.org</a><br>@mkorpela on Slack",
-                href: "mailto:mikko@robotframework.org",
-                img: require("@/assets/img/users/Mikko_Korpela.png"),
-              },
-            ],
           },
         },
         {
