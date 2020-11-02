@@ -153,7 +153,7 @@ export default {
               You can try out our <a href="https://pretix.eu/robocon/BBB/ticket/Q0QRP/1/z39cjbggz466x9fs/call/" target="blank">Test Platform here</a> to ensure technical compatibility.
               </p>
               <br>
-              <br>Ticket sale: ${utc_time("2020-11-04T08:00:00+0000").format(
+              <p>Ticket sale: ${utc_time("2020-11-04T08:00:00+0000").format(
                 "L"
               )} ${utc_time("2020-11-04T08:00:00+0000").format(
                 "LT"
