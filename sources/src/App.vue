@@ -53,13 +53,8 @@ export default {
                 <p>
                 We have gathered experts from the Robot Framework Community to hold great workshops for you.
                 The revenue of the day will be used entirely for the development of Robot Framework.</p>
-                <p>All Workshops will be held online on <a href="https://bigbluebutton.org/" target="blank">BigBlueButton</a> Servers located in Germany.<br>
-                </p>
-                <p>
-                ⚠️ Please try out our <a href="https://pretix.eu/robocon/BBB/ticket/Q0QRP/1/z39cjbggz466x9fs/call/" target="blank">Test Platform here</a>. ⚠️
-                </p>
-                <p>Special thanks go to all workshop organizers who will share their experience with the community.</p>
-                <h2>Thank you very much! You are the best ❤️ </h2></p>`,
+                <p>Special thanks to all workshop organizers who will share their experience with the community.</p>
+                <h2>Keep scrolling down to get tickets ⬇️ </h2></p>`,
             },
           },
         },
@@ -123,7 +118,7 @@ export default {
           data: {
             text: {
               twitter: false,
-              header: "Tickets",
+              header: "Tickets 🎉",
               text: `
               <div class="ticket-visual_visual" id="ticket">
                   <canvas id="ticket-canvas"></canvas>
@@ -152,6 +147,11 @@ export default {
               </div>
               <div><p><a href="https://pretix.eu/robocon/WWWW2020" target="blank">Tickets are available here!</a>
               <br>Supporter Tickets are available NOW!! Note: times in the shop are in UTC.
+              <p>All Workshops will be held online on <a href="https://bigbluebutton.org/" target="blank">BigBlueButton</a> Servers located in Germany.<br>
+              </p>
+              <p>
+              You can try out our <a href="https://pretix.eu/robocon/BBB/ticket/Q0QRP/1/z39cjbggz466x9fs/call/" target="blank">Test Platform here</a> to ensure technical compatibility.
+              </p>
               <br>
               <br>Ticket sale: ${utc_time("2020-11-04T08:00:00+0000").format(
                 "L"
