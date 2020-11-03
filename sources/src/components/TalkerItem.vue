@@ -50,7 +50,7 @@
               <p>
               Start: {{ utc_time(start).format("LT") }} (UTC) <span class="local-time">/ {{ local_time(start).format("LT") }} ({{local_tz()}})</span><br>
               End: {{ utc_time(end).format("LT") }} (UTC) <span class="local-time">/ {{ local_time(end).format("LT") }} ({{local_tz()}})</span></p>
-              <a v-if="pretixid !== ''" :href="'https://pretix.eu/robocon/WWWW2020/' + pretixid" target="blank" ><h3>&gt; Tickets</h3></a>
+              <a v-if="pretixid !== ''" :href="'https://pretix.eu/robocon/WWWW2020/' + pretixid" target="blank" ><h3 @click="sendEvent(pretixid)">&gt; Tickets</h3></a>
 
               <p :class="{ 'cyr': title.startsWith('🇷🇺')}" v-html="description"></p>
               <p :class="{ 'cyr': title.startsWith('🇷🇺')}" v-html="descriptionExpanded"></p>
@@ -207,8 +207,13 @@ export default {
     local_time,
     utc_time,
     local_tz,
+    sendEvent,
   },
 };
+
+function sendEvent(pretixid) {
+  ga('send', 'event', 'toTicketShop', pretixid);
+}
 
 function utc_time(dataTime) {
   var locale = window.navigator.userLanguage || window.navigator.language;
