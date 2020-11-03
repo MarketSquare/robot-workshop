@@ -65,8 +65,11 @@ export default {
   },
   methods: {
     onActivate(target) {
+      const oldPage = this.currentPageMutable
       this.currentPageMutable = target.substring(1).toUpperCase().replace(/-AND-/g,'&').replace('-', ' ')
-      ga('send', 'event', 'scrollTo', target)
+      if (oldPage !== this.currentPageMutable) {
+        ga('send', 'event', 'scrollTo', target)
+      }
     },
     click(a) {
       ga('send', 'event', 'navigationClick', a)
