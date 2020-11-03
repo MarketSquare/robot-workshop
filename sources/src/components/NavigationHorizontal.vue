@@ -2,7 +2,7 @@
 <section>
 <b-nav  v-b-scrollspy:scroller.50 tag="nav" toggleable="lg" id="navigation" class="d-none d-md-block topbar" style="height: unset; padding-bottom: 6px">
     <b-nav-item v-for="item in pages" v-if="item.hide_from_nav != true && item.title !== ''" v-bind:key="item.title" v-scroll-to="'#'+item.title.toLowerCase()" :href="'#'+item.title.toLowerCase()" @click="click(item.title)">{{item.title.replace(/-and-/g,' & ').replace('-', ' ')}}</b-nav-item>
-  <ShareNetwork
+    <ShareNetwork
           v-for="network in networks"
           :network="network.network"
           :key="network.network"
@@ -74,6 +74,9 @@ export default {
   },
   created() {
     this.$root.$on("bv::scrollspy::activate", this.onActivate);
+    this.$root.$on('share_network_open', function (network, url) {
+      ga('send', 'event', 'socialShareClick', network);
+    });
   }
 };
 </script>
