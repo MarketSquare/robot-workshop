@@ -18,7 +18,6 @@
       <b-nav-item v-for="item in pages" v-if="item.hide_from_nav != true" v-bind:key="item.title" :href="'#'+item.title.toLowerCase()">{{item.title}}</b-nav-item>
     </b-navbar-nav>
   </b-collapse>
-
 </b-navbar>
 </section>
 </template>

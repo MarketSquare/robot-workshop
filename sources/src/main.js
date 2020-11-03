@@ -7,6 +7,7 @@ import Es6Promise from 'es6-promise'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueRouter from 'vue-router'
+import VueSocialSharing from 'vue-social-sharing'
 
 import Vue from 'vue'
 import App from './App'
@@ -21,6 +22,8 @@ import BootstrapVue from 'bootstrap-vue'
 Es6Promise.polyfill()
 
 Vue.use(BootstrapVue)
+
+Vue.use(VueSocialSharing);
 
 Vue.use(VueScrollTo, {
   duration: 300,
