@@ -25,6 +25,7 @@
     "vue-analytics": "^5.16.0",
     "vue-router": "^3.0.1",
     "vue-scrollto": "^2.13.0",
+    "vue-social-sharing": "^3.0.3",
     "vue-tweet-embed": "^2.1.2"
   },
   "devDependencies": {
