@@ -425,7 +425,7 @@ export default {
                   sponsorLogo: require("@/assets/img/sponsors/robocorp.png"),
                 },
                 {
-                  type: "workshop-last",
+                  type: "workshop",
                   pretixid: "244001",
                   author: "Hélio Guilherme 🇵🇹",
                   start: "2020-12-02T15:00:00+0000",
@@ -446,7 +446,7 @@ export default {
                   sponsorLogo: require("@/assets/img/sponsors/Load.png"),
                 },
                 {
-                  type: "workshop-last",
+                  type: "workshop",
                   author: "Maria Prokhorova 🇷🇺",
                   start: "2020-12-02T15:00:00+0000",
                   end: "2020-12-02T18:00:00+0000",
@@ -459,7 +459,7 @@ export default {
                   imgUrl: ["Maria_Prokhorova.jpeg"],
                 },
                 {
-                  type: "workshop-last",
+                  type: "workshop",
                   pretixid: "239595",
                   author: "Mikko Korpela 🇫🇮",
                   start: "2020-12-02T15:00:00+0000",
