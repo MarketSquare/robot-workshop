@@ -530,7 +530,7 @@ export default {
                 },
                 {
                   type: "workshop",
-                  pretixid: "????",
+                  pretixid: "256053",
                   author: "Anton Cervantes 🇪🇸",
                   start: "2020-12-02T16:30:00+0000",
                   end: "2020-12-02T20:30:00+0000",
