@@ -478,6 +478,27 @@ export default {
                 },
                 {
                   type: "workshop",
+                  pretixid: "????",
+                  author: "Anton Cervantes 🇪🇸",
+                  start: "2020-12-02T16:30:00+0000",
+                  end: "2020-12-02T20:30:00+0000",
+                  title: "🇪🇸 Introducción a SeleniumLibrary y RequestsLibrary (Web Testing + API Testing) [España/Español] 3️⃣",
+                  description:
+                  "Curso de iniciación en el testing web y API con Robot Framework.",
+                  descriptionExpanded:
+                    `<p>Parte 1: Fundamentos de Robot Framework (1h)
+                    En esta sección aprenderemos a crear test cases, test suites, keywords de usuario, tipos de variables, keywords condicionales, bucles, manipulación de ficheros json, etc.</p>
+                    <p>Parte 2: Introducción al testing UI con SeleniumLibrary (1h 30m)
+                    En esta sección automatizaremos el proceso de compra en una tienda online (e-commerce). Para ello aprenderemos a identificar objectos, operaciones con elementos, instrucciones de espera, validaciones, etc.</p>
+                    <p>Parte 3: Introducción al testing API con RequestsLibrary (1h 30m)
+                    En esta sección validaremos el correcto funcionamiento de una API de una web de reservas. Para ello aprenderemos a hacer llamadas Get, Post, Put, Patch, Delete, Health Check y validaremos las respuestas obtenidas del servidor.</p>
+                    `,
+                  bio:
+                    "Anton Cervantes ha trabajado como ingeniero de test desde 2008 en diferentes empresas de consultoría entre otras. Anton empezó a automatizar utilizando Robot Framework en 2017 para web y mobile utilizando SeleniumLibrary, AppiumLibrary y RequestsLibrary.",
+                  imgUrl: ["A_Cervantes.jpg"]
+                },
+                {
+                  type: "workshop",
                   pretixid: "250361",
                   author: "Luca Giovenzana 🇮🇹",
                   start: "2020-12-02T17:00:00+0000",
