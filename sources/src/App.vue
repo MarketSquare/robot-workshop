@@ -179,6 +179,8 @@ export default {
                   <div class="ticket-visual_ticket-number-wrapper">
                     <h3 class="ticket-visual_ticket-number">№ 43770</h3>
                   </div>
+                  <div class="left"></div>
+                  <div class="right"></div>
                 </div>
               </div>
               `,
