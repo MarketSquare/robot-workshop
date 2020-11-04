@@ -671,20 +671,13 @@ export default {
               header: "Tickets 🎉",
               text: `
               <p><a href="https://pretix.eu/robocon/WWWW2020" onclick="ga('send', 'event', 'toTicketShop', 'ticket')" target="blank">Tickets are available here!</a>
-              <br>Supporter Tickets are available NOW!! Note: times in the shop are in UTC.
+              <br>Tickets are available NOW!! Note: times in the shop are in UTC.
               <p>All Workshops will be held online on <a href="https://bigbluebutton.org/" target="blank">BigBlueButton</a> Servers located in Germany.<br>
               </p>
               <p>
               You can try out our <a href="https://pretix.eu/robocon/BBB/ticket/Q0QRP/1/z39cjbggz466x9fs/call/" target="blank">Test Platform here</a> to ensure technical compatibility.
               </p>
               <br>
-              <p>Ticket sale: ${utc_time("2020-11-04T08:00:00+0000").format(
-                "L"
-              )} ${utc_time("2020-11-04T08:00:00+0000").format(
-                "LT"
-              )} (UTC) <span class="local-time">${local_time(
-                "2020-12-02T08:00:00+0000"
-              ).format("LT")} (${local_tz()})</span></p>
 
               <p>Workshops are sold in three different price zones.
               With these zones we try to set fair prices all around the globe.
