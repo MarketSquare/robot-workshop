@@ -194,6 +194,7 @@ export default {
     expanded: {
       handler() {
         if (this.expanded)
+          ga('send', 'event', 'workshopExpanded', this.pretixid);
           history.pushState(
             null,
             null,
