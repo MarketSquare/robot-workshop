@@ -463,10 +463,10 @@ export default {
                 },
                 {
                   type: "workshop",
-                  pretixid: "????",
+                  pretixid: "257059",
                   price: 300,
                   author: "Andrea Gubellini 🇮🇹 & Angelo Caovilla 🇮🇹",
-                  start: "2020-12-02T14:00:00+0000",
+                  start: "2020-12-02T13:00:00+0000",
                   end: "2020-12-02T17:00:00+0000",
                   title:
                     "🇮🇹 From zero to hero [Italy/IT] 3️⃣",
