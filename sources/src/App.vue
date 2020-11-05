@@ -195,6 +195,7 @@ export default {
                   end: "2020-12-02T06:00:00+0000",
                   title:
                     "🇬🇧 Introduction to Robot framework [India/English] 1️⃣",
+                  price: 100,
                   description: "Basic workshop for robot framework beginners.",
                   descriptionExpanded: `<h3>Section 1 - Introduction & Installation</h3>
                     <b>Duration:</b> 10-15 minutes<br>
@@ -226,6 +227,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239594",
+                  price: 300,
                   author: "Mikko Korpela 🇫🇮",
                   start: "2020-12-02T07:00:00+0000",
                   end: "2020-12-02T11:00:00+0000",
@@ -243,6 +245,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "244011",
+                  price: 300,
                   author: "Liviu Avram 🇷🇴",
                   start: "2020-12-02T08:00:00+0000",
                   end: "2020-12-02T12:00:00+0000",
@@ -277,6 +280,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239596",
+                  price: 300,
                   author: "René Rohner 🇩🇪",
                   start: "2020-12-02T08:00:00+0000",
                   end: "2020-12-02T12:00:00+0000",
@@ -295,6 +299,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239853",
+                  price: 300,
                   author: "Michael Hallik 🇳🇱",
                   start: "2020-12-02T09:00:00+0000",
                   end: "2020-12-02T13:00:00+0000",
@@ -346,6 +351,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "243985",
+                  price: 300,
                   author: "Hélio Guilherme 🇵🇹",
                   start: "2020-12-02T10:00:00+0000",
                   end: "2020-12-02T13:00:00+0000",
@@ -366,6 +372,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239854",
+                  price: 300,
                   author: "Adrian Yorke 🇫🇮",
                   start: "2020-12-02T11:00:00+0000",
                   end: "2020-12-02T14:00:00+0000",
@@ -391,6 +398,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "250361",
+                  price: 300,
                   author: "Kerkko Pelttari 🇫🇮",
                   start: "2020-12-02T12:00:00+0000",
                   end: "2020-12-02T16:00:00+0000",
@@ -415,6 +423,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239851",
+                  price: 300,
                   author: "René Rohner 🇩🇪",
                   start: "2020-12-02T13:00:00+0000",
                   end: "2020-12-02T16:00:00+0000",
@@ -432,6 +441,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239852",
+                  price: 300,
                   author: "Nils Balkow-Tychsen 🇩🇪",
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T17:00:00+0000",
@@ -454,6 +464,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "????",
+                  price: 300,
                   author: "Andrea Gubellini 🇮🇹 & Angelo Caovilla 🇮🇹",
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T17:00:00+0000",
@@ -482,6 +493,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239858",
+                  price: 100,
                   author: "Jani Palsamäki 🇫🇮 & Mika Hänninen 🇫🇮",
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T18:00:00+0000",
@@ -510,6 +522,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "244001",
+                  price: 200,
                   author: "Hélio Guilherme 🇵🇹",
                   start: "2020-12-02T15:00:00+0000",
                   end: "2020-12-02T18:00:00+0000",
@@ -529,6 +542,8 @@ export default {
                 {
                   type: "workshop",
                   author: "Maria Prokhorova 🇷🇺",
+                  price: 200,
+                  pretixid: "250362",
                   start: "2020-12-02T15:00:00+0000",
                   end: "2020-12-02T18:00:00+0000",
                   title:
@@ -543,6 +558,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239595",
+                  price: 300,
                   author: "Mikko Korpela 🇫🇮",
                   start: "2020-12-02T15:00:00+0000",
                   end: "2020-12-02T19:00:00+0000",
@@ -561,6 +577,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "256053",
+                  price: 300,
                   author: "Anton Cervantes 🇪🇸",
                   start: "2020-12-02T16:30:00+0000",
                   end: "2020-12-02T20:30:00+0000",
@@ -582,6 +599,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "250361",
+                  price: 300,
                   author: "Luca Giovenzana 🇮🇹",
                   start: "2020-12-02T16:00:00+0000",
                   end: "2020-12-02T19:00:00+0000",
@@ -617,6 +635,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239857",
+                  price: 500,
                   author: "Juho Saarinen 🇫🇮",
                   start: "2020-12-02T07:00:00+0000",
                   end: "2020-12-02T15:00:00+0000",
@@ -635,6 +654,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239856",
+                  price: 500,
                   author: "Christoph Singe 🇩🇪",
                   start: "2020-12-02T08:00:00+0000",
                   end: "2020-12-02T16:00:00+0000",
@@ -653,6 +673,7 @@ export default {
                 {
                   type: "workshop",
                   pretixid: "239855",
+                  price: 500,
                   author: "Pekka Klärck 🇫🇮",
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T21:00:00+0000",
@@ -672,6 +693,7 @@ export default {
                   type: "workshop-last",
                   pretixid: "239849",
                   author: "Tatu Aalto 🇫🇮",
+                  price: 500,
                   start: "2020-12-02T14:00:00+0000",
                   end: "2020-12-02T21:00:00+0000",
                   title: "🇬🇧 SeleniumLibrary (Advanced) [Finland/English] 3️⃣",

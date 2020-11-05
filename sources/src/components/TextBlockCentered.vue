@@ -29,7 +29,8 @@
           :sponsor-url="talk.sponsorUrl"
           :start="talk.start"
           :end="talk.end"
-          :pretixid="talk.pretixid"/>
+          :pretixid="talk.pretixid"
+          :price="talk.price"/>
       </div>
     </div>
     <div v-else>
