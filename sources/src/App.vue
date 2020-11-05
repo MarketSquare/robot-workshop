@@ -53,7 +53,7 @@ export default {
                 <p>
                 We have gathered experts around the world from the Robot Framework Community to hold great workshops for you.
                 The revenue of the day will be used entirely for the development of Robot Framework.</p>
-                <p>Workshops in English, Suomeksi, Deutsch, Dutch, Portuguese, Русский and Español.</p>
+                <p>Workshops in English, Suomeksi, Deutsch, Dutch, Portuguese, Русский, Español and Italiano.</p>
                 <p>Special thanks to all workshop organizers who will share their experience with the community.</p>
                 <h2>Keep scrolling down to learn about workshops and get tickets ⬇️ </h2></p>`,
             },
@@ -450,6 +450,34 @@ export default {
                   imgUrl: ["Nils_Balkow.jpeg"],
                   sponsorUrl: "https://www.humanitec.com",
                   sponsorLogo: require("@/assets/img/sponsors/humanitec.png"),
+                },
+                {
+                  type: "workshop",
+                  pretixid: "????",
+                  author: "Andrea Gubellini 🇮🇹 & Angelo Caovilla 🇮🇹",
+                  start: "2020-12-02T14:00:00+0000",
+                  end: "2020-12-02T17:00:00+0000",
+                  title:
+                    "🇮🇹 From zero to hero [Italy/IT] 3️⃣",
+                  description:
+                    "Impara ad automatizzare nel modo corretto senza skill o conoscenze pregresse!",
+                  descriptionExpanded: `
+                  <p>Durante questo workshop acquisirai conoscenze generali sulle automation best practices,
+                  come interagire con pagine web, come impostare un'architettura effettiva per i tuoi test,
+                  livelli di astrazione BDD ed altro: tutto utilizzando Robot Framework!</p>
+                  `,
+                  bio:
+                    `
+                    <p>Angelo is a Vegan - Heavy Metal - Man with a lot of hobbies and interests.
+                    His main interest is quality and he applies it at work.
+                    Currently he is the Chapter QA Lead in CHILI, managing 2000+ test case with a great team.
+                    Together with Luca Giovenzana he founded the italian RobotfFramework Community.
+                    He is also called Automation Hero.</p>
+                    <p>Andrea is a self-taught  QA Engineer/Dev with a strong passion about technology.
+                    He loves creating stuff and contributing to open source projects.
+                    After a few months using and trying Robot Framework he started
+                    developing custom libraries and joined Robot framework Italian Meetup as one of the organizers.</p>
+                    `,
                 },
                 {
                   type: "workshop",
