@@ -534,7 +534,7 @@ export default {
                     Iremos explorar as bibliotecas internas com alguns exemplos, e depois com as bibliotecas externas veremos o potencial do Robot Framework, e ao mesmo tempo conhecer as importantes funcionalidades do RIDE.`,
                   bio: `Hélio Guilherme é um Testador de Software desde 2008 quando teve o primeiro contacto com Robot Framework e o RIDE, na Nokia Networks em Lisboa, Portugal.<br>
                     Durante as suas actividades profissionais, ele utilizou todas as bibliotecas internas do Robot Framework, e outras bibliotecas como sejam: SikuliLibrary, SSHLibrary, SeleniumLibrary, RequestsLibrary e AppiumLibrary.<br>
-                    Ele é presentemente o líder de desenvolvimento e manutenção do RIDE. Profissionalmente, ele é Engenheiro de Qualidade na LOAD em Aveiro, Portugal (http://load.digital/), que patroncina o seu tempo neste Workshop.`,
+                    Ele é presentemente o líder de desenvolvimento e manutenção do RIDE. Profissionalmente, ele é Engenheiro de Qualidade na LOAD em Aveiro, Portugal (http://load.digital/), que patrocina o seu tempo neste Workshop.`,
                   imgUrl: ["Helio_Guilherme.png"],
                   sponsorUrl: "http://load.digital/",
                   sponsorLogo: require("@/assets/img/sponsors/Load.png"),
