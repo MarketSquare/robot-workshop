@@ -54,6 +54,7 @@ export default {
                 We have gathered experts around the world from the Robot Framework Community to hold great workshops for you.
                 The revenue of the day will be used entirely for the development of Robot Framework.</p>
                 <p>Workshops in English, Suomeksi, Deutsch, Dutch, Portuguese, Русский, Español and Italiano.</p>
+                <p>All workshops have at max 30 participants and are live online trainings.</p>
                 <p>Special thanks to all workshop organizers who will share their experience with the community.</p>
                 <h2>Keep scrolling down to learn about workshops and get tickets ⬇️ </h2></p>`,
             },
