@@ -398,7 +398,7 @@ export default {
                 },
                 {
                   type: "workshop",
-                  pretixid: "250361",
+                  pretixid: "253854",
                   price: 300,
                   author: "Kerkko Pelttari 🇫🇮",
                   start: "2020-12-02T12:00:00+0000",
