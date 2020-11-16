@@ -337,7 +337,12 @@ export default {
                     <li style="margin-bottom: 0;">Robot Framework - Good Knowledge</li>
                     <li style="margin-bottom: 0;">HTTP concepts - Basic Knowledge</li>
                     <li style="margin-bottom: 0;">Object oriented programming concepts - Basic Knowledge</li>
-                  </ul>`,
+                  </ul>
+                  <p>Participants should have a good grasp of HTTP related concepts, such as sessions, methods (verbs/nouns), status codes/messages, headers and cookies. We will work with all of those, but will assume the concepts themselves to be understood.</p>
+                  <p>Participants should have broad experience/skill wrt to working with Robot Framework. For instance, we will employ dictionaries, list, tuples and use the extended variable syntax and basic convenience libraries such as the Collections library.</p>
+                  <p>Basic programming concepts (such as objects, methods, attributes, arguments, return values) should be known as well.</p>
+                  <p>Our example SUT will be the website of the Dutch tax authority: <a href="https://www.belastingdienst.nl">www.belastingdienst.nl</a>. So participants should make sure they have access to that site with the device they'll be using in the workshop.</p>
+                  `,
                   bio: `<p>Michael has been a software tester since 2000, in various roles.</p>
                         <p>His first exposure to Robot Framework (and test automation) came as early as 2011.
                         It was love at first sight.
