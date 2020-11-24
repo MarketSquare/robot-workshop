@@ -377,32 +377,6 @@ export default {
                 },
                 {
                   type: "workshop",
-                  pretixid: "239854",
-                  price: 300,
-                  author: "Adrian Yorke 🇫🇮",
-                  start: "2020-12-02T11:00:00+0000",
-                  end: "2020-12-02T14:00:00+0000",
-                  title:
-                    "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Robot Framework Cookbook - The Journey So Far [Finland/British English] 3️⃣",
-                  description:
-                    "This will be a hands-on workshop exploring numerous curated test recipes from Robot Framework Cookbook.",
-                  descriptionExpanded: `We will explain how the CI has been implemented for this project and how we use Robocop for linting services.
-                  Excellent for beginners and intermediates who want to learn more across a diverse set of libraries and technology areas.
-                  <p><h3>Contents:</h3>
-                  Check out the github repository to see the material we will be covering:<br>
-                  <a href='https://github.com/adrianyorke/robotframework-cookbook/tree/feature/actions#table-of-contents' target='blank'>Robot Framework Cookbook GitHub Repo</a></p> `,
-                  bio: `
-                  <p>Adrian Yorke is a senior Data Specialist and DevOps Engineer at OP, one of Finland's largest and oldest Financial groups.</p>
-                  <ul>
-                    <li style="margin-bottom: 0;">Driving force behind the adoption of DevOps and Test Automation using Robot Framework in the Data Warehousing tribe.</li>
-                    <li style="margin-bottom: 0;">During 2019 authored and presented a Python Summer Camp workshop series.  Some of the sessions had 60+ live attendees even though it was held during the month of July.</li>
-                    <li style="margin-bottom: 0;">Tech interests: Python, Raspberry Pi projects & recently I've been studying machine learning and data science.</li>
-                    <li style="margin-bottom: 0;">When I'm not being a geek: swimming (former national championship swimmer), long distance running (I actually completed the London marathon!), carpentry & just being there for my daughter and helping her grow.</li>
-                  </ul>`,
-                  imgUrl: ["Adrian_Yorke.jpeg"],
-                },
-                {
-                  type: "workshop",
                   pretixid: "253854",
                   price: 300,
                   author: "Kerkko Pelttari 🇫🇮",
