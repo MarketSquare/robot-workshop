@@ -537,25 +537,6 @@ export default {
                 },
                 {
                   type: "workshop",
-                  pretixid: "239595",
-                  price: 300,
-                  author: "Mikko Korpela 🇫🇮",
-                  start: "2020-12-02T15:00:00+0000",
-                  end: "2020-12-02T19:00:00+0000",
-                  title:
-                    "🇬🇧 Pabot Introduction / Tips & Tricks [Finland/English] 3️⃣",
-                  description:
-                    "A hands-on introduction to parallel test execution with Robot Framework and Pabot.",
-                  descriptionExpanded:
-                    "Introduction to parallel test execution with Pabot.",
-                  bio:
-                    "Mikko Korpela is a consultant and former core developer of Robot Framework. He invented the awesome Pabot.",
-                  imgUrl: ["Mikko_Korpela.png"],
-                  sponsorUrl: "https://www.reaktor.com/",
-                  sponsorLogo: require("@/assets/img/sponsors/reaktor.png"),
-                },
-                {
-                  type: "workshop",
                   pretixid: "256053",
                   price: 300,
                   author: "Anton Cervantes 🇪🇸",
