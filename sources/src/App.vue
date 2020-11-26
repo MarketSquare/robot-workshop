@@ -53,7 +53,7 @@ export default {
                 <p>
                 We have gathered experts around the world from the Robot Framework Community to hold great workshops for you.
                 The revenue of the day will be used entirely for the development of Robot Framework.</p>
-                <p>Workshops in English, Suomeksi, Deutsch, Dutch, Portuguese, Русский and Italiano.</p>
+                <p>Workshops in English, Suomeksi, Deutsch, Dutch, Русский and Italiano.</p>
                 <p>All workshops have at max 10 participants and are live online trainings.</p>
                 <p>Special thanks to all workshop organizers who will share their experience with the community.</p>
                 <h2>Keep scrolling down to learn about workshops and get tickets ⬇️ </h2></p>`,
@@ -356,27 +356,6 @@ export default {
                 },
                 {
                   type: "workshop",
-                  pretixid: "243985",
-                  price: 300,
-                  author: "Hélio Guilherme 🇵🇹",
-                  start: "2020-12-02T10:00:00+0000",
-                  end: "2020-12-02T13:00:00+0000",
-                  title:
-                    "🇬🇧 Tips and Tricks with Robot Framework IDE (RIDE) [Portugal/English] 3️⃣",
-                  description:
-                    "Introduction to Robot Framework, installation and use of internal and external libraries with RIDE.",
-                  descriptionExpanded: `In this Workshop, we'll start by installing Robot Framework and RIDE, and run some small examples on command window/shell or terminal, and then in RIDE Run tab.<br>
-                    We will explore the internal libraries with some examples, and then with external libraries see the full power of Robot Framework, and at the same time getting to know most useful RIDE features.`,
-                  bio: `Hélio Guilherme is an experienced Software Tester since 2008 when he first had contact with Robot Framework and RIDE, at Nokia Networks in Lisbon, Portugal.<br>
-                    During his work activities he used all the Robot Framework internal libraries, and other libraries like: <b>SikuliLibrary, SSHLibrary, SeleniumLibrary, RequestsLibrary and AppiumLibrary</b>.<br>
-                    He is currently the lead developer and maintainer of RIDE.<br>
-                    Professionally, he is QA Engineer at LOAD in Aveiro, Portugal (http://load.digital/), which is sponsoring his time for this Workshop.`,
-                  imgUrl: ["Helio_Guilherme.png"],
-                  sponsorUrl: "http://load.digital/",
-                  sponsorLogo: require("@/assets/img/sponsors/Load.png"),
-                },
-                {
-                  type: "workshop",
                   pretixid: "253854",
                   price: 300,
                   author: "Kerkko Pelttari 🇫🇮",
@@ -475,26 +454,6 @@ export default {
                   imgUrl: ["Jani_Palsamäki.jpg", "Mika_Hänninen.jpeg"],
                   sponsorUrl: "https://robocorp.com/",
                   sponsorLogo: require("@/assets/img/sponsors/robocorp.png"),
-                },
-                {
-                  type: "workshop",
-                  pretixid: "244001",
-                  price: 200,
-                  author: "Hélio Guilherme 🇵🇹",
-                  start: "2020-12-02T15:00:00+0000",
-                  end: "2020-12-02T18:00:00+0000",
-                  title:
-                    "🇵🇹 Dicas e Truques com Robot Framework IDE (RIDE) [Portugal/Portuguese] 2️⃣",
-                  description:
-                    "Introdução ao Robot Framework, instalação e uso das bibliotecas internas e externas com o RIDE",
-                  descriptionExpanded: `Neste Workshop, começamos pela instalação do Robot Framework e do RIDE, correremos alguns pequenos exemplos na linha de comandos e no separador Run do RIDE.<br>
-                    Iremos explorar as bibliotecas internas com alguns exemplos, e depois com as bibliotecas externas veremos o potencial do Robot Framework, e ao mesmo tempo conhecer as importantes funcionalidades do RIDE.`,
-                  bio: `Hélio Guilherme é um Testador de Software desde 2008 quando teve o primeiro contacto com Robot Framework e o RIDE, na Nokia Networks em Lisboa, Portugal.<br>
-                    Durante as suas actividades profissionais, ele utilizou todas as bibliotecas internas do Robot Framework, e outras bibliotecas como sejam: SikuliLibrary, SSHLibrary, SeleniumLibrary, RequestsLibrary e AppiumLibrary.<br>
-                    Ele é presentemente o líder de desenvolvimento e manutenção do RIDE. Profissionalmente, ele é Engenheiro de Qualidade na LOAD em Aveiro, Portugal (http://load.digital/), que patrocina o seu tempo neste Workshop.`,
-                  imgUrl: ["Helio_Guilherme.png"],
-                  sponsorUrl: "http://load.digital/",
-                  sponsorLogo: require("@/assets/img/sponsors/Load.png"),
                 },
                 {
                   type: "workshop",
