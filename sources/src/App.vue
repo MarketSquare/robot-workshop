@@ -420,29 +420,6 @@ export default {
                 },
                 {
                   type: "workshop",
-                  pretixid: "239852",
-                  price: 300,
-                  author: "Nils Balkow-Tychsen 🇩🇪",
-                  start: "2020-12-02T14:00:00+0000",
-                  end: "2020-12-02T17:00:00+0000",
-                  title:
-                    "🇬🇧 KubeLibrary - Verify state of your Kubernetes Cluster [Germany/English] 3️⃣",
-                  description:
-                    "RobotFramework library for testing Kubernetes cluster.",
-                  descriptionExpanded: `<p><h3 class='mb-0 mt-2'>Language</h3>
-                    Workshop will be in English, Questions in German can also be answered.<br>
-                    <h3 class='mb-0 mt-2'>Required knowledge</h3>
-                    Basic knowledge of Robotframework, Basic knowledge of Kubernetes
-                    <h3 class='mb-0 mt-2'>Description</h3>
-                    In this workshop you will learn how to connect from your robot tests to a k8s cluster. Feel free to bring your own GKE/EKS/AKS cluster or work with a local cluster in K3S/KinD/MiniKube. You will build your own test suite to assert objects in your cluster. Finally we'll go over contribution to the KubeLibrary.`,
-                  bio:
-                    "Nils is Lead QA Engineer at Humanitec. He has worked in software testing for more than 20 years, in different industries like finance, games and developer platforms. He specializes in test automation for web apps based on Microservice Architectures.",
-                  imgUrl: ["Nils_Balkow.jpeg"],
-                  sponsorUrl: "https://www.humanitec.com",
-                  sponsorLogo: require("@/assets/img/sponsors/humanitec.png"),
-                },
-                {
-                  type: "workshop",
                   pretixid: "257059",
                   price: 300,
                   author: "Andrea Gubellini 🇮🇹 & Angelo Caovilla 🇮🇹",
